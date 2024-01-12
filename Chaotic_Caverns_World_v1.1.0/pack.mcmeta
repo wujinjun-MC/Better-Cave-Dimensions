@@ -1,0 +1,35 @@
+{
+  "pack": {
+    "description": [
+      {
+        "text": "Chaotic Caverns World",
+        "color": "#2c2c2c"
+      },
+      "\n",
+      {
+        "text": "Made by ",
+        "color": "#AAAAAA"
+      },
+      {
+        "text": "Quidvio",
+        "color": "#ffc76f"
+      }
+    ],
+    "pack_format": 15,
+    "supported_formats": [
+      15,
+      26
+    ]
+  },
+  "overlays": {
+    "entries": [
+      {
+        "formats": [
+          19,
+          26
+        ],
+        "directory": "overlay1"
+      }
+    ]
+  }
+}
