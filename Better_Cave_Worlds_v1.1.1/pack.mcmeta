@@ -1,0 +1,35 @@
+{
+  "pack": {
+    "description": [
+      {
+        "text": "Makes Better Cave Worlds",
+        "color": "#5c5c5c"
+      },
+      "\n",
+      {
+        "text": "Made by ",
+        "color": "#AAAAAA"
+      },
+      {
+        "text": "Quidvio",
+        "color": "#ffc76f"
+      }
+    ],
+    "pack_format": 15,
+    "supported_formats": [
+      15,
+      26
+    ]
+  },
+  "overlays": {
+    "entries": [
+      {
+        "formats": [
+          17,
+          26
+        ],
+        "directory": "overlay1"
+      }
+    ]
+  }
+}
