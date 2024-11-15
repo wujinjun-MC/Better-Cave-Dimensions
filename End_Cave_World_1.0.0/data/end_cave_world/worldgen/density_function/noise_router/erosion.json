@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:cache_2d",
+  "argument": {
+    "type": "minecraft:end_islands"
+  }
+}
