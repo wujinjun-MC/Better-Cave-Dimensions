@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "end_cave_world:end_fountain_hole",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 0,
+    "spacing": 128,
+    "separation": 127
+  }
+}
