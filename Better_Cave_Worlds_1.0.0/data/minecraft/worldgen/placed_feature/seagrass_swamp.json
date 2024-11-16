@@ -2,11 +2,11 @@
   "feature": "cave_world:seagrass_mid",
   "placement": [
     {
-      "type": "minecraft:in_square"
-    },
-    {
       "type": "minecraft:count",
       "count": 64
+    },
+    {
+      "type": "minecraft:in_square"
     },
     {
       "type": "minecraft:height_range",

@@ -6,9 +6,6 @@
       "chance": 2
     },
     {
-      "type": "minecraft:in_square"
-    },
-    {
       "type": "minecraft:count_on_every_layer",
       "count": 2
     },

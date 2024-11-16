@@ -2,11 +2,11 @@
   "feature": "cave_world:seagrass_block",
   "placement": [
     {
-      "type": "minecraft:in_square"
-    },
-    {
       "type": "minecraft:rarity_filter",
       "chance": 10
+    },
+    {
+      "type": "minecraft:in_square"
     },
     {
       "type": "minecraft:height_range",
@@ -26,11 +26,7 @@
       "max_steps": 6,
       "target_condition": {
         "type": "minecraft:has_sturdy_face",
-        "offset": [
-          0,
-          -1,
-          0
-        ],
+        "offset": [0, -1, 0],
         "direction": "up"
       },
       "allowed_search_condition": {
