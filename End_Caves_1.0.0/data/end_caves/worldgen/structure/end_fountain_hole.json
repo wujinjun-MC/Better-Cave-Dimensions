@@ -3,7 +3,7 @@
   "biomes": "minecraft:the_end",
   "step": "top_layer_modification",
   "spawn_overrides": {},
-  "start_pool": "end_cave_world:end_fountain_pool",
+  "start_pool": "end_caves:end_fountain_pool",
   "size": 7,
   "start_height": {
     "absolute": 164

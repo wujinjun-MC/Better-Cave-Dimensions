@@ -1,12 +1,12 @@
 {
-  "name": "end_cave_world:end_fountain_hole",
+  "name": "end_caves:end_fountain_hole",
   "fallback": "minecraft:empty",
   "elements": [
     {
       "weight": 1,
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "end_cave_world:end_fountain_hole",
+        "location": "end_caves:end_fountain_hole",
         "projection": "rigid",
         "processors": "minecraft:empty"
       }
