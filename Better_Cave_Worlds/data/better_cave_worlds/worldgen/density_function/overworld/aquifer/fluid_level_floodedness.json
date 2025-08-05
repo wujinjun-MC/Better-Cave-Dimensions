@@ -1,15 +1,17 @@
 {
   "type": "minecraft:range_choice",
-  "input": "better_cave_worlds:ocean_or_river",
+  "input": "better_cave_worlds:overworld/util/ocean_or_river",
   "min_inclusive": 0,
   "max_exclusive": 1,
   "when_in_range": {
+    "": "When out of river/ocean",
     "type": "minecraft:noise",
     "noise": "better_cave_worlds:aquifer_fluid_level_floodedness",
     "xz_scale": 2,
     "y_scale": 0.67
   },
   "when_out_of_range": {
+    "": "When in river/ocean",
     "type": "minecraft:range_choice",
     "input": "minecraft:y",
     "min_inclusive": 40,

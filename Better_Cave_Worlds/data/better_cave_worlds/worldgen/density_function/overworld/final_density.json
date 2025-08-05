@@ -1,4 +1,5 @@
 {
+  "": "Clamp for better barriers",
   "type": "minecraft:clamp",
   "min": -0.1,
   "max": 100,
@@ -43,7 +44,7 @@
                       "argument1": -0.9375,
                       "argument2": {
                         "type": "minecraft:add",
-                        "argument1": "better_cave_worlds:terrain/ocean_reduction",
+                        "argument1": "better_cave_worlds:overworld/util/ocean_terrain_reduction",
                         "argument2": "minecraft:nether/base_3d_noise"
                       }
                     }

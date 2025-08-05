@@ -20,47 +20,21 @@
     "size_vertical": 2
   },
   "noise_router": {
-    "barrier": 0.1,
-    "fluid_level_floodedness": "better_cave_worlds:fluid_level_floodedness",
-    "fluid_level_spread": "better_cave_worlds:fluid_level_spread",
-    "lava": {
-      "type": "minecraft:noise",
-      "noise": "minecraft:aquifer_lava",
-      "xz_scale": 1,
-      "y_scale": 1
-    },
-    "temperature": {
-      "type": "minecraft:shifted_noise",
-      "noise": "minecraft:temperature",
-      "xz_scale": 0.25,
-      "y_scale": 0,
-      "shift_x": "minecraft:shift_x",
-      "shift_y": 0,
-      "shift_z": "minecraft:shift_z"
-    },
-    "vegetation": {
-      "type": "minecraft:shifted_noise",
-      "noise": "minecraft:vegetation",
-      "xz_scale": 0.25,
-      "y_scale": 0,
-      "shift_x": "minecraft:shift_x",
-      "shift_y": 0,
-      "shift_z": "minecraft:shift_z"
-    },
-    "continents": "minecraft:overworld/continents",
-    "erosion": "minecraft:overworld/erosion",
-    "depth": "minecraft:overworld/depth",
-    "ridges": "minecraft:overworld/ridges",
-    "initial_density_without_jaggedness": 1,
-    "final_density": "better_cave_worlds:terrain/final",
-    "vein_toggle": "better_cave_worlds:vein_toggle",
-    "vein_ridged": "better_cave_worlds:vein_ridged",
-    "vein_gap": {
-      "type": "minecraft:noise",
-      "noise": "minecraft:ore_gap",
-      "xz_scale": 1,
-      "y_scale": 1
-    }
+    "barrier": "better_cave_worlds:overworld/aquifer/barrier",
+    "fluid_level_floodedness": "better_cave_worlds:overworld/aquifer/fluid_level_floodedness",
+    "fluid_level_spread": "better_cave_worlds:overworld/aquifer/fluid_level_spread",
+    "lava": "better_cave_worlds:overworld/aquifer/lava",
+    "temperature": "better_cave_worlds:overworld/temperature",
+    "vegetation": "better_cave_worlds:overworld/temperature",
+    "continents": "better_cave_worlds:overworld/continents",
+    "erosion": "better_cave_worlds:overworld/erosion",
+    "depth": "better_cave_worlds:overworld/depth",
+    "ridges": "better_cave_worlds:overworld/ridges",
+    "initial_density_without_jaggedness": "better_cave_worlds:overworld/initial_density_without_jaggedness",
+    "final_density": "better_cave_worlds:overworld/final_density",
+    "vein_toggle": "better_cave_worlds:overworld/vein/toggle",
+    "vein_ridged": "better_cave_worlds:overworld/vein/ridged",
+    "vein_gap": "better_cave_worlds:overworld/vein/gap"
   },
   "spawn_target": [
     {
