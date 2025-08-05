@@ -21,8 +21,8 @@
   },
   "noise_router": {
     "barrier": 0.1,
-    "fluid_level_floodedness": "cave_world:fluid_level_floodedness",
-    "fluid_level_spread": "cave_world:fluid_level_spread",
+    "fluid_level_floodedness": "better_cave_worlds:fluid_level_floodedness",
+    "fluid_level_spread": "better_cave_worlds:fluid_level_spread",
     "lava": {
       "type": "minecraft:noise",
       "noise": "minecraft:aquifer_lava",
@@ -52,9 +52,9 @@
     "depth": "minecraft:overworld/depth",
     "ridges": "minecraft:overworld/ridges",
     "initial_density_without_jaggedness": 1,
-    "final_density": "cave_world:terrain/final",
-    "vein_toggle": "cave_world:vein_toggle",
-    "vein_ridged": "cave_world:vein_ridged",
+    "final_density": "better_cave_worlds:terrain/final",
+    "vein_toggle": "better_cave_worlds:vein_toggle",
+    "vein_ridged": "better_cave_worlds:vein_ridged",
     "vein_gap": {
       "type": "minecraft:noise",
       "noise": "minecraft:ore_gap",

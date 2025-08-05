@@ -10,11 +10,11 @@
         "config": {
           "features": [
             {
-              "chance": 0.4,
-              "feature": "cave_world:placed_tall_seagrass"
+              "chance": 0.8,
+              "feature": "better_cave_worlds:placed_tall_seagrass"
             }
           ],
-          "default": "cave_world:placed_seagrass"
+          "default": "better_cave_worlds:placed_seagrass"
         }
       },
       "placement": [
@@ -24,11 +24,7 @@
           "max_steps": 6,
           "target_condition": {
             "type": "minecraft:has_sturdy_face",
-            "offset": [
-              0,
-              -1,
-              0
-            ],
+            "offset": [0, -1, 0],
             "direction": "up"
           },
           "allowed_search_condition": {

@@ -43,7 +43,7 @@
                       "argument1": -0.9375,
                       "argument2": {
                         "type": "minecraft:add",
-                        "argument1": "cave_world:terrain/ocean_reduction",
+                        "argument1": "better_cave_worlds:terrain/ocean_reduction",
                         "argument2": "minecraft:nether/base_3d_noise"
                       }
                     }
