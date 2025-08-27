@@ -20,21 +20,21 @@
     "size_vertical": 2
   },
   "noise_router": {
-    "barrier": "better_cave_worlds:overworld/aquifer/barrier",
-    "fluid_level_floodedness": "better_cave_worlds:overworld/aquifer/fluid_level_floodedness",
-    "fluid_level_spread": "better_cave_worlds:overworld/aquifer/fluid_level_spread",
-    "lava": "better_cave_worlds:overworld/aquifer/lava",
-    "temperature": "better_cave_worlds:overworld/temperature",
-    "vegetation": "better_cave_worlds:overworld/temperature",
-    "continents": "better_cave_worlds:overworld/continents",
-    "erosion": "better_cave_worlds:overworld/erosion",
-    "depth": "better_cave_worlds:overworld/depth",
-    "ridges": "better_cave_worlds:overworld/ridges",
-    "initial_density_without_jaggedness": "better_cave_worlds:overworld/initial_density_without_jaggedness",
-    "final_density": "better_cave_worlds:overworld/final_density",
-    "vein_toggle": "better_cave_worlds:overworld/vein/toggle",
-    "vein_ridged": "better_cave_worlds:overworld/vein/ridged",
-    "vein_gap": "better_cave_worlds:overworld/vein/gap"
+    "barrier": "better_cave_dimensions:overworld/aquifer/barrier",
+    "fluid_level_floodedness": "better_cave_dimensions:overworld/aquifer/fluid_level_floodedness",
+    "fluid_level_spread": "better_cave_dimensions:overworld/aquifer/fluid_level_spread",
+    "lava": "better_cave_dimensions:overworld/aquifer/lava",
+    "temperature": "better_cave_dimensions:overworld/temperature",
+    "vegetation": "better_cave_dimensions:overworld/temperature",
+    "continents": "better_cave_dimensions:overworld/continents",
+    "erosion": "better_cave_dimensions:overworld/erosion",
+    "depth": "better_cave_dimensions:overworld/depth",
+    "ridges": "better_cave_dimensions:overworld/ridges",
+    "initial_density_without_jaggedness": "better_cave_dimensions:overworld/initial_density_without_jaggedness",
+    "final_density": "better_cave_dimensions:overworld/final_density",
+    "vein_toggle": "better_cave_dimensions:overworld/vein/toggle",
+    "vein_ridged": "better_cave_dimensions:overworld/vein/ridged",
+    "vein_gap": "better_cave_dimensions:overworld/vein/gap"
   },
   "spawn_target": [
     {

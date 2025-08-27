@@ -60,7 +60,7 @@
       "minecraft:red_mushroom_nether",
       "minecraft:ore_magma",
       "minecraft:spring_closed_double",
-      "minecraft:ore_gold_deltas",
+      "better_cave_dimensions:ore_gold_deltas",
       "minecraft:ore_quartz_deltas",
       "minecraft:ore_ancient_debris_large",
       "minecraft:ore_debris_small"

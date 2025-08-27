@@ -11,10 +11,10 @@
           "features": [
             {
               "chance": 0.8,
-              "feature": "better_cave_worlds:placed_tall_seagrass"
+              "feature": "better_cave_dimensions:placed_tall_seagrass"
             }
           ],
-          "default": "better_cave_worlds:placed_seagrass"
+          "default": "better_cave_dimensions:placed_seagrass"
         }
       },
       "placement": [

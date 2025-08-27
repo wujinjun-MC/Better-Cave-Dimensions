@@ -1,5 +1,5 @@
 {
-  "feature": "better_cave_worlds:seagrass_tall",
+  "feature": "better_cave_dimensions:seagrass_tall",
   "placement": [
     {
       "type": "minecraft:count",
@@ -13,10 +13,10 @@
       "height": {
         "type": "minecraft:uniform",
         "min_inclusive": {
-          "above_bottom": -8
+          "absolute": 0
         },
         "max_inclusive": {
-          "absolute": 62
+          "below_top": 0
         }
       }
     },

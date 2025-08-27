@@ -1,5 +1,5 @@
 {
-  "feature": "better_cave_worlds:kelp",
+  "feature": "better_cave_dimensions:kelp",
   "placement": [
     {
       "type": "minecraft:noise_based_count",
@@ -15,10 +15,10 @@
       "height": {
         "type": "minecraft:uniform",
         "min_inclusive": {
-          "absolute": -8
+          "above_bottom": 0
         },
         "max_inclusive": {
-          "absolute": 62
+          "below_top": 0
         }
       }
     },

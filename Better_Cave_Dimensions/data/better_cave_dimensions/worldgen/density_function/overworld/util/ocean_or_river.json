@@ -6,7 +6,7 @@
       "type": "minecraft:add",
       "argument1": {
         "type": "minecraft:range_choice",
-        "input": "better_cave_worlds:overworld/ridges",
+        "input": "better_cave_dimensions:overworld/ridges",
         "min_inclusive": -0.065,
         "max_exclusive": 0.065,
         "when_in_range": 1,
@@ -14,7 +14,7 @@
       },
       "argument2": {
         "type": "minecraft:range_choice",
-        "input": "better_cave_worlds:overworld/continents",
+        "input": "better_cave_dimensions:overworld/continents",
         "min_inclusive": -1.04,
         "max_exclusive": -0.19,
         "when_in_range": 1,

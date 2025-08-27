@@ -25,16 +25,16 @@
       "minecraft:lake_lava_surface"
     ],
     [
-      "minecraft:amethyst_geode"
+      "better_cave_dimensions:amethyst_geode"
     ],
     [
-      "minecraft:monster_room",
-      "minecraft:monster_room_deep"
+      "better_cave_dimensions:monster_room",
+      "better_cave_dimensions:monster_room_deep"
     ],
     [],
     [],
     [
-      "minecraft:ore_dirt",
+      "better_cave_dimensions:ore_dirt",
       "minecraft:ore_gravel",
       "minecraft:ore_granite_upper",
       "minecraft:ore_granite_lower",
@@ -43,44 +43,44 @@
       "minecraft:ore_andesite_upper",
       "minecraft:ore_andesite_lower",
       "minecraft:ore_tuff",
-      "minecraft:ore_coal_upper",
-      "minecraft:ore_coal_lower",
-      "minecraft:ore_iron_upper",
-      "minecraft:ore_iron_middle",
-      "minecraft:ore_iron_small",
-      "minecraft:ore_gold",
-      "minecraft:ore_gold_lower",
-      "minecraft:ore_redstone",
-      "minecraft:ore_redstone_lower",
-      "minecraft:ore_diamond",
-      "minecraft:ore_diamond_medium",
-      "minecraft:ore_diamond_large",
-      "minecraft:ore_diamond_buried",
-      "minecraft:ore_lapis",
-      "minecraft:ore_lapis_buried",
-      "minecraft:ore_copper",
-      "minecraft:underwater_magma",
-      "minecraft:disk_sand",
+      "better_cave_dimensions:ore_coal_upper",
+      "better_cave_dimensions:ore_coal_lower",
+      "better_cave_dimensions:ore_iron_upper",
+      "better_cave_dimensions:ore_iron_middle",
+      "better_cave_dimensions:ore_iron_small",
+      "better_cave_dimensions:ore_gold",
+      "better_cave_dimensions:ore_gold_lower",
+      "better_cave_dimensions:ore_redstone",
+      "better_cave_dimensions:ore_redstone_lower",
+      "better_cave_dimensions:ore_diamond",
+      "better_cave_dimensions:ore_diamond_medium",
+      "better_cave_dimensions:ore_diamond_large",
+      "better_cave_dimensions:ore_diamond_buried",
+      "better_cave_dimensions:ore_lapis",
+      "better_cave_dimensions:ore_lapis_buried",
+      "better_cave_dimensions:ore_copper",
+      "better_cave_dimensions:underwater_magma",
+      "better_cave_dimensions:disk_sand",
       "minecraft:disk_clay",
-      "minecraft:disk_gravel"
+      "better_cave_dimensions:disk_gravel"
     ],
     [],
     [
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
+      "better_cave_dimensions:spring_water",
+      "better_cave_dimensions:spring_lava"
     ],
     [
-      "minecraft:glow_lichen",
-      "minecraft:trees_water",
-      "minecraft:flower_default",
-      "minecraft:patch_grass_badlands",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
-      "minecraft:patch_pumpkin",
-      "minecraft:patch_sugar_cane",
-      "minecraft:patch_firefly_bush_near_water",
-      "minecraft:seagrass_deep_warm",
-      "minecraft:kelp_warm"
+      "better_cave_dimensions:glow_lichen",
+      "better_cave_dimensions:trees_water",
+      "better_cave_dimensions:flower_default",
+      "better_cave_dimensions:patch_grass_badlands",
+      "better_cave_dimensions:brown_mushroom_normal",
+      "better_cave_dimensions:red_mushroom_normal",
+      "better_cave_dimensions:patch_pumpkin",
+      "better_cave_dimensions:patch_sugar_cane",
+      "better_cave_dimensions:patch_firefly_bush_near_water",
+      "better_cave_dimensions:seagrass_deep_warm",
+      "better_cave_dimensions:kelp_warm"
     ],
     [
       "minecraft:freeze_top_layer"

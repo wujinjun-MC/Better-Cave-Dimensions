@@ -13,6 +13,10 @@
       {
         "text": "Klinbee",
         "color": "#ffbbbb"
+      },
+      {
+        "text": "Forked and turned into dimension by wujinjun",
+        "color": "#ffbbbb"
       }
     ],
     "pack_format": 15,
@@ -31,6 +35,10 @@
       {
         "formats": [71, 999],
         "directory": "overlay_1_21_5"
+      },
+      {
+        "formats": [81, 999],
+        "directory": "overlay_1_21_7"
       }
     ]
   }
