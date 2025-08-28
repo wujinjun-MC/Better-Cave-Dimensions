@@ -1,0 +1,11 @@
+{
+  "values": [
+    "better_cave_dimensions:desert",
+    "better_cave_dimensions:plains",
+    "better_cave_dimensions:savanna",
+    "better_cave_dimensions:snowy_plains",
+    "better_cave_dimensions:taiga",
+    "#better_cave_dimensions:is_mountain",
+    "better_cave_dimensions:grove"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "values": [
+    "better_cave_dimensions:desert",
+    "better_cave_dimensions:warm_ocean",
+    "#better_cave_dimensions:is_jungle",
+    "#better_cave_dimensions:is_savanna",
+    "#better_cave_dimensions:is_nether",
+    "#better_cave_dimensions:is_badlands",
+    "better_cave_dimensions:mangrove_swamp"
+  ]
+}

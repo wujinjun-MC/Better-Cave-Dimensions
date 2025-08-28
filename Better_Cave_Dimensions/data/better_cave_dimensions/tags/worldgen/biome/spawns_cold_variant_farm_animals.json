@@ -1,0 +1,26 @@
+{
+  "values": [
+    "better_cave_dimensions:snowy_plains",
+    "better_cave_dimensions:ice_spikes",
+    "better_cave_dimensions:frozen_peaks",
+    "better_cave_dimensions:jagged_peaks",
+    "better_cave_dimensions:snowy_slopes",
+    "better_cave_dimensions:frozen_ocean",
+    "better_cave_dimensions:deep_frozen_ocean",
+    "better_cave_dimensions:grove",
+    "better_cave_dimensions:deep_dark",
+    "better_cave_dimensions:frozen_river",
+    "better_cave_dimensions:snowy_taiga",
+    "better_cave_dimensions:snowy_beach",
+    "#better_cave_dimensions:is_end",
+    "better_cave_dimensions:cold_ocean",
+    "better_cave_dimensions:deep_cold_ocean",
+    "better_cave_dimensions:old_growth_pine_taiga",
+    "better_cave_dimensions:old_growth_spruce_taiga",
+    "better_cave_dimensions:taiga",
+    "better_cave_dimensions:windswept_forest",
+    "better_cave_dimensions:windswept_gravelly_hills",
+    "better_cave_dimensions:windswept_hills",
+    "better_cave_dimensions:stony_peaks"
+  ]
+}
