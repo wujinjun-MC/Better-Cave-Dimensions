@@ -13,7 +13,7 @@
       "absolute": 80
     }
   },
-  "start_pool": "minecraft:village/taiga/town_centers",
+  "start_pool": "better_cave_dimensions:village/taiga/town_centers",
   "step": "surface_structures",
   "terrain_adaptation": "beard_box",
   "use_expansion_hack": true

@@ -15,8 +15,8 @@ Goals:
             - [x] Desert
             - [x] Plains
             - [x] Savanna
-            - [ ] Snowy
-            - [ ] Taiga
+            - [x] Snowy
+            - [x] Taiga
 - [ ] Support other vanilla structures
 - Support third-party structure datapacks:
     - [Dungeons and Taverns(DnT)](https://modrinth.com/user/NovaWostra)
