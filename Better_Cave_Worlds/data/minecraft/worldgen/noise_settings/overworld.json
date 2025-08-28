@@ -25,7 +25,7 @@
     "fluid_level_spread": "better_cave_worlds:overworld/aquifer/fluid_level_spread",
     "lava": "better_cave_worlds:overworld/aquifer/lava",
     "temperature": "better_cave_worlds:overworld/temperature",
-    "vegetation": "better_cave_worlds:overworld/temperature",
+    "vegetation": "better_cave_worlds:overworld/vegetation",
     "continents": "better_cave_worlds:overworld/continents",
     "erosion": "better_cave_worlds:overworld/erosion",
     "depth": "better_cave_worlds:overworld/depth",
