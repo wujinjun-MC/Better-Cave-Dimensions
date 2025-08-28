@@ -39,7 +39,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/savanna/zombie/terminators/terminator_05",
+        "location": "better_cave_dimensions:village/savanna/zombie/terminators/terminator_05",
         "processors": "minecraft:street_savanna",
         "projection": "rigid"
       },

@@ -14,7 +14,7 @@ Goals:
         - Villages
             - [x] Desert
             - [x] Plains
-            - [ ] Savanna
+            - [x] Savanna
             - [ ] Snowy
             - [ ] Taiga
 - [ ] Support other vanilla structures
