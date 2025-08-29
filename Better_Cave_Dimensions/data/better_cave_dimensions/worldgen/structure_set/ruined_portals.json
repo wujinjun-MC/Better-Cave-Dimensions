@@ -29,6 +29,10 @@
     {
       "structure": "better_cave_dimensions:ruined_portal_ocean",
       "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:ruined_portal_nether",
+      "weight": 1
     }
   ]
 }
