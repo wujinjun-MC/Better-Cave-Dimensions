@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "better_cave_dimensions:dripstone_caves",
+    "better_cave_dimensions:lush_caves",
+    "better_cave_dimensions:deep_dark"
+  ]
+}

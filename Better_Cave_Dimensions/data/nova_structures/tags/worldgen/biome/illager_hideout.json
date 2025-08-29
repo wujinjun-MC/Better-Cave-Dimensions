@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "#better_cave_dimensions:is_beach",
+    "#better_cave_dimensions:is_river",
+    "#better_cave_dimensions:is_taiga",
+    "#better_cave_dimensions:is_forest",
+    "#better_cave_dimensions:is_badlands",
+    "#better_cave_dimensions:is_hill",
+    "#better_cave_dimensions:is_jungle",
+    "#better_cave_dimensions:is_savanna",
+    "better_cave_dimensions:mushroom_fields",
+    "better_cave_dimensions:ice_spikes",
+    "better_cave_dimensions:dripstone_caves",
+    "better_cave_dimensions:lush_caves",
+    "better_cave_dimensions:snowy_plains",
+    "better_cave_dimensions:plains",
+    "better_cave_dimensions:sunflower_plains",
+    "better_cave_dimensions:desert",
+	  "better_cave_dimensions:dripstone_caves",
+	  "better_cave_dimensions:lush_caves"
+  ]
+}

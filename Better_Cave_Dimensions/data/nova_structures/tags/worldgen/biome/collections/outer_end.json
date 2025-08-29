@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "better_cave_dimensions:end_barrens",
+    "better_cave_dimensions:end_highlands",
+    "better_cave_dimensions:end_midlands",
+    "better_cave_dimensions:small_end_islands"
+  ]
+}
