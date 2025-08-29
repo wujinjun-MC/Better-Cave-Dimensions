@@ -18,6 +18,7 @@ Goals:
             - [x] Snowy
             - [x] Taiga
 - [ ] Support other vanilla structures
+    - [x] Trial Chambers
 - Support third-party structure datapacks:
     - [Dungeons and Taverns(DnT)](https://modrinth.com/user/NovaWostra)
         - [ ] [Main](https://modrinth.com/datapack/dungeons-and-taverns)

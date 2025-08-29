@@ -15,7 +15,11 @@
         "color": "#ffbbbb"
       },
       {
-        "text": "Forked and turned into dimension by wujinjun",
+        "text": "Turned into dimension by ",
+        "color": "#AAAAAA"
+      },
+      {
+        "text": "Wujinjun",
         "color": "#ffbbbb"
       }
     ],
@@ -29,16 +33,16 @@
         "directory": "overlay_1_20_5"
       },
       {
+        "formats": [48, 999],
+        "directory": "overlay_1_21"
+      },
+      {
         "formats": [60, 999],
         "directory": "overlay_1_21_4"
       },
       {
         "formats": [71, 999],
         "directory": "overlay_1_21_5"
-      },
-      {
-        "formats": [81, 999],
-        "directory": "overlay_1_21_7"
       }
     ]
   }
