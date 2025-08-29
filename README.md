@@ -17,7 +17,7 @@ WIP.
             - [x] Savanna
             - [x] Snowy
             - [x] Taiga
-- [ ] Support other vanilla structures
+- [x] Support other vanilla structures
     - [x] Ancient City
     - [x] Bastion Remnant (Can not be placed due to missing biomes)
     - [x] Buried Treasure (May break bedrock roof)
@@ -30,6 +30,9 @@ WIP.
     - [x] Nether Fossil (Can not be placed due to missing biomes)
     - [x] Ocean Monument (May not be placed. Don't use "/locate structure" to find, or your game/server will be crashed)
     - [x] Ocean Ruins (May break bedrock roof)
+    - [x] Shipwreck (May break bedrock roof)
+    - [x] Stronghold
+    - [x] Swamp Hut (May break bedrock roof)
     - [x] Trial Chambers
     - [x] Woodland Mansion (May break bedrock roof)
 - Support third-party structure datapacks:

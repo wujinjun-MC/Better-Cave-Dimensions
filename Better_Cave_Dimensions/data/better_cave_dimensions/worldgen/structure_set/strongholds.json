@@ -1,0 +1,16 @@
+{
+  "placement": {
+    "type": "minecraft:concentric_rings",
+    "count": 128,
+    "distance": 32,
+    "preferred_biomes": "#better_cave_dimensions:stronghold_biased_to",
+    "salt": 0,
+    "spread": 3
+  },
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:stronghold",
+      "weight": 1
+    }
+  ]
+}
