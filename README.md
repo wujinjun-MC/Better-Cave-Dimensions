@@ -23,9 +23,15 @@ WIP.
     - [x] Buried Treasure (May break bedrock roof)
     - [x] Desert Pyramid (May break bedrock roof)
     - [x] End City (Can not be placed due to missing biomes)
-    - [x] Fortress (Can not be placed due to missing biomes)
-    - [x] Igioo (May break bedrock roof)
+    - [x] Igloo (May break bedrock roof)
+    - [x] Jungle Pyramid (May break bedrock roof)
+    - [x] Mineshaft
+    - [x] Nether Fortress (Can not be placed due to missing biomes)
+    - [x] Nether Fossil (Can not be placed due to missing biomes)
+    - [x] Ocean Monument (May not be placed. Don't use "/locate structure" to find, or your game/server will be crashed)
+    - [x] Ocean Ruins (May break bedrock roof)
     - [x] Trial Chambers
+    - [x] Woodland Mansion (May break bedrock roof)
 - Support third-party structure datapacks:
     - [Dungeons and Taverns(DnT)](https://modrinth.com/user/NovaWostra)
         - [ ] [Main](https://modrinth.com/datapack/dungeons-and-taverns)

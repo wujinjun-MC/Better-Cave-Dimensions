@@ -15,6 +15,10 @@
         "color": "#ffbbbb"
       },
       {
+        "text": " | ",
+        "color": "#fcd524"
+      },
+      {
         "text": "Turned into dimension by ",
         "color": "#AAAAAA"
       },
