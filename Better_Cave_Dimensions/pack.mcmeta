@@ -47,6 +47,10 @@
       {
         "formats": [71, 999],
         "directory": "overlay_1_21_5"
+      },
+      {
+        "formats": [1, 999],
+        "directory": "overlay_addon_unlimited_vanilla_structures"
       }
     ]
   }

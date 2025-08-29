@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:jungle_temple",
+  "biomes": "#better_cave_dimensions:all_biome",
+  "spawn_overrides": {},
+  "step": "surface_structures"
+}

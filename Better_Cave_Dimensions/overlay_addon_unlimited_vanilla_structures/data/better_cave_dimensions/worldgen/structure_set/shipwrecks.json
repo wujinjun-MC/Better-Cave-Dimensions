@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 165745295,
+    "separation": 0,
+    "spacing": 12
+  },
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:shipwreck",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:shipwreck_beached",
+      "weight": 1
+    }
+  ]
+}

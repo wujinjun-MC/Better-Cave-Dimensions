@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 83469867,
+    "separation": 0,
+    "spacing": 16
+  },
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:trail_ruins",
+      "weight": 1
+    }
+  ]
+}
