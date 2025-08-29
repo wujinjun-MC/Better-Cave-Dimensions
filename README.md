@@ -5,8 +5,6 @@ Height extends to -128~256
 
 May only support 1.21.4+
 
-WIP.
-
 ## Goals
 - Structure fix:
     - Full generation:
@@ -76,6 +74,17 @@ WIP.
         5. `placement`.`exclusion_zone` -> none
         6. `placement`.`frequency` -> double (if present)
         7. Strong hold count -> 1024 ; `preferred_biomes` -> all
+</details>
+<details>
+<summary>Dimension type tweaks</summary>
+
+- Overlay name: `overlay_addon_dimension_type_tweaks`
+- Supported Minecraft version: 1.21.6+ (or 1.20.5+ if remove key-value pair `cloud_height`)
+- Features:
+    1. `piglin_safe`: Piglins will not convert to zombified ones
+    2. `respawn_anchor_works`
+    3. `cloud_height` -> 64
+    4. Enable skylight
 </details>
 
 ### How to enable addon
