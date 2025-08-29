@@ -7,7 +7,7 @@ May only support 1.21.4+
 
 WIP.
 
-Goals:
+## Goals
 - Structure fix:
     - Full generation:
         - [x] Pillager outpost
@@ -18,6 +18,13 @@ Goals:
             - [x] Snowy
             - [x] Taiga
 - [ ] Support other vanilla structures
+    - [x] Ancient City
+    - [x] Bastion Remnant (Can not be placed due to missing biomes)
+    - [x] Buried Treasure (May break bedrock roof)
+    - [x] Desert Pyramid (May break bedrock roof)
+    - [x] End City (Can not be placed due to missing biomes)
+    - [x] Fortress (Can not be placed due to missing biomes)
+    - [x] Igioo (May break bedrock roof)
     - [x] Trial Chambers
 - Support third-party structure datapacks:
     - [Dungeons and Taverns(DnT)](https://modrinth.com/user/NovaWostra)
@@ -33,6 +40,10 @@ Goals:
     - [ ] [Structory](https://modrinth.com/datapack/structory)
 - [ ] Extend-able height (e.g. -128~512)
 - [ ] Guidelines to create more cave dimensions / Cave dimension preset
+
+## Bug Fix
+- [x] Some biomes are missing ([Upstream issue #9](https://github.com/klinbee/Better-Cave-Worlds/issues/9)) (Fixed by [my PR](https://github.com/klinbee/Better-Cave-Worlds/pull/10#event-19395656866))
+- [ ] Some terrain generation can break bedrock roof (e.g. Cold biomes (bedrocks are replaced by snow blocks))
 
 ↓ Original README:
 

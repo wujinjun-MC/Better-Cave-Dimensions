@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:end_city",
+  "biomes": "#better_cave_dimensions:has_structure/end_city",
+  "spawn_overrides": {},
+  "terrain_adaptation": "beard_box",
+  "step": "surface_structures"
+}
