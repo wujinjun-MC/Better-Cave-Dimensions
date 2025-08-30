@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#better_cave_dimensions:has_structure/bastion_remnant",
+  "max_distance_from_center": 128,
+  "spawn_overrides": {},
+  "step": "underground_decoration",
+  "start_height": {
+    "type": "minecraft:uniform",
+    "max_inclusive": {
+      "below_top": 16
+    },
+    "min_inclusive": {
+      "above_bottom": 16
+    }
+  },
+  "start_pool": "nova_structures:donjon/donjon_framework/donjon_center_start",
+  "size": 20,
+  "use_expansion_hack": true
+}

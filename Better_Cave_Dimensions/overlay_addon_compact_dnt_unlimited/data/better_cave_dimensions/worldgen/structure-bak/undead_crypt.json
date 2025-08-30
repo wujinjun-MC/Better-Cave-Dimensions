@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#better_cave_dimensions:collections/stronghold_related_ruins_biomes",
+  "step": "underground_structures",
+  "spawn_overrides": {},
+  "start_pool": "nova_structures:undead_crypt_spawner",
+  "liquid_settings": "ignore_waterlogging",
+  "size": 20,
+  "start_height": {
+    "type": "minecraft:uniform",
+    "max_inclusive": {
+      "below_top": 16
+    },
+    "min_inclusive": {
+      "above_bottom": 16
+    }
+  },
+  "max_distance_from_center": 116,
+  "use_expansion_hack": true
+}

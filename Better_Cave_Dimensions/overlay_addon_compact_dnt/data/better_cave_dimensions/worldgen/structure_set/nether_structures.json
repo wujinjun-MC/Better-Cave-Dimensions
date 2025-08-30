@@ -1,0 +1,30 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 5894302,
+    "separation": 40,
+    "spacing": 85
+  },
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:nether_port",
+      "weight": 20
+    },
+    {
+      "structure": "better_cave_dimensions:nether_keep",
+      "weight": 10
+    },
+    {
+      "structure": "better_cave_dimensions:hamlet",
+      "weight": 40
+    },
+    {
+      "structure": "better_cave_dimensions:piglin_outstation",
+      "weight": 20
+    },
+    {
+      "structure": "better_cave_dimensions:piglin_donjon",
+      "weight": 5
+    }
+  ]
+}

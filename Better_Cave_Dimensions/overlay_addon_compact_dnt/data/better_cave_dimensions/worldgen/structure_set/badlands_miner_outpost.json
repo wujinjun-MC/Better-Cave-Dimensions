@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:badlands_miner_outpost",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "exclusion_zone": {
+      "other_set": "better_cave_dimensions:villages",
+      "chunk_count": 10
+    },
+    "spacing": 60,
+    "separation": 12,
+    "salt": 783,
+    "type": "minecraft:random_spread"
+  }
+}

@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "#nova_structures:collections/taiga",
-    "better_cave_dimensions:taiga",
-	  "better_cave_dimensions:old_growth_spruce_taiga",
-	  "better_cave_dimensions:old_growth_pine_taiga"
-  ]
-}

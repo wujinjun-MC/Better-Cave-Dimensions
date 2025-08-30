@@ -3,5 +3,5 @@
   "biomes": "#better_cave_dimensions:has_structure/mineshaft_mesa",
   "mineshaft_type": "mesa",
   "spawn_overrides": {},
-  "step": "underground_structures"
+  "step": "top_layer_modification"
 }

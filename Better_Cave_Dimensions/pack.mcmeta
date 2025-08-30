@@ -54,7 +54,19 @@
       },
       {
         "formats": [999, 999],
+        "directory": "overlay_addon_biome_tag_tweaks_vanilla"
+      },
+      {
+        "formats": [999, 999],
         "directory": "overlay_addon_dimension_type_tweaks"
+      },
+      {
+        "formats": [999, 999],
+        "directory": "overlay_addon_compact_dnt"
+      },
+      {
+        "formats": [999, 999],
+        "directory": "overlay_addon_compact_dnt_unlimited"
       }
     ]
   }

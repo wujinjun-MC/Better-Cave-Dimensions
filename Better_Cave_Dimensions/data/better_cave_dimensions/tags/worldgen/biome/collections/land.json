@@ -1,0 +1,25 @@
+{
+  "replace": true,
+  "values": [
+    "#better_cave_dimensions:collections/swamps",
+    "#better_cave_dimensions:collections/snowy_plains",
+    "#better_cave_dimensions:collections/snowy_forests",
+    "#better_cave_dimensions:collections/savannas",
+    "#better_cave_dimensions:collections/plains",
+    "#better_cave_dimensions:collections/mushrooms",
+    "#better_cave_dimensions:collections/meadows",
+    "#better_cave_dimensions:collections/mountains",
+    "#better_cave_dimensions:collections/light_jungles",
+    "#better_cave_dimensions:collections/icy",
+    "#better_cave_dimensions:collections/hills",
+    "#better_cave_dimensions:collections/floral",
+    "#better_cave_dimensions:collections/deserts",
+    "#better_cave_dimensions:collections/cherry_forests",
+    "#better_cave_dimensions:collections/caves",
+    "#better_cave_dimensions:collections/birch_forests",
+    "#better_cave_dimensions:collections/beaches",
+    "#better_cave_dimensions:collections/badlands",
+    "#better_cave_dimensions:collections/taiga",
+    "#better_cave_dimensions:collections/any_forests"
+  ]
+}

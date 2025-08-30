@@ -1,0 +1,38 @@
+{
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:shrine_combat_tier_1",
+      "weight": 20
+    },
+    {
+      "structure": "better_cave_dimensions:shrine_combat_tier_2",
+      "weight": 20
+    },
+    {
+      "structure": "better_cave_dimensions:shrine_combat_tier_3",
+      "weight": 50
+    },
+    {
+      "structure": "better_cave_dimensions:shrine_combat_tier_4",
+      "weight": 40
+    },
+    {
+      "structure": "better_cave_dimensions:shrine_combat_tier_5",
+      "weight": 30
+    },
+    {
+      "structure": "better_cave_dimensions:shrine_combat_tier_6",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "spacing": 50,
+    "separation": 26,
+    "salt": 78409300,
+    "exclusion_zone": {
+      "chunk_count": 15,
+      "other_set": "better_cave_dimensions:strongholds"
+    },
+    "type": "minecraft:random_spread"
+  }
+}

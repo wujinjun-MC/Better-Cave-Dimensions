@@ -1,0 +1,26 @@
+{
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:stray_fort",
+      "weight": 9
+    },
+    {
+      "structure": "better_cave_dimensions:lone_citadel",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:stray_outlook",
+      "weight": 18
+    }
+  ],
+  "placement": {
+    "exclusion_zone": {
+      "other_set": "better_cave_dimensions:villages",
+      "chunk_count": 10
+    },
+    "spacing": 100,
+    "separation": 16,
+    "salt": 5004938900,
+    "type": "minecraft:random_spread"
+  }
+}

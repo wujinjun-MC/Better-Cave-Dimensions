@@ -1,0 +1,38 @@
+{
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:well_spruce",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:well_birch",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:well_dark_oak",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:well_jungle",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:well_oak",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:well_savana",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "exclusion_zone": {
+      "other_set": "better_cave_dimensions:villages",
+      "chunk_count": 10
+    },
+    "spacing": 40,
+    "separation": 15,
+    "salt": 430930,
+    "type": "minecraft:random_spread"
+  }
+}

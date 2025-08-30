@@ -1,0 +1,19 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 3042970,
+    "separation": 20,
+    "spacing": 80,
+    "spread_type": "triangular"
+  },
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:witch_villa",
+      "weight": 3
+    },
+    {
+      "structure": "better_cave_dimensions:toxic_lair",
+      "weight": 1
+    }
+  ]
+}
