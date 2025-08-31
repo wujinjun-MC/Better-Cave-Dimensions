@@ -18,7 +18,7 @@
           "minCount": 4,
           "weight": 50
         },
-		{
+    {
           "type": "minecraft:ghast",
           "maxCount": 1,
           "minCount": 1,
@@ -52,7 +52,7 @@
       "below_top": 16
     },
     "min_inclusive": {
-      "above_bottom": 16
+      "absolute": -32
     }
   },
   "start_pool": "minecraft:nether_fortress/nether_fortress_core",

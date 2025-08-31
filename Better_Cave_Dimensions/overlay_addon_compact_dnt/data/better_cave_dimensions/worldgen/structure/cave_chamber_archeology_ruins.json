@@ -17,12 +17,12 @@
               "alias": "nova_structures:cave_chamber/cave_and_chamber",
               "target": "nova_structures:cave_chamber/cave_and_ruins"
             },
-			{
+      {
               "type": "minecraft:direct",
               "alias": "nova_structures:cave_chamber/part_2",
               "target": "nova_structures:cave_chamber/part_2_archy"
             },
-			{
+      {
               "type": "minecraft:direct",
               "alias": "nova_structures:cave_chamber/cave",
               "target": "nova_structures:cave_chamber/cave_archy"
@@ -39,7 +39,7 @@
       "below_top": 16
     },
     "min_inclusive": {
-      "above_bottom": 16
+      "absolute": -32
     }
   },
   "max_distance_from_center": 128,

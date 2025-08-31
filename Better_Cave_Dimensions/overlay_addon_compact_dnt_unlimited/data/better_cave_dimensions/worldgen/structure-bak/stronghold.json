@@ -1,6 +1,6 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "#better_cave_dimensions:has_structure/stronghold",
+  "biomes": "#better_cave_dimensions:all_biome",
   "step": "underground_structures",
   "liquid_settings": "ignore_waterlogging",
   "spawn_overrides": {
@@ -79,7 +79,7 @@
       "below_top": 16
     },
     "min_inclusive": {
-      "above_bottom": 16
+      "absolute": -32
     }
   },
   "max_distance_from_center": 116,

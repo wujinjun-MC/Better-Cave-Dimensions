@@ -1,6 +1,6 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "#better_cave_dimensions:collections/nether_warped_forest",
+  "biomes": "#better_cave_dimensions:all_biome",
   "start_pool": "nova_structures:skeleton_camp/warped",
   "max_distance_from_center": 116,
   "start_height": {
@@ -9,7 +9,7 @@
       "below_top": 16
     },
     "min_inclusive": {
-      "above_bottom": 16
+      "absolute": -32
     }
   },
   "spawn_overrides": {},

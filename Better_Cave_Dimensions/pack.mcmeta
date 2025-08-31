@@ -62,6 +62,14 @@
       },
       {
         "formats": [999, 999],
+        "directory": "overlay_addon_noise_height_extend"
+      },
+      {
+        "formats": [999, 999],
+        "directory": "overlay_addon_custom_cave_config"
+      },
+      {
+        "formats": [999, 999],
         "directory": "overlay_addon_compact_dnt"
       },
       {

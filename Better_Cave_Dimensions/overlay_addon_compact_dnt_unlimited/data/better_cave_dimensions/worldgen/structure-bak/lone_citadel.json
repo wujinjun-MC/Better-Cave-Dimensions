@@ -1,6 +1,6 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "#better_cave_dimensions:collections/snowy_structures",
+  "biomes": "#better_cave_dimensions:all_biome",
   "max_distance_from_center": 128,
   "spawn_overrides": {},
   "step": "underground_decoration",
@@ -10,14 +10,14 @@
       "below_top": 16
     },
     "min_inclusive": {
-      "above_bottom": 16
+      "absolute": -32
     }
   },
   "start_pool": "nova_structures:lone_citadel/start",
   "start_jigsaw_name": "nova_structures:lone_citadel_frame_anchor",
   "liquid_settings": "ignore_waterlogging",
   "pool_aliases": [
-	{
+  {
       "type": "minecraft:random_group",
       "groups": [
         {
@@ -30,7 +30,7 @@
           ],
           "weight": 1
         },
-		{
+    {
           "data": [
             {
               "type": "minecraft:direct",
@@ -40,7 +40,7 @@
           ],
           "weight": 1
         },
-		{
+    {
           "data": [
             {
               "type": "minecraft:direct",
@@ -50,7 +50,7 @@
           ],
           "weight": 1
         },
-		{
+    {
           "data": [
             {
               "type": "minecraft:direct",

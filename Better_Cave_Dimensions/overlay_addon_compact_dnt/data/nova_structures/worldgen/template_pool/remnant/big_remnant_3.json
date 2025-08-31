@@ -1,15 +1,15 @@
 {
-	"name": "nova_structures:well",
-	"fallback": "minecraft:empty",
-	"elements": [
-		{
-			"weight": 1,
-			"element": {
-				"element_type": "minecraft:single_pool_element",
-				"location": "nova_structures:remnant/big_remnant_3",
-				"projection": "rigid",
-				"processors": "nova_structures:remnantification"
-			}
-		}
-	]
+  "name": "nova_structures:well",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "nova_structures:remnant/big_remnant_3",
+        "projection": "rigid",
+        "processors": "nova_structures:remnantification"
+      }
+    }
+  ]
 }

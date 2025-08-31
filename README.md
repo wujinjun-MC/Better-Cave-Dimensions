@@ -64,7 +64,8 @@ May only support 1.21.4+
         4. For structures using jigsaws
             1. Always `use_expansion_hack`
             2. Maximize `size` and `max_distance_from_center` (Requires strong CPU)
-            3. Maximize `start_height` range ([min height +16] ~ [max height -16])
+            3. Maximize `start_height` range (-32 ~ [max height -16])
+                - Lowest height can not < -55, or lava-logged
             4. Remove `dimension_padding`
     2. Structure set
         1. `placement`.`spacing` (or `placement`.`distance`) -> max(1,min(16, half_spacing))
@@ -85,6 +86,52 @@ May only support 1.21.4+
     2. `respawn_anchor_works`
     3. `cloud_height` -> 64
     4. Enable skylight
+</details>
+<details>
+<summary>Extend noise height range</summary>
+
+- Overlay name: `overlay_addon_noise_height_extend`
+- Supported Minecraft version: same as datapack supported version
+- Features:
+    1. Terrain noise height range syncs with dimension height range (aka. no building space above bedrock roof)
+    2. Without cave height range configuration, there may be only lava lakes in y 128~256
+    3. (Recommend) enable `overlay_addon_unlimited_vanilla_structures` and/or `overlay_addon_compact_dnt_unlimited`, since original height range doesn't allow structure placement in y 128~256.
+    4. (Performance optimization) disable skylight as it is useless now and causes unnecessary light calculation
+- Side effects:
+    - Some structures can only be placed on bedrock roof. After enabling, they are not placed correctly
+</details>
+<details>
+<summary>Configurable cave</summary>
+
+- Overlay name: `overlay_addon_custom_cave_config`
+- Supported Minecraft version: same as datapack supported version
+- Features:
+    1. Customize cave generation, including height range and density!
+- Config:
+    - Path: `overlay_addon_custom_cave_config/data/better_cave_dimensions/worldgen/density_function/cave/final_density.json`
+    - Json path:
+        - Cave bottom: `input`.`argument`.`argument2`.`argument`.`argument`.`argument2`.`argument1` (line 20~26)
+        - Cave main: `input`.`argument`.`argument2`.`argument`.`argument`.`argument2`.`argument2`.`argument2`.`argument2`.`argument1` (line 35~41)
+    - Definition:
+        - `from_y` and `to_y`: Cave roof/base height range
+            - `from_y` < `to_y`
+            - Must be in range of noise height range
+                - `to_y` <= 128, or
+                - `to_y` <= 256 (with `overlay_addon_noise_height_extend`)
+        - `to_value` (for cave bottom, > `from_value`) or `from_value` (for cave main, < `to_value`): Control cave density
+            - Higher value -> Lower density
+            - If value is too low, noise caves(like underground vanilla caves) still generate
+    - Default tweaks:
+        - Cave main: `from_y`=224, `to_y`=256 -- more space to survive!
+    - Sometimes world can be chaotic!
+        - e.g. `to_y` > [noise height range] -> bedrock roof breaker
+            <details>
+            <summary>Images: Bedrock roof breaker</summary>
+
+            ![bedrock-roof-breaker-1](assets/images/overlay_addon_custom_cave_config/bedrock-roof-breaker-1.png)
+            ![bedrock-roof-breaker-2](assets/images/overlay_addon_custom_cave_config/bedrock-roof-breaker-2.png)
+            ![bedrock-roof-breaker-3](assets/images/overlay_addon_custom_cave_config/bedrock-roof-breaker-3.png)
+            </details>
 </details>
 <details>
 <summary>Vanilla biome tag tweaks</summary>
@@ -120,9 +167,10 @@ May only support 1.21.4+
 - Overlay name: `overlay_addon_compact_dnt_unlimited`
 - Supported Minecraft version: Unknown(latest?)
 - Dependencies: `overlay_addon_compact_dnt`
+- Recommend: `overlay_addon_unlimited_vanilla_structures`(Because some DnT structures just replace vanilla ones)
 - Features:
     1. Unlock structure limits like "Unlimited vanilla structures"
-        - `size` doubled
+        - Doubled or maximized `size`
             - Cannot change all sizes (crash)
 </details>
 

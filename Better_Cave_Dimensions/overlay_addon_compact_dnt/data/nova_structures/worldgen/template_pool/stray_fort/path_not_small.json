@@ -1,69 +1,69 @@
 {
-	"name": "nova_structures:stray_fort/start",
-	"fallback": "minecraft:empty",
-	"elements": [
-		{
-			"weight": 5,
-			"element": {
-				"element_type": "minecraft:single_pool_element",
-				"location": "nova_structures:stray_fort/road/stray_fort_path_cross_s",
-				"projection": "rigid",
-				"processors": "nova_structures:stray_fort_degradation"
-			}
-		},
-		{
-			"weight": 5,
-			"element": {
-				"element_type": "minecraft:single_pool_element",
-				"location": "nova_structures:stray_fort/road/stray_fort_path_crossroad",
-				"projection": "rigid",
-				"processors": "nova_structures:stray_fort_degradation"
-			}
-		},
-		{
-			"weight": 5,
-			"element": {
-				"element_type": "minecraft:single_pool_element",
-				"location": "nova_structures:stray_fort/road/stray_fort_path_curve",
-				"projection": "rigid",
-				"processors": "nova_structures:stray_fort_degradation"
-			}
-		},
-		{
-			"weight": 5,
-			"element": {
-				"element_type": "minecraft:single_pool_element",
-				"location": "nova_structures:stray_fort/road/stray_fort_path_straight_1",
-				"projection": "rigid",
-				"processors": "nova_structures:stray_fort_degradation"
-			}
-		},
-		{
-			"weight": 5,
-			"element": {
-				"element_type": "minecraft:single_pool_element",
-				"location": "nova_structures:stray_fort/road/stray_fort_path_straight_2",
-				"projection": "rigid",
-				"processors": "nova_structures:stray_fort_degradation"
-			}
-		},
-		{
-			"weight": 5,
-			"element": {
-				"element_type": "minecraft:single_pool_element",
-				"location": "nova_structures:stray_fort/road/stray_fort_path_straight_3",
-				"projection": "rigid",
-				"processors": "nova_structures:stray_fort_degradation"
-			}
-		},
-		{
-			"weight": 5,
-			"element": {
-				"element_type": "minecraft:single_pool_element",
-				"location": "nova_structures:stray_fort/road/stray_fort_path_straight_4",
-				"projection": "rigid",
-				"processors": "nova_structures:stray_fort_degradation"
-			}
-		}
-	]
+  "name": "nova_structures:stray_fort/start",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "nova_structures:stray_fort/road/stray_fort_path_cross_s",
+        "projection": "rigid",
+        "processors": "nova_structures:stray_fort_degradation"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "nova_structures:stray_fort/road/stray_fort_path_crossroad",
+        "projection": "rigid",
+        "processors": "nova_structures:stray_fort_degradation"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "nova_structures:stray_fort/road/stray_fort_path_curve",
+        "projection": "rigid",
+        "processors": "nova_structures:stray_fort_degradation"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "nova_structures:stray_fort/road/stray_fort_path_straight_1",
+        "projection": "rigid",
+        "processors": "nova_structures:stray_fort_degradation"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "nova_structures:stray_fort/road/stray_fort_path_straight_2",
+        "projection": "rigid",
+        "processors": "nova_structures:stray_fort_degradation"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "nova_structures:stray_fort/road/stray_fort_path_straight_3",
+        "projection": "rigid",
+        "processors": "nova_structures:stray_fort_degradation"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "nova_structures:stray_fort/road/stray_fort_path_straight_4",
+        "projection": "rigid",
+        "processors": "nova_structures:stray_fort_degradation"
+      }
+    }
+  ]
 }

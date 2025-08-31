@@ -1,14 +1,14 @@
 {
   "type": "minecraft:jigsaw",
   "start_pool": "nova_structures:end_ships/boat",
-  "biomes": "#better_cave_dimensions:collections/outer_end",
+  "biomes": "#better_cave_dimensions:all_biome",
   "start_height": {
     "type": "minecraft:uniform",
     "max_inclusive": {
       "below_top": 16
     },
     "min_inclusive": {
-      "above_bottom": 16
+      "absolute": -32
     }
   },
   "spawn_overrides": {},

@@ -1,6 +1,6 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "#better_cave_dimensions:collections/jungles",
+  "biomes": "#better_cave_dimensions:all_biome",
   "max_distance_from_center": 116,
   "liquid_settings": "ignore_waterlogging",
   "size": 20,
@@ -11,7 +11,7 @@
       "below_top": 16
     },
     "min_inclusive": {
-      "above_bottom": 16
+      "absolute": -32
     }
   },
   "start_pool": "minecraft:jungle_village/town_center",

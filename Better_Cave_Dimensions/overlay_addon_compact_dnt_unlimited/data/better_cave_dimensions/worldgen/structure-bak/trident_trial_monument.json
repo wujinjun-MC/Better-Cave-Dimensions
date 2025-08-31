@@ -1,14 +1,14 @@
 {
   "type": "minecraft:jigsaw",
   "start_pool": "nova_structures:trident_monument/start",
-  "biomes": "#better_cave_dimensions:has_structure/ocean_monument",
+  "biomes": "#better_cave_dimensions:all_biome",
   "start_height": {
     "type": "minecraft:uniform",
     "max_inclusive": {
       "below_top": 16
     },
     "min_inclusive": {
-      "above_bottom": 16
+      "absolute": -32
     }
   },
   "spawn_overrides": {},

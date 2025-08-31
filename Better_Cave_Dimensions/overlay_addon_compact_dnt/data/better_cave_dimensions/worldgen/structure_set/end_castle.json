@@ -1,9 +1,9 @@
 {
   "placement": {
     "type": "minecraft:concentric_rings",
-  	"count": 219,
+    "count": 219,
     "distance": 32,
-  	"preferred_biomes": "#better_cave_dimensions:collections/end_voids",
+    "preferred_biomes": "#better_cave_dimensions:collections/end_voids",
     "salt": 0,
     "spread": 3
   },

@@ -2,14 +2,14 @@
   "type": "minecraft:jigsaw",
   "start_pool": "nova_structures:badlands_miner_outpost_start",
   "liquid_settings": "ignore_waterlogging",
-  "biomes": "#better_cave_dimensions:collections/badlands",
+  "biomes": "#better_cave_dimensions:all_biome",
   "start_height": {
     "type": "minecraft:uniform",
     "max_inclusive": {
       "below_top": 16
     },
     "min_inclusive": {
-      "above_bottom": 16
+      "absolute": -32
     }
   },
   "spawn_overrides": {},

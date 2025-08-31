@@ -1,6 +1,6 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "#better_cave_dimensions:collections/any_pale_gardens",
+  "biomes": "#better_cave_dimensions:all_biome",
   "max_distance_from_center": 116,
   "spawn_overrides": {
     "monster": {
@@ -64,7 +64,7 @@
       "below_top": 16
     },
     "min_inclusive": {
-      "above_bottom": 16
+      "absolute": -32
     }
   },
   "start_pool": "nova_structures:pale_residence/pale_residence_start",

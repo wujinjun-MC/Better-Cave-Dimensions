@@ -10,7 +10,7 @@
       "below_top": 16
     },
     "min_inclusive": {
-      "above_bottom": 16
+      "absolute": -32
     }
   },
   "start_jigsaw_name": "minecraft:city_anchor",
