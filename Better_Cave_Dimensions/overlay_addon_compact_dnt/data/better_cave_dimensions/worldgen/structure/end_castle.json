@@ -38,7 +38,8 @@
   },
   "step": "surface_structures",
   "start_jigsaw_name": "nova_structures:end_castle_anchor",
-  "use_expansion_hack": false,
-  "max_distance_from_center": 128,
-  "size": 10
+  "max_distance_from_center": 116,
+  "size": 10,
+  "terrain_adaptation": "beard_box",
+  "use_expansion_hack": false
 }

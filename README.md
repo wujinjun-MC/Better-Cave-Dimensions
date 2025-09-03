@@ -5,6 +5,10 @@ Height extends to -128~256
 
 May only support 1.21.4+
 
+> This branch is _ commits ahead of, _ commits behind `klinbee/Better-Cave-Worlds:main`
+
+Don't worry. "Sync fork" can not be used due to different path, but I track upstream changes and apply to correct files.
+
 ## Goals
 - Structure fix:
     - Full generation:
@@ -17,36 +21,39 @@ May only support 1.21.4+
             - [x] Taiga
 - [x] Support other vanilla structures
     - [x] Ancient City
-    - [x] Bastion Remnant (Can not be placed due to missing biomes)
-    - [x] Buried Treasure (May break bedrock roof)
-    - [x] Desert Pyramid (May break bedrock roof)
-    - [x] End City (Can not be placed due to missing biomes)
-    - [x] Igloo (May break bedrock roof)
-    - [x] Jungle Pyramid (May break bedrock roof)
+    - [x] Bastion Remnant [^1]
+    - [x] Buried Treasure [^2]
+    - [x] Desert Pyramid [^2]
+    - [x] End City [^1]
+    - [x] Igloo [^2]
+    - [x] Jungle Pyramid [^2]
     - [x] Mineshaft
-    - [x] Nether Fortress (Can not be placed due to missing biomes)
-    - [x] Nether Fossil (Can not be placed due to missing biomes)
+    - [x] Nether Fortress [^1]
+    - [x] Nether Fossil [^1]
     - [x] Ocean Monument (May not be placed. Don't use "/locate structure" to find, or your game/server will be crashed)
-    - [x] Ocean Ruins (May break bedrock roof)
-    - [x] Shipwreck (May break bedrock roof)
+    - [x] Ocean Ruins [^2]
+    - [x] Shipwreck [^2]
     - [x] Stronghold
-    - [x] Swamp Hut (May break bedrock roof)
+    - [x] Swamp Hut [^2]
     - [x] Trial Chambers
-    - [x] Woodland Mansion (May break bedrock roof)
+    - [x] Woodland Mansion [^2]
 - Support third-party structure datapacks:
-    - [x] [Dungeons and Taverns(DnT)](https://modrinth.com/user/NovaWostra) (Experimental support, full generation is not guaranteed)
+    - [x] [Dungeons and Taverns(DnT)](https://modrinth.com/user/NovaWostra)
         - Full support:
-            - [ ] [Main](https://modrinth.com/datapack/dungeons-and-taverns)
-            - [ ] [Ancient City Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-ancient-city-overhaul)
-            - [ ] [Desert Temple Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-desert-temple-overhaul)
-            - [ ] [End Castle Standalone](https://modrinth.com/datapack/dungeons-and-taverns-end-castle-standalone)
-            - [ ] [Nether Fortress Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-nether-fortress-overhaul)
-            - [ ] [Pillager Outpost Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-pillager-outpost-overhaul)
-            - [ ] [Stronghold Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-stronghold-overhaul)
+            - [x] [Main](https://modrinth.com/datapack/dungeons-and-taverns)
+            - [x] [Ancient City Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-ancient-city-overhaul)
+            - [x] [Desert Temple Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-desert-temple-overhaul)
+            - [x] [End Castle Standalone](https://modrinth.com/datapack/dungeons-and-taverns-end-castle-standalone)
+            - [x] [Nether Fortress Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-nether-fortress-overhaul)
+            - [x] [Pillager Outpost Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-pillager-outpost-overhaul)
+            - [x] [Stronghold Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-stronghold-overhaul)
     - [ ] [Explorify](https://modrinth.com/datapack/explorify)
     - [ ] [Structory](https://modrinth.com/datapack/structory)
 - [ ] Extend-able height (e.g. -128~512)
 - [ ] Guidelines to create more cave dimensions / Cave dimension preset
+
+[^1]: Can not be placed due to missing biomes. Use addon `Unlimited vanilla structures` can fix it.
+[^2]: May break bedrock roof
 
 ## Addons
 ### List
@@ -96,7 +103,6 @@ May only support 1.21.4+
     1. Terrain noise height range syncs with dimension height range (aka. no building space above bedrock roof)
     2. Without cave height range configuration, there may be only lava lakes in y 128~256
     3. (Recommend) enable `overlay_addon_unlimited_vanilla_structures` and/or `overlay_addon_compact_dnt_unlimited`, since original height range doesn't allow structure placement in y 128~256.
-    4. (Performance optimization) disable skylight as it is useless now and causes unnecessary light calculation
 - Side effects:
     - Some structures can only be placed on bedrock roof. After enabling, they are not placed correctly
 </details>
@@ -118,11 +124,13 @@ May only support 1.21.4+
             - Must be in range of noise height range
                 - `to_y` <= 128, or
                 - `to_y` <= 256 (with `overlay_addon_noise_height_extend`)
-        - `to_value` (for cave bottom, > `from_value`) or `from_value` (for cave main, < `to_value`): Control cave density
+            - Suggestion: `cave_bottom`.`to_y` >= -50, to avoid hard-coded lava layer
+        - `to_value` (for cave bottom, > `from_value`) and `from_value` (for cave main, < `to_value`): Control cave density
             - Higher value -> Lower density
+            - \> 1: Unexpected behavior, including: bedrock roof breaker, infinite lava ocean
             - If value is too low, noise caves(like underground vanilla caves) still generate
     - Default tweaks:
-        - Cave main: `from_y`=224, `to_y`=256 -- more space to survive!
+        - Cave main: `from_y` = 224, `to_y` = 256 -- more space to survive!
     - Sometimes world can be chaotic!
         - e.g. `to_y` > [noise height range] -> bedrock roof breaker
             <details>
@@ -162,16 +170,36 @@ May only support 1.21.4+
     5. All DnT packs listed in "Goals" must be loaded successfully
 </details>
 <details>
-<summary>Dungeons and Taverns compat - unlimited structures</summary>
+<summary>Dungeons and Taverns compat - larger structures</summary>
 
-- Overlay name: `overlay_addon_compact_dnt_unlimited`
+- Overlay name: `overlay_addon_compact_dnt_larger`
 - Supported Minecraft version: Unknown(latest?)
 - Dependencies: `overlay_addon_compact_dnt`
-- Recommend: `overlay_addon_unlimited_vanilla_structures`(Because some DnT structures just replace vanilla ones)
+- Recommend: `overlay_addon_unlimited_vanilla_structures`(Because some DnT structures replace vanilla ones)
 - Features:
     1. Unlock structure limits like "Unlimited vanilla structures"
-        - Doubled or maximized `size`
+        - Change/Optimize `size`
+            - Normally size will be doubled/maximized
             - Cannot change all sizes (crash)
+            - Some structures don't have enough parts to enlarge. Lower sizes can gain performance benefit (~20%)
+        - Chunk generation may take a long time due to large structures
+            - Suggestion:
+                - If add dp for the 1st time: Don't enable this addon until "Preparing spawn area" completes
+                - Use chunk pregeneration tool like "Chunky"
+</details>
+<details>
+<summary>Dungeons and Taverns compat - high density</summary>
+
+- Overlay name: `overlay_addon_compact_dnt_high_density`
+- Supported Minecraft version: Unknown(latest?)
+- Dependencies: `overlay_addon_compact_dnt`
+- Features:
+    1. Unlock structure limits like "Unlimited vanilla structures"
+        - Structure set `spacing`:
+            - if spacing > 50: -> max(50,min(100,half_spacing))
+            - if spacing <= 50: unchanged
+        - Chunk generation may take a long time due to large structures
+            - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
 
 ### How to enable addon
@@ -179,10 +207,10 @@ May only support 1.21.4+
 2. Use `Ctrl+F` to search "Overlay name"
 3. Change `formats` range to 1~999 ("formats": [1, 999],)
 
-
 ## Bug Fix
 - [x] Some biomes are missing ([Upstream issue #9](https://github.com/klinbee/Better-Cave-Worlds/issues/9)) (Fixed by [my PR](https://github.com/klinbee/Better-Cave-Worlds/pull/10#event-19395656866))
 - [ ] Some terrain generation can break bedrock roof (e.g. Cold biomes (bedrocks are replaced by snow blocks))
+- [x] DnT's template pool missing (DnT's bug) (`[WARN]: Empty or non-existent pool: nova_structures:pale_residence/resi_window_slim_right` (or left))
 
 ↓ Original README:
 

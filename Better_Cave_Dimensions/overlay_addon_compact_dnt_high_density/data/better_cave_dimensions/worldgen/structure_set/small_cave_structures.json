@@ -1,0 +1,42 @@
+{
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:cave_chamber",
+      "weight": 3
+    },
+    {
+      "structure": "better_cave_dimensions:cave_chamber_colony",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:cave_hut",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:cave_chamber_dungeon_colony",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:cave_chamber_archeology_ruins",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:deepslate_camp",
+      "weight": 3
+    },
+    {
+      "structure": "better_cave_dimensions:underground_house",
+      "weight": 3
+    },
+    {
+      "structure": "better_cave_dimensions:trial_dungeon",
+      "weight": 3
+    }
+  ],
+  "placement": {
+    "spacing": 14,
+    "separation": 0,
+    "salt": 79984849,
+    "type": "minecraft:random_spread"
+  }
+}

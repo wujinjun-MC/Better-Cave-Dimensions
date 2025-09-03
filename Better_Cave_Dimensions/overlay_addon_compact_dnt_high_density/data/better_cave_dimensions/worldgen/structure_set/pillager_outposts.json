@@ -1,0 +1,15 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "frequency": 0.4,
+    "salt": 165745296,
+    "separation": 0,
+    "spacing": 32
+  },
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:pillager_outpost",
+      "weight": 1
+    }
+  ]
+}

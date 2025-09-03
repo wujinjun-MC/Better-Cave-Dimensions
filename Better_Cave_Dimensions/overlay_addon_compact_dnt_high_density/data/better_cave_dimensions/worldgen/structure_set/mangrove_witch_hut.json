@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:mangrove_witch_hut",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "spacing": 32,
+    "separation": 0,
+    "salt": 594,
+    "type": "minecraft:random_spread"
+  }
+}

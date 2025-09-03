@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:trident_trial_monument",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "spacing": 100,
+    "separation": 0,
+    "salt": 69846574,
+    "type": "minecraft:random_spread"
+  }
+}

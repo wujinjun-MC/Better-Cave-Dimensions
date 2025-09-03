@@ -49,32 +49,36 @@
         "directory": "overlay_1_21_5"
       },
       {
-        "formats": [999, 999],
+        "formats": [999,999],
         "directory": "overlay_addon_unlimited_vanilla_structures"
       },
       {
-        "formats": [999, 999],
+        "formats": [999,999],
         "directory": "overlay_addon_biome_tag_tweaks_vanilla"
       },
       {
-        "formats": [999, 999],
+        "formats": [999,999],
         "directory": "overlay_addon_dimension_type_tweaks"
       },
       {
-        "formats": [999, 999],
+        "formats": [999,999],
         "directory": "overlay_addon_noise_height_extend"
       },
       {
-        "formats": [999, 999],
+        "formats": [999,999],
         "directory": "overlay_addon_custom_cave_config"
       },
       {
-        "formats": [999, 999],
+        "formats": [999,999],
         "directory": "overlay_addon_compact_dnt"
       },
       {
-        "formats": [999, 999],
-        "directory": "overlay_addon_compact_dnt_unlimited"
+        "formats": [999,999],
+        "directory": "overlay_addon_compact_dnt_larger"
+      },
+      {
+        "formats": [999,999],
+        "directory": "overlay_addon_compact_dnt_high_density"
       }
     ]
   }

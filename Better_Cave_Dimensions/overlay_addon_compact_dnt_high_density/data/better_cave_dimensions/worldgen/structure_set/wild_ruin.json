@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:wild_ruin",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "spacing": 27,
+    "separation": 0,
+    "salt": 75489234,
+    "type": "minecraft:random_spread"
+  }
+}

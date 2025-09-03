@@ -1,0 +1,58 @@
+{
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:tavern_acacia",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:tavern_birch",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:tavern_cherry",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:tavern_dark_oak",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:tavern_desert",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:tavern_jungle",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:tavern_mangrove",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:tavern_oak",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:tavern_snowy",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:tavern_spruce",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:tavern_swamp",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:tavern_pale",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "spacing": 40,
+    "separation": 0,
+    "salt": 783,
+    "type": "minecraft:random_spread"
+  }
+}

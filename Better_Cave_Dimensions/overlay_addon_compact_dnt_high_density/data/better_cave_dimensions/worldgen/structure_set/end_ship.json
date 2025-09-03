@@ -1,0 +1,15 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 79584390,
+    "frequency": 0.5,
+    "separation": 0,
+    "spacing": 40
+  },
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:end_ship",
+      "weight": 1
+    }
+  ]
+}

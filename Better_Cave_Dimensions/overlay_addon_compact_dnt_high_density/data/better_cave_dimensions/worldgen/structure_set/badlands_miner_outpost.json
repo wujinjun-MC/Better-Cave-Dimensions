@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:badlands_miner_outpost",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "spacing": 50,
+    "separation": 0,
+    "salt": 783,
+    "type": "minecraft:random_spread"
+  }
+}

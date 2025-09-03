@@ -3,10 +3,10 @@
   "biomes": "#better_cave_dimensions:illager_hideout",
   "step": "underground_structures",
   "spawn_overrides": {},
-  "terrain_adaptation": "encapsulate",
   "start_pool": "nova_structures:illager_hideout_heart",
   "liquid_settings": "ignore_waterlogging",
   "size": 6,
+  "terrain_adaptation": "beard_box",
   "start_height": {
     "type": "minecraft:uniform",
     "max_inclusive": {

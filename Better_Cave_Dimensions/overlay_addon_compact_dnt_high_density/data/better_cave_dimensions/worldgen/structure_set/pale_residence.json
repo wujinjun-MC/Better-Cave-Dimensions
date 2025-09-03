@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:pale_residence",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "spacing": 50,
+    "separation": 0,
+    "salt": 560486059,
+    "type": "minecraft:random_spread"
+  }
+}

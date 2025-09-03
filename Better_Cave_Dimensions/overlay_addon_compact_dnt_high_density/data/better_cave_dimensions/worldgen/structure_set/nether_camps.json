@@ -1,0 +1,30 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 4533232,
+    "separation": 0,
+    "spacing": 20
+  },
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:skeleton_camp_crimson",
+      "weight": 2
+    },
+    {
+      "structure": "better_cave_dimensions:skeleton_camp_waste",
+      "weight": 2
+    },
+    {
+      "structure": "better_cave_dimensions:skeleton_camp_warped",
+      "weight": 2
+    },
+    {
+      "structure": "better_cave_dimensions:skeleton_camp_soul",
+      "weight": 2
+    },
+    {
+      "structure": "better_cave_dimensions:piglin_camp",
+      "weight": 3
+    }
+  ]
+}

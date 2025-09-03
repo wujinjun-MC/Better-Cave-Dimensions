@@ -1,0 +1,110 @@
+{
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:remnant_bundle_tent",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_bee_keeper",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_big_remnant",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_big_remnant_2",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_big_remnant_3",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_bridge_remnant",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_birch_graveyard",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_bunny_base",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_desert_remnant",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_forest_smith",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_frog_ranch",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_graveyard",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_medium_remnant",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_medium_remnant_2",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_miner_hut",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_mud_brick_constructor",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_ominous_shop",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_ruin_farmer",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_ruin_smith",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_sawmill",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_school_remnant",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_taiga_castle",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_woodland_hud",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_zombie_horse_ranch",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:remnant_classic_village",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "spacing": 60,
+    "separation": 0,
+    "salt": 9785737382,
+    "type": "minecraft:random_spread"
+  }
+}
