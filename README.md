@@ -54,7 +54,7 @@ May only support 1.21.4+
             - [x] [Pillager Outpost Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-pillager-outpost-overhaul)
             - [x] [Stronghold Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-stronghold-overhaul)
     - [x] [Explorify](https://modrinth.com/datapack/explorify)
-    - [ ] [Structory](https://modrinth.com/datapack/structory)
+    - [x] [Structory](https://modrinth.com/datapack/structory)
 - [ ] Extend-able height (e.g. -128~512)
 - [ ] Guidelines to create more cave dimensions / Cave dimension preset
 
