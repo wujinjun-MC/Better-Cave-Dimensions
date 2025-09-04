@@ -89,6 +89,7 @@ May only support 1.21.4+
         6. `placement`.`frequency` -> double (if present)
         7. Strong hold count -> 1024 ; `preferred_biomes` -> all
 </details>
+
 <details>
 <summary>Dimension type tweaks</summary>
 
@@ -100,6 +101,7 @@ May only support 1.21.4+
     3. `cloud_height` -> 64
     4. Enable skylight
 </details>
+
 <details>
 <summary>Extend noise height range</summary>
 
@@ -112,6 +114,7 @@ May only support 1.21.4+
 - Side effects:
     - Some structures can only be placed on bedrock roof. After enabling, they are not placed correctly
 </details>
+
 <details>
 <summary>Configurable cave</summary>
 
@@ -147,6 +150,7 @@ May only support 1.21.4+
             ![bedrock-roof-breaker-3](assets/images/overlay_addon_custom_cave_config/bedrock-roof-breaker-3.png)
             </details>
 </details>
+
 <details>
 <summary>Vanilla biome tag tweaks</summary>
 
@@ -160,6 +164,7 @@ May only support 1.21.4+
     5. Wandering Trader can spawn in all biomes
     6. Zombie Siege can spawn in all biomes
 </details>
+
 <details>
 <summary>Dungeons and Taverns compat</summary>
 
@@ -175,6 +180,7 @@ May only support 1.21.4+
     4. The namespace of structures spawning in this dimension is `better_cave_dimensions`, not `nova_structures`
     5. All DnT packs listed in "Goals" must be loaded successfully
 </details>
+
 <details>
 <summary>Dungeons and Taverns compat - larger structures</summary>
 
@@ -193,6 +199,7 @@ May only support 1.21.4+
                 - If add dp for the 1st time: Don't enable this addon until "Preparing spawn area" completes
                 - Use chunk pregeneration tool like "Chunky"
 </details>
+
 <details>
 <summary>Dungeons and Taverns compat - high density</summary>
 
@@ -207,6 +214,7 @@ May only support 1.21.4+
         - Chunk generation may take a long time due to large structures
             - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
+
 <details>
 <summary>Explorify compat</summary>
 
@@ -221,6 +229,7 @@ May only support 1.21.4+
     3. To fully function, this datapack must take priority (load after `Explorify`). In singleplayer, select `Explorify` first and select this; In dedicated server, add `Explorify`, start and stop server, then add this. Make sure the name appears after `Explorify`'s in `/datapack list`
     4. The namespace of structures spawning in this dimension is `better_cave_dimensions`, not `nova_structures`
 </details>
+
 <details>
 <summary>Explorify compat - larger structures</summary>
 
@@ -236,12 +245,55 @@ May only support 1.21.4+
         - Chunk generation may take a long time due to large structures
             - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
+
 <details>
 <summary>Explorify compat - high density</summary>
 
 - Overlay name: `overlay_addon_compact_explorify_high_density`
 - Supported Minecraft version: Unknown(latest?)
 - Dependencies: `overlay_addon_compact_explorify`
+- Features:
+    1. Unlock structure limits like "Unlimited vanilla structures"
+        - Structure set `spacing` -> 1/2
+        - Chunk generation may take a long time due to large structures
+            - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
+</details>
+
+<details>
+<summary>Structory compat</summary>
+
+- Overlay name: `overlay_addon_compact_structory`
+- Supported Minecraft version: Unknown(latest?)
+- Features:
+    1. Fix particial generation
+    2. structure definition or structure set may use ones from Structory to make sure provided strucutres can be placed or for better placement
+- Notice:
+    1. May change generation in other dimensions
+    2. This addon can be removed due to license(strict license or ARR)
+    3. To fully function, this datapack must take priority (load after `Structory`). In singleplayer, select `Structory` first and select this; In dedicated server, add `Structory`, start and stop server, then add this. Make sure the name appears after `Structory`'s in `/datapack list`
+    4. The namespace of structures spawning in this dimension is `better_cave_dimensions`, not `nova_structures`
+</details>
+<details>
+<summary>Structory compat - larger structures</summary>
+
+- Overlay name: `overlay_addon_compact_structory_larger`
+- Supported Minecraft version: Unknown(latest?)
+- Dependencies: `overlay_addon_compact_structory`
+- Features:
+    1. Unlock structure limits like "Unlimited vanilla structures"
+        - Change/Optimize `size`
+            - Normally size will be doubled/maximized
+            - Cannot change all sizes (crash)
+            - Some structures don't have enough parts to enlarge. Lower sizes can gain performance benefit (~20%)
+        - Chunk generation may take a long time due to large structures
+            - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
+</details>
+<details>
+<summary>Structory compat - high density</summary>
+
+- Overlay name: `overlay_addon_compact_structory_high_density`
+- Supported Minecraft version: Unknown(latest?)
+- Dependencies: `overlay_addon_compact_structory`
 - Features:
     1. Unlock structure limits like "Unlimited vanilla structures"
         - Structure set `spacing` -> 1/2

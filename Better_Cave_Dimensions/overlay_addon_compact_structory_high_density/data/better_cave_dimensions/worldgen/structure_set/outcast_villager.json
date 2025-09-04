@@ -1,0 +1,42 @@
+{
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:abandoned_chapel",
+      "weight": 5
+    },
+    {
+      "structure": "better_cave_dimensions:graveyard",
+      "weight": 2
+    },
+    {
+      "structure": "better_cave_dimensions:abandoned_camp",
+      "weight": 3
+    },
+    {
+      "structure": "better_cave_dimensions:outcast_villager_grassy",
+      "weight": 8
+    },
+    {
+      "structure": "better_cave_dimensions:ruin_grassy",
+      "weight": 8
+    },
+    {
+      "structure": "better_cave_dimensions:firetower",
+      "weight": 4
+    },
+    {
+      "structure": "better_cave_dimensions:outcast_villager_desert",
+      "weight": 4
+    },
+    {
+      "structure": "better_cave_dimensions:boat",
+      "weight": 4
+    }
+  ],
+  "placement": {
+    "salt": 420,
+    "spacing": 22,
+    "separation": 0,
+    "type": "minecraft:random_spread"
+  }
+}

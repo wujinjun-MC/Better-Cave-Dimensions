@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "better_cave_dimensions:plains",
+    "better_cave_dimensions:savanna",
+    "better_cave_dimensions:sunflower_plains",
+    "better_cave_dimensions:forest",
+    "better_cave_dimensions:sparse_jungle",
+    "better_cave_dimensions:birch_forest",
+    "better_cave_dimensions:dark_forest",
+    "better_cave_dimensions:old_growth_birch_forest",
+    "better_cave_dimensions:old_growth_spruce_taiga",
+    "better_cave_dimensions:old_growth_pine_taiga"
+  ]
+}

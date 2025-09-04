@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:jungle_ruin",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 992963,
+    "spacing": 15,
+    "separation": 0,
+    "type": "minecraft:random_spread"
+  }
+}

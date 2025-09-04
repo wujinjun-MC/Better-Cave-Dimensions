@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:swamp_ruin",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 6942069,
+    "spacing": 23,
+    "separation": 10,
+    "type": "minecraft:random_spread"
+  }
+}

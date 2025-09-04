@@ -1,0 +1,24 @@
+{
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:taiga_ruin_surface",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:taiga_ruin_underground",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:northern_ruin",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 42069420,
+    "frequency_reduction_method": "default",
+    "frequency": 0.7,
+    "spacing": 15,
+    "separation": 0
+  }
+}
