@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "better_cave_dimensions:grove",
+    "better_cave_dimensions:snowy_slopes",
+    "better_cave_dimensions:jagged_peaks",
+    "better_cave_dimensions:frozen_peaks",
+    "better_cave_dimensions:meadow"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spread_type": "linear",
+    "salt": 63294721,
+    "spacing": 16,
+    "separation": 0,
+    "frequency": 0.75
+  },
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:badlands_pyramid",
+      "weight": 1
+    }
+  ]
+}

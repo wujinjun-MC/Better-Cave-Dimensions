@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#better_cave_dimensions:is_forest",
+    "better_cave_dimensions:forest",
+    "better_cave_dimensions:birch_forest",
+    "better_cave_dimensions:dark_forest",
+    "better_cave_dimensions:taiga",
+    "better_cave_dimensions:snowy_taiga"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:mausoleum",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 535694654,
+    "spread_type": "linear",
+    "spacing": 24,
+    "separation": 0,
+    "frequency": 0.8
+  }
+}

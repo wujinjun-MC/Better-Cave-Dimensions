@@ -1,0 +1,16 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spread_type": "linear",
+    "salt": 89294828,
+    "spacing": 12,
+    "separation": 0,
+    "frequency": 1.00
+  },
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:desert_shrine",
+      "weight": 1
+    }
+  ]
+}

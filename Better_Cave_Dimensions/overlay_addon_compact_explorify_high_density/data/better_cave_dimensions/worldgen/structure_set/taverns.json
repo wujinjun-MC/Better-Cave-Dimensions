@@ -1,0 +1,16 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spread_type": "linear",
+    "salt": 15731481,
+    "spacing": 18,
+    "separation": 0,
+    "frequency": 0.80
+  },
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:tavern",
+      "weight": 1
+    }
+  ]
+}

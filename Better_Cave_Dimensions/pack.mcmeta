@@ -79,6 +79,18 @@
       {
         "formats": [999,999],
         "directory": "overlay_addon_compact_dnt_high_density"
+      },
+      {
+        "formats": [999,999],
+        "directory": "overlay_addon_compact_explorify"
+      },
+      {
+        "formats": [999,999],
+        "directory": "overlay_addon_compact_explorify_larger"
+      },
+      {
+        "formats": [999,999],
+        "directory": "overlay_addon_compact_explorify_high_density"
       }
     ]
   }

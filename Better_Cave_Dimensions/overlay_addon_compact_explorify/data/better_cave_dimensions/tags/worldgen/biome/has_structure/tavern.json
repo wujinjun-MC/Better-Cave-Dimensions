@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#better_cave_dimensions:has_structure/village_plains",
+    "better_cave_dimensions:forest",
+    "better_cave_dimensions:flower_forest"
+  ]
+}

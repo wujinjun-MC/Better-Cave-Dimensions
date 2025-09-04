@@ -1,0 +1,16 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spread_type": "linear",
+    "salt": 70128199,
+    "spacing": 19,
+    "separation": 0,
+    "frequency": 0.80
+  },
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:farmstead",
+      "weight": 1
+    }
+  ]
+}

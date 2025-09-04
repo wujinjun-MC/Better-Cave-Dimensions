@@ -1,0 +1,24 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spread_type": "linear",
+    "salt": 17906333,
+    "spacing": 24,
+    "separation": 0,
+    "frequency": 0.75
+  },
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:watchtower/plains",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:watchtower/taiga",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:watchtower/savanna",
+      "weight": 1
+    }
+  ]
+}
