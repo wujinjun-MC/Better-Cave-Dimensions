@@ -47,6 +47,7 @@ May only support 1.21.4+
     - [x] Woodland Mansion [^2]
 - Support third-party structure datapacks:
     - [x] [Dungeons and Taverns(DnT)](https://modrinth.com/user/NovaWostra)
+        - Addon required: [Dungeons and Taverns compat](#addon_dnt_compact)
         - Full support:
             - [x] [Main](https://modrinth.com/datapack/dungeons-and-taverns)
             - [x] [Ancient City Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-ancient-city-overhaul)
@@ -56,8 +57,11 @@ May only support 1.21.4+
             - [x] [Pillager Outpost Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-pillager-outpost-overhaul)
             - [x] [Stronghold Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-stronghold-overhaul)
     - [x] [Explorify](https://modrinth.com/datapack/explorify)
+        - Addon required: [Explorify compat](#addon_explorify_compact)
     - [x] [Structory](https://modrinth.com/datapack/structory)
+        - Addon required: [Structory compat](#addon_structory_compact)
     - [x] [Hopo Better Mineshaft](https://modrinth.com/datapack/hopo-better-mineshaft)
+        - Addon required: [Hopo Better Mineshaft compat](#addon_hopobettermineshaft_compact)
 - [ ] Extend-able height (e.g. -128~512)
 - [ ] Guidelines to create more cave dimensions / Cave dimension preset
 
@@ -168,7 +172,7 @@ May only support 1.21.4+
     6. Zombie Siege can spawn in all biomes
 </details>
 
-<details>
+<span id = "addon_dnt_compact"><details></span>
 <summary>Dungeons and Taverns compat</summary>
 
 - Overlay name: `overlay_addon_compact_dnt`
@@ -218,7 +222,7 @@ May only support 1.21.4+
             - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
 
-<details>
+<span id = "addon_explorify_compact"><details></span>
 <summary>Explorify compat</summary>
 
 - Overlay name: `overlay_addon_compact_explorify`
@@ -262,7 +266,7 @@ May only support 1.21.4+
             - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
 
-<details>
+<span id = "addon_structory_compact"><details></span>
 <summary>Structory compat</summary>
 
 - Overlay name: `overlay_addon_compact_structory`
@@ -304,7 +308,7 @@ May only support 1.21.4+
             - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
 
-<details>
+<span id = "addon_hopobettermineshaft_compact"><details></span>
 <summary>Hopo Better Mineshaft compat</summary>
 
 - Overlay name: `overlay_addon_compact_hopobettermineshaft`
