@@ -55,6 +55,7 @@ May only support 1.21.4+
             - [x] [Stronghold Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-stronghold-overhaul)
     - [x] [Explorify](https://modrinth.com/datapack/explorify)
     - [x] [Structory](https://modrinth.com/datapack/structory)
+    - [ ] [Hopo Better Mineshaft](https://modrinth.com/datapack/hopo-better-mineshaft)
 - [ ] Extend-able height (e.g. -128~512)
 - [ ] Guidelines to create more cave dimensions / Cave dimension preset
 
