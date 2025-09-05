@@ -2,8 +2,12 @@
   "pack": {
     "description": [
       {
-        "text": "Better Cave Worlds",
+        "text": "Better Cave Dimension ",
         "color": "#fcd524"
+      },
+      {
+        "text": "v1.3.0-SNAPSHOT",
+        "color": "#00AA99"
       },
       "\n",
       {
