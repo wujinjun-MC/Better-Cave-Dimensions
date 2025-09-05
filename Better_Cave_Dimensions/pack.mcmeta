@@ -74,51 +74,51 @@
       },
       {
         "formats": [999,999],
-        "directory": "overlay_addon_compact_dnt"
+        "directory": "overlay_addon_compat_dnt"
       },
       {
         "formats": [999,999],
-        "directory": "overlay_addon_compact_dnt_larger"
+        "directory": "overlay_addon_compat_dnt_larger"
       },
       {
         "formats": [999,999],
-        "directory": "overlay_addon_compact_dnt_high_density"
+        "directory": "overlay_addon_compat_dnt_high_density"
       },
       {
         "formats": [999,999],
-        "directory": "overlay_addon_compact_explorify"
+        "directory": "overlay_addon_compat_explorify"
       },
       {
         "formats": [999,999],
-        "directory": "overlay_addon_compact_explorify_larger"
+        "directory": "overlay_addon_compat_explorify_larger"
       },
       {
         "formats": [999,999],
-        "directory": "overlay_addon_compact_explorify_high_density"
+        "directory": "overlay_addon_compat_explorify_high_density"
       },
       {
         "formats": [999,999],
-        "directory": "overlay_addon_compact_structory"
+        "directory": "overlay_addon_compat_structory"
       },
       {
         "formats": [999,999],
-        "directory": "overlay_addon_compact_structory_larger"
+        "directory": "overlay_addon_compat_structory_larger"
       },
       {
         "formats": [999,999],
-        "directory": "overlay_addon_compact_structory_high_density"
+        "directory": "overlay_addon_compat_structory_high_density"
       },
       {
         "formats": [999,999],
-        "directory": "overlay_addon_compact_hopobettermineshaft"
+        "directory": "overlay_addon_compat_hopobettermineshaft"
       },
       {
         "formats": [999,999],
-        "directory": "overlay_addon_compact_hopobettermineshaft_larger"
+        "directory": "overlay_addon_compat_hopobettermineshaft_larger"
       },
       {
         "formats": [999,999],
-        "directory": "overlay_addon_compact_hopobettermineshaft_high_density"
+        "directory": "overlay_addon_compat_hopobettermineshaft_high_density"
       }
     ]
   }

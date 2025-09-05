@@ -47,7 +47,7 @@ May only support 1.21.4+
     - [x] Woodland Mansion [^2]
 - Support third-party structure datapacks:
     - [x] [Dungeons and Taverns(DnT)](https://modrinth.com/user/NovaWostra)
-        - Addon required: [Dungeons and Taverns compat](#addon_dnt_compact)
+        - Addon required: [Dungeons and Taverns compat](#addon_dnt_compat)
         - Full support:
             - [x] [Main](https://modrinth.com/datapack/dungeons-and-taverns)
             - [x] [Ancient City Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-ancient-city-overhaul)
@@ -57,11 +57,11 @@ May only support 1.21.4+
             - [x] [Pillager Outpost Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-pillager-outpost-overhaul)
             - [x] [Stronghold Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-stronghold-overhaul)
     - [x] [Explorify](https://modrinth.com/datapack/explorify)
-        - Addon required: [Explorify compat](#addon_explorify_compact)
+        - Addon required: [Explorify compat](#addon_explorify_compat)
     - [x] [Structory](https://modrinth.com/datapack/structory)
-        - Addon required: [Structory compat](#addon_structory_compact)
+        - Addon required: [Structory compat](#addon_structory_compat)
     - [x] [Hopo Better Mineshaft](https://modrinth.com/datapack/hopo-better-mineshaft)
-        - Addon required: [Hopo Better Mineshaft compat](#addon_hopobettermineshaft_compact)
+        - Addon required: [Hopo Better Mineshaft compat](#addon_hopobettermineshaft_compat)
 - [ ] Extend-able height (e.g. -128~512)
 - [ ] Guidelines to create more cave dimensions / Cave dimension preset
 
@@ -117,7 +117,7 @@ May only support 1.21.4+
 - Features:
     1. Terrain noise height range syncs with dimension height range (aka. no building space above bedrock roof)
     2. Without cave height range configuration, there may be only lava lakes in y 128~256
-    3. (Recommend) enable `overlay_addon_unlimited_vanilla_structures` and/or `overlay_addon_compact_*_larger`, since original height range doesn't allow structure placement in y 128~256.
+    3. (Recommend) enable `overlay_addon_unlimited_vanilla_structures` and/or `overlay_addon_compat_*_larger`, since original height range doesn't allow structure placement in y 128~256.
 - Side effects:
     - Some structures can only be placed on bedrock roof. After enabling, they are not placed correctly
 </details>
@@ -172,10 +172,10 @@ May only support 1.21.4+
     6. Zombie Siege can spawn in all biomes
 </details>
 
-<span id = "addon_dnt_compact"><details></span>
+<span id = "addon_dnt_compat"><details></span>
 <summary>Dungeons and Taverns compat</summary>
 
-- Overlay name: `overlay_addon_compact_dnt`
+- Overlay name: `overlay_addon_compat_dnt`
 - Supported Minecraft version: Unknown(latest?)
 - Features:
     1. Fix partial generation, but affects generation in other dimensions. (data/\*/worldgen/template_pool/\*\* - all .json, `elements`.*.`element`.`projection`: terrain_matching -> rigid)
@@ -191,9 +191,9 @@ May only support 1.21.4+
 <details>
 <summary>Dungeons and Taverns compat - larger structures</summary>
 
-- Overlay name: `overlay_addon_compact_dnt_larger`
+- Overlay name: `overlay_addon_compat_dnt_larger`
 - Supported Minecraft version: Unknown(latest?)
-- Dependencies: `overlay_addon_compact_dnt`
+- Dependencies: `overlay_addon_compat_dnt`
 - Recommend: `overlay_addon_unlimited_vanilla_structures`(Because some DnT structures replace vanilla ones)
 - Features:
     1. Unlock structure limits like "Unlimited vanilla structures"
@@ -210,9 +210,9 @@ May only support 1.21.4+
 <details>
 <summary>Dungeons and Taverns compat - high density</summary>
 
-- Overlay name: `overlay_addon_compact_dnt_high_density`
+- Overlay name: `overlay_addon_compat_dnt_high_density`
 - Supported Minecraft version: Unknown(latest?)
-- Dependencies: `overlay_addon_compact_dnt`
+- Dependencies: `overlay_addon_compat_dnt`
 - Features:
     1. Unlock structure limits like "Unlimited vanilla structures"
         - Structure set `spacing`:
@@ -222,10 +222,10 @@ May only support 1.21.4+
             - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
 
-<span id = "addon_explorify_compact"><details></span>
+<span id = "addon_explorify_compat"><details></span>
 <summary>Explorify compat</summary>
 
-- Overlay name: `overlay_addon_compact_explorify`
+- Overlay name: `overlay_addon_compat_explorify`
 - Supported Minecraft version: Unknown(latest?)
 - Features:
     1. Fix particial generation
@@ -240,9 +240,9 @@ May only support 1.21.4+
 <details>
 <summary>Explorify compat - larger structures</summary>
 
-- Overlay name: `overlay_addon_compact_explorify_larger`
+- Overlay name: `overlay_addon_compat_explorify_larger`
 - Supported Minecraft version: Unknown(latest?)
-- Dependencies: `overlay_addon_compact_explorify`
+- Dependencies: `overlay_addon_compat_explorify`
 - Features:
     1. Unlock structure limits like "Unlimited vanilla structures"
         - Change/Optimize `size`
@@ -256,9 +256,9 @@ May only support 1.21.4+
 <details>
 <summary>Explorify compat - high density</summary>
 
-- Overlay name: `overlay_addon_compact_explorify_high_density`
+- Overlay name: `overlay_addon_compat_explorify_high_density`
 - Supported Minecraft version: Unknown(latest?)
-- Dependencies: `overlay_addon_compact_explorify`
+- Dependencies: `overlay_addon_compat_explorify`
 - Features:
     1. Unlock structure limits like "Unlimited vanilla structures"
         - Structure set `spacing` -> 1/2
@@ -266,10 +266,10 @@ May only support 1.21.4+
             - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
 
-<span id = "addon_structory_compact"><details></span>
+<span id = "addon_structory_compat"><details></span>
 <summary>Structory compat</summary>
 
-- Overlay name: `overlay_addon_compact_structory`
+- Overlay name: `overlay_addon_compat_structory`
 - Supported Minecraft version: Unknown(latest?)
 - Features:
     1. Fix particial generation
@@ -283,9 +283,9 @@ May only support 1.21.4+
 <details>
 <summary>Structory compat - larger structures</summary>
 
-- Overlay name: `overlay_addon_compact_structory_larger`
+- Overlay name: `overlay_addon_compat_structory_larger`
 - Supported Minecraft version: Unknown(latest?)
-- Dependencies: `overlay_addon_compact_structory`
+- Dependencies: `overlay_addon_compat_structory`
 - Features:
     1. Unlock structure limits like "Unlimited vanilla structures"
         - Change/Optimize `size`
@@ -298,9 +298,9 @@ May only support 1.21.4+
 <details>
 <summary>Structory compat - high density</summary>
 
-- Overlay name: `overlay_addon_compact_structory_high_density`
+- Overlay name: `overlay_addon_compat_structory_high_density`
 - Supported Minecraft version: Unknown(latest?)
-- Dependencies: `overlay_addon_compact_structory`
+- Dependencies: `overlay_addon_compat_structory`
 - Features:
     1. Unlock structure limits like "Unlimited vanilla structures"
         - Structure set `spacing` -> 1/2
@@ -308,10 +308,10 @@ May only support 1.21.4+
             - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
 
-<span id = "addon_hopobettermineshaft_compact"><details></span>
+<span id = "addon_hopobettermineshaft_compat"><details></span>
 <summary>Hopo Better Mineshaft compat</summary>
 
-- Overlay name: `overlay_addon_compact_hopobettermineshaft`
+- Overlay name: `overlay_addon_compat_hopobettermineshaft`
 - Supported Minecraft version: Unknown(latest?)
 - Features:
     1. Fix particial generation
@@ -325,9 +325,9 @@ May only support 1.21.4+
 <details>
 <summary>Hopo Better Mineshaft compat - larger structures</summary>
 
-- Overlay name: `overlay_addon_compact_hopobettermineshaft_larger`
+- Overlay name: `overlay_addon_compat_hopobettermineshaft_larger`
 - Supported Minecraft version: Unknown(latest?)
-- Dependencies: `overlay_addon_compact_hopobettermineshaft`
+- Dependencies: `overlay_addon_compat_hopobettermineshaft`
 - Features:
     1. Unlock structure limits like "Unlimited vanilla structures"
         - Change/Optimize `size`
@@ -338,9 +338,9 @@ May only support 1.21.4+
 <details>
 <summary>Hopo Better Mineshaft compat - high density</summary>
 
-- Overlay name: `overlay_addon_compact_hopobettermineshaft_high_density`
+- Overlay name: `overlay_addon_compat_hopobettermineshaft_high_density`
 - Supported Minecraft version: Unknown(latest?)
-- Dependencies: `overlay_addon_compact_hopobettermineshaft`
+- Dependencies: `overlay_addon_compat_hopobettermineshaft`
 - Features:
     1. Unlock structure limits like "Unlimited vanilla structures"
         - Structure set `spacing` -> 15
