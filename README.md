@@ -1,7 +1,7 @@
 # Description
 An unofficial fork that turns it into a standalone dimension so that overworld is not affected.
 
-Height extends to -128~256 (optional)
+Height extends to -128~256 (& try these [(1)](#addon_noise_height_extend) [(2)](#addon_custom_cave_config))
 
 Download [latest version](https://github.com/wujinjun-MC/Better-Cave-Dimensions/releases/latest)
 
@@ -57,11 +57,11 @@ May only support 1.21.4+
             - [x] [Pillager Outpost Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-pillager-outpost-overhaul)
             - [x] [Stronghold Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-stronghold-overhaul)
     - [x] [Explorify](https://modrinth.com/datapack/explorify)
-        - Addon required: [Explorify compat](#addon_explorify_compat)
+        - Addon required: [Explorify compat](#addon_compat_explorify)
     - [x] [Structory](https://modrinth.com/datapack/structory)
-        - Addon required: [Structory compat](#addon_structory_compat)
+        - Addon required: [Structory compat](#addon_compat_structory)
     - [x] [Hopo Better Mineshaft](https://modrinth.com/datapack/hopo-better-mineshaft)
-        - Addon required: [Hopo Better Mineshaft compat](#addon_hopobettermineshaft_compat)
+        - Addon required: [Hopo Better Mineshaft compat](#addon_compat_hopobettermineshaft)
 - [ ] Extend-able height (e.g. -128~512)
 - [ ] Guidelines to create more cave dimensions / Cave dimension preset
 
@@ -109,7 +109,7 @@ May only support 1.21.4+
     4. Enable skylight
 </details>
 
-<details>
+<span id = "addon_noise_height_extend"><details></span>
 <summary>Extend noise height range</summary>
 
 - Overlay name: `overlay_addon_noise_height_extend`
@@ -122,7 +122,7 @@ May only support 1.21.4+
     - Some structures can only be placed on bedrock roof. After enabling, they are not placed correctly
 </details>
 
-<details>
+<span id = "addon_custom_cave_config"><details></span>
 <summary>Configurable cave</summary>
 
 - Overlay name: `overlay_addon_custom_cave_config`
@@ -222,7 +222,7 @@ May only support 1.21.4+
             - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
 
-<span id = "addon_explorify_compat"><details></span>
+<span id = "addon_compat_explorify"><details></span>
 <summary>Explorify compat</summary>
 
 - Overlay name: `overlay_addon_compat_explorify`
@@ -266,7 +266,7 @@ May only support 1.21.4+
             - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
 
-<span id = "addon_structory_compat"><details></span>
+<span id = "addon_compat_structory"><details></span>
 <summary>Structory compat</summary>
 
 - Overlay name: `overlay_addon_compat_structory`
@@ -308,7 +308,7 @@ May only support 1.21.4+
             - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
 
-<span id = "addon_hopobettermineshaft_compat"><details></span>
+<span id = "addon_compat_hopobettermineshaft"><details></span>
 <summary>Hopo Better Mineshaft compat</summary>
 
 - Overlay name: `overlay_addon_compat_hopobettermineshaft`
