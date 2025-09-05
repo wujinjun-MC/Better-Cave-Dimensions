@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#better_cave_dimensions:has_structure/jungle_mineshaft",
+  "step": "underground_structures",
+  "spawn_overrides": {},
+  "start_pool": "hopo:jungle_mineshaft",
+  "size": 3,
+  "start_height": {
+    "type": "minecraft:uniform",
+    "max_inclusive": {
+      "below_top": 16
+    },
+    "min_inclusive": {
+      "absolute": -32
+    }
+  },
+  "max_distance_from_center": 85,
+  "use_expansion_hack": true,
+  "liquid_settings": "ignore_waterlogging"
+}

@@ -6,7 +6,7 @@
         "color": "#fcd524"
       },
       {
-        "text": "v1.3.0-SNAPSHOT",
+        "text": "v1.3.0",
         "color": "#00AA99"
       },
       "\n",
@@ -107,6 +107,18 @@
       {
         "formats": [999,999],
         "directory": "overlay_addon_compact_structory_high_density"
+      },
+      {
+        "formats": [999,999],
+        "directory": "overlay_addon_compact_hopobettermineshaft"
+      },
+      {
+        "formats": [999,999],
+        "directory": "overlay_addon_compact_hopobettermineshaft_larger"
+      },
+      {
+        "formats": [999,999],
+        "directory": "overlay_addon_compact_hopobettermineshaft_high_density"
       }
     ]
   }

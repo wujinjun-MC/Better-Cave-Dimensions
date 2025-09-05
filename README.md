@@ -1,7 +1,9 @@
 # Description
 An unofficial fork that turns it into a standalone dimension so that overworld is not affected.
 
-Height extends to -128~256
+Height extends to -128~256 (optional)
+
+Download [latest version](https://github.com/wujinjun-MC/Better-Cave-Dimensions/releases/latest)
 
 May only support 1.21.4+
 
@@ -55,7 +57,7 @@ May only support 1.21.4+
             - [x] [Stronghold Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-stronghold-overhaul)
     - [x] [Explorify](https://modrinth.com/datapack/explorify)
     - [x] [Structory](https://modrinth.com/datapack/structory)
-    - [ ] [Hopo Better Mineshaft](https://modrinth.com/datapack/hopo-better-mineshaft)
+    - [x] [Hopo Better Mineshaft](https://modrinth.com/datapack/hopo-better-mineshaft)
 - [ ] Extend-able height (e.g. -128~512)
 - [ ] Guidelines to create more cave dimensions / Cave dimension preset
 
@@ -298,6 +300,46 @@ May only support 1.21.4+
 - Features:
     1. Unlock structure limits like "Unlimited vanilla structures"
         - Structure set `spacing` -> 1/2
+        - Chunk generation may take a long time due to large structures
+            - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
+</details>
+
+<details>
+<summary>Hopo Better Mineshaft compat</summary>
+
+- Overlay name: `overlay_addon_compact_hopobettermineshaft`
+- Supported Minecraft version: Unknown(latest?)
+- Features:
+    1. Fix particial generation
+    2. structure definition or structure set may use ones from Hopo Better Mineshaft to make sure provided strucutres can be placed or for better placement
+- Notice:
+    1. May change generation in other dimensions
+    2. This addon can be removed due to license(strict license or ARR)
+    3. To fully function, this datapack must take priority (load after `Hopo Better Mineshaft`). In singleplayer, select `Hopo Better Mineshaft` first and select this; In dedicated server, add `Hopo Better Mineshaft`, start and stop server, then add this. Make sure the name appears after `Hopo Better Mineshaft`'s in `/datapack list`
+    4. The namespace of structures spawning in this dimension is `better_cave_dimensions`, not `nova_structures`
+</details>
+<details>
+<summary>Hopo Better Mineshaft compat - larger structures</summary>
+
+- Overlay name: `overlay_addon_compact_hopobettermineshaft_larger`
+- Supported Minecraft version: Unknown(latest?)
+- Dependencies: `overlay_addon_compact_hopobettermineshaft`
+- Features:
+    1. Unlock structure limits like "Unlimited vanilla structures"
+        - Change/Optimize `size`
+            - Normally size will +1
+        - Chunk generation may take a long time due to large structures
+            - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
+</details>
+<details>
+<summary>Hopo Better Mineshaft compat - high density</summary>
+
+- Overlay name: `overlay_addon_compact_hopobettermineshaft_high_density`
+- Supported Minecraft version: Unknown(latest?)
+- Dependencies: `overlay_addon_compact_hopobettermineshaft`
+- Features:
+    1. Unlock structure limits like "Unlimited vanilla structures"
+        - Structure set `spacing` -> 15
         - Chunk generation may take a long time due to large structures
             - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
