@@ -1,5 +1,5 @@
 # Description
-An unofficial fork that turns it into a standalone dimension so that overworld is not affected.
+`klinbee/Better-Cave-Worlds`, but in a dimension!
 
 Height extends to -128~256 (& try these [(1)](#addon_noise_height_extend) [(2)](#addon_custom_cave_config))
 
@@ -62,6 +62,10 @@ May only support 1.21.4+
         - Addon required: [Structory compat](#addon_compat_structory)
     - [x] [Hopo Better Mineshaft](https://modrinth.com/datapack/hopo-better-mineshaft)
         - Addon required: [Hopo Better Mineshaft compat](#addon_compat_hopobettermineshaft)
+    - [ ] [Copper Golem Statue](https://modrinth.com/datapack/copper-golem-statue)
+    - [ ] [EnderCat](https://modrinth.com/datapack/ender-cat)
+    - [ ] [Happy Ghast Houses](https://modrinth.com/datapack/happy-ghast-houses)
+    - [ ] [Tidal Towns](https://modrinth.com/datapack/tidal-towns)
 - [ ] Extend-able height (e.g. -128~512)
 - [ ] Guidelines to create more cave dimensions / Cave dimension preset
 
@@ -70,6 +74,7 @@ May only support 1.21.4+
 
 # Addons
 ## List
+### Vanilla
 <details>
 <summary>Unlimited vanilla structures</summary>
 
@@ -172,7 +177,10 @@ May only support 1.21.4+
     6. Zombie Siege can spawn in all biomes
 </details>
 
-<span id = "addon_dnt_compat"><details></span>
+### Compatibly
+#### Dungeons and Taverns (DnT) <span id = "addon_dnt_compat"></span>
+
+<details>
 <summary>Dungeons and Taverns compat</summary>
 
 - Overlay name: `overlay_addon_compat_dnt`
@@ -222,7 +230,9 @@ May only support 1.21.4+
             - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
 
-<span id = "addon_compat_explorify"><details></span>
+#### Explorify <span id = "addon_compat_explorify"></span>
+
+<details>
 <summary>Explorify compat</summary>
 
 - Overlay name: `overlay_addon_compat_explorify`
@@ -266,7 +276,9 @@ May only support 1.21.4+
             - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
 
-<span id = "addon_compat_structory"><details></span>
+#### Structory <span id = "addon_compat_structory"></span>
+
+<details>
 <summary>Structory compat</summary>
 
 - Overlay name: `overlay_addon_compat_structory`
@@ -308,7 +320,9 @@ May only support 1.21.4+
             - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
 
-<span id = "addon_compat_hopobettermineshaft"><details></span>
+#### Hopo Better Mineshaft <span id = "addon_compat_hopobettermineshaft"></span>
+
+<details>
 <summary>Hopo Better Mineshaft compat</summary>
 
 - Overlay name: `overlay_addon_compat_hopobettermineshaft`
@@ -347,6 +361,11 @@ May only support 1.21.4+
         - Chunk generation may take a long time due to large structures
             - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
+
+#### Copper Golem Statue - WIP
+#### EnderCat - WIP
+#### Happy Ghast Houses - WIP
+#### Tidal Towns - WIP
 
 ## How to enable addon
 1. Open `pack.mcmeta`
