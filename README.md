@@ -63,7 +63,7 @@ May only support 1.21.4+
     - [x] [Hopo Better Mineshaft](https://modrinth.com/datapack/hopo-better-mineshaft)
         - Addon required: [Hopo Better Mineshaft compat](#addon_compat_hopobettermineshaft)
     - [x] [Copper Golem Statue](https://modrinth.com/datapack/copper-golem-statue) (partial)
-        - Addon required: [Dungeons and Taverns compat](#addon_compat_coppergolemstatue)
+        - Addon required: [Copper Golem Statue compat](#addon_compat_coppergolemstatue)
     - [ ] [EnderCat](https://modrinth.com/datapack/ender-cat)
     - [ ] [Happy Ghast Houses](https://modrinth.com/datapack/happy-ghast-houses)
     - [ ] [Tidal Towns](https://modrinth.com/datapack/tidal-towns)
