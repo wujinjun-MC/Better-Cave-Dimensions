@@ -119,6 +119,18 @@
       {
         "formats": [999,999],
         "directory": "overlay_addon_compat_hopobettermineshaft_high_density"
+      },
+      {
+        "formats": [999,999],
+        "directory": "overlay_addon_compat_coppergolemstatue"
+      },
+      {
+        "formats": [999,999],
+        "directory": "overlay_addon_compat_coppergolemstatue_larger"
+      },
+      {
+        "formats": [999,999],
+        "directory": "overlay_addon_compat_coppergolemstatue_high_density"
       }
     ]
   }

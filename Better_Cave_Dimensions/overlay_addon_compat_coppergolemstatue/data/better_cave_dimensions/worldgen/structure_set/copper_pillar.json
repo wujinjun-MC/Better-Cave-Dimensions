@@ -1,0 +1,34 @@
+{
+    "structures": [
+      {
+        "structure": "better_cave_dimensions:copper_pillar",
+        "weight": 5
+      },
+      {
+        "structure": "better_cave_dimensions:copper_pillar_exposed",
+        "weight": 10
+      },
+      {
+        "structure": "better_cave_dimensions:copper_pillar_oxidixed",
+        "weight": 15
+      },
+      {
+        "structure": "better_cave_dimensions:copper_pillar_weathered",
+        "weight": 15
+      }
+    ],
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 34357642,
+      "frequency_reduction_method": "default",
+      "spread_type" :"triangular",
+      "frequency": 1,
+      "spacing": 38,
+      "separation": 26,
+      "exclusion_zone": {
+        "chunk_count": 2,
+        "other_set": "better_cave_dimensions:statue_copper_golem"
+      } 
+    }
+  }
+  

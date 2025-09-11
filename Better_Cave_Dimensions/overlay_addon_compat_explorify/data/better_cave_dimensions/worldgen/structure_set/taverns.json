@@ -7,7 +7,7 @@
     "separation": 18,
     "frequency": 0.80,
     "exclusion_zone": {
-      "other_set": "minecraft:villages",
+      "other_set": "better_cave_dimensions:villages",
       "chunk_count": 12
     }
   },

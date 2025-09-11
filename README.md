@@ -62,7 +62,8 @@ May only support 1.21.4+
         - Addon required: [Structory compat](#addon_compat_structory)
     - [x] [Hopo Better Mineshaft](https://modrinth.com/datapack/hopo-better-mineshaft)
         - Addon required: [Hopo Better Mineshaft compat](#addon_compat_hopobettermineshaft)
-    - [ ] [Copper Golem Statue](https://modrinth.com/datapack/copper-golem-statue)
+    - [x] [Copper Golem Statue](https://modrinth.com/datapack/copper-golem-statue) (partial)
+        - Addon required: [Dungeons and Taverns compat](#addon_compat_coppergolemstatue)
     - [ ] [EnderCat](https://modrinth.com/datapack/ender-cat)
     - [ ] [Happy Ghast Houses](https://modrinth.com/datapack/happy-ghast-houses)
     - [ ] [Tidal Towns](https://modrinth.com/datapack/tidal-towns)
@@ -362,7 +363,22 @@ May only support 1.21.4+
             - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
 
-#### Copper Golem Statue - WIP
+#### Copper Golem Statue - WIP <span id = "addon_compat_coppergolemstatue"></span>
+
+<details>
+<summary>Copper Golem Statue compat</summary>
+
+- Overlay name: `overlay_addon_compat_coppergolemstatue`
+- Supported Minecraft version: Unknown(latest?)
+- Features:
+    1. structure definition or structure set may use ones from Copper Golem Statue to make sure provided strucutres can be placed or for better placement
+- Notice:
+    1. May change generation in other dimensions
+    2. This addon can be removed due to license(strict license or ARR)
+    3. To fully function, this datapack must take priority (load after `Copper Golem Statue`). In singleplayer, select `Copper Golem Statue` first and select this; In dedicated server, add `Copper Golem Statue`, start and stop server, then add this. Make sure the name appears after `Copper Golem Statue`'s in `/datapack list`
+    4. The namespace of structures spawning in this dimension is `better_cave_dimensions`, not `nova_structures`
+</details>
+
 #### EnderCat - WIP
 #### Happy Ghast Houses - WIP
 #### Tidal Towns - WIP

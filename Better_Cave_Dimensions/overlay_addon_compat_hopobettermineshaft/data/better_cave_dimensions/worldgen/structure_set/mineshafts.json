@@ -57,7 +57,7 @@
     "type": "minecraft:random_spread",
     "salt": 10110111,
     "exclusion_zone": {   
-      "other_set": "minecraft:trial_chambers",
+      "other_set": "better_cave_dimensions:trial_chambers",
       "chunk_count": 10
     },
     "spacing": 28,

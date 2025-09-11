@@ -1,0 +1,22 @@
+{
+    "structures": [
+      {
+        "structure": "better_cave_dimensions:statue_copper_golem",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 1052664,
+      "frequency_reduction_method": "default",
+      "spread_type" :"triangular",
+      "frequency": 0.54,
+      "spacing": 44,
+      "separation": 30,
+      "exclusion_zone": {
+        "chunk_count": 10,
+        "other_set": "better_cave_dimensions:pillager_copper_house"
+      }
+    }
+  }
+  

@@ -1,0 +1,18 @@
+{
+    "structures": [
+      {
+        "structure": "better_cave_dimensions:pillager_copper_house",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 9485952,
+      "frequency_reduction_method": "default",
+      "spread_type" :"triangular",
+      "frequency": 0.64,
+      "spacing": 51,
+      "separation": 36
+    }
+  }
+  

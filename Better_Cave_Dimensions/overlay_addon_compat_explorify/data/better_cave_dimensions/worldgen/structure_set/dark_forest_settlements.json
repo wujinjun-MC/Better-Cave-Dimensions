@@ -7,7 +7,7 @@
     "separation": 16,
     "frequency": 0.80,
     "exclusion_zone": {
-      "other_set": "minecraft:woodland_mansions",
+      "other_set": "better_cave_dimensions:woodland_mansions",
       "chunk_count": 16
     }
   },
