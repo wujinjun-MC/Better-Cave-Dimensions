@@ -131,6 +131,18 @@
       {
         "formats": [999,999],
         "directory": "overlay_addon_compat_coppergolemstatue_high_density"
+      },
+      {
+        "formats": [999,999],
+        "directory": "overlay_addon_compat_endercat"
+      },
+      {
+        "formats": [999,999],
+        "directory": "overlay_addon_compat_endercat_larger"
+      },
+      {
+        "formats": [999,999],
+        "directory": "overlay_addon_compat_endercat_high_density"
       }
     ]
   }

@@ -45,7 +45,7 @@ May only support 1.21.4+
     - [x] Swamp Hut [^2]
     - [x] Trial Chambers
     - [x] Woodland Mansion [^2]
-- Support third-party structure datapacks:
+- Support third-party structure datapacks[^3]:
     - [x] [Dungeons and Taverns(DnT)](https://modrinth.com/user/NovaWostra)
         - Addon required: [Dungeons and Taverns compat](#addon_dnt_compat)
         - Full support:
@@ -64,7 +64,8 @@ May only support 1.21.4+
         - Addon required: [Hopo Better Mineshaft compat](#addon_compat_hopobettermineshaft)
     - [x] [Copper Golem Statue](https://modrinth.com/datapack/copper-golem-statue)
         - Addon required: [Copper Golem Statue compat](#addon_compat_coppergolemstatue)
-    - [ ] [EnderCat](https://modrinth.com/datapack/ender-cat)
+    - [x] [EnderCat](https://modrinth.com/datapack/ender-cat)
+        - Addon required: [EnderCat compat](#addon_compat_endercat)
     - [ ] [Happy Ghast Houses](https://modrinth.com/datapack/happy-ghast-houses)
     - [ ] [Tidal Towns](https://modrinth.com/datapack/tidal-towns)
 - [ ] Extend-able height (e.g. -128~512)
@@ -72,6 +73,7 @@ May only support 1.21.4+
 
 [^1]: Can not be placed due to missing biomes. Use addon `Unlimited vanilla structures` can fix it.
 [^2]: May break bedrock roof
+[^3]: Some structures can not be placed due to missing biomes. Use addon `overlay_addon_compat_`*`_larger` can fix them.
 
 # Addons
 ## List
@@ -245,7 +247,7 @@ May only support 1.21.4+
     1. May change generation in other dimensions
     2. This addon can be removed due to license(strict license or ARR)
     3. To fully function, this datapack must take priority (load after `Explorify`). In singleplayer, select `Explorify` first and select this; In dedicated server, add `Explorify`, start and stop server, then add this. Make sure the name appears after `Explorify`'s in `/datapack list`
-    4. The namespace of structures spawning in this dimension is `better_cave_dimensions`, not `nova_structures`
+    4. The namespace of structures spawning in this dimension is `better_cave_dimensions`, not `explorify`
 </details>
 
 <details>
@@ -291,7 +293,7 @@ May only support 1.21.4+
     1. May change generation in other dimensions
     2. This addon can be removed due to license(strict license or ARR)
     3. To fully function, this datapack must take priority (load after `Structory`). In singleplayer, select `Structory` first and select this; In dedicated server, add `Structory`, start and stop server, then add this. Make sure the name appears after `Structory`'s in `/datapack list`
-    4. The namespace of structures spawning in this dimension is `better_cave_dimensions`, not `nova_structures`
+    4. The namespace of structures spawning in this dimension is `better_cave_dimensions`, not `structory`
 </details>
 <details>
 <summary>Structory compat - larger structures</summary>
@@ -335,7 +337,7 @@ May only support 1.21.4+
     1. May change generation in other dimensions
     2. This addon can be removed due to license(strict license or ARR)
     3. To fully function, this datapack must take priority (load after `Hopo Better Mineshaft`). In singleplayer, select `Hopo Better Mineshaft` first and select this; In dedicated server, add `Hopo Better Mineshaft`, start and stop server, then add this. Make sure the name appears after `Hopo Better Mineshaft`'s in `/datapack list`
-    4. The namespace of structures spawning in this dimension is `better_cave_dimensions`, not `nova_structures`
+    4. The namespace of structures spawning in this dimension is `better_cave_dimensions`, not `hopo`
 </details>
 <details>
 <summary>Hopo Better Mineshaft compat - larger structures</summary>
@@ -376,7 +378,7 @@ May only support 1.21.4+
     1. May change generation in other dimensions
     2. This addon can be removed due to license(strict license or ARR)
     3. To fully function, this datapack must take priority (load after `Copper Golem Statue`). In singleplayer, select `Copper Golem Statue` first and select this; In dedicated server, add `Copper Golem Statue`, start and stop server, then add this. Make sure the name appears after `Copper Golem Statue`'s in `/datapack list`
-    4. The namespace of structures spawning in this dimension is `better_cave_dimensions`, not `nova_structures`
+    4. The namespace of structures spawning in this dimension is `better_cave_dimensions`, not `luistercorp`
 </details>
 <details>
 <summary>Copper Golem Statue compat - larger structures</summary>
@@ -401,7 +403,44 @@ May only support 1.21.4+
             - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
 
-#### EnderCat - WIP
+#### EnderCat <span id = "addon_compat_endercat"></span>
+
+<details>
+<summary>EnderCat compat</summary>
+
+- Overlay name: `overlay_addon_compat_endercat`
+- Supported Minecraft version: Unknown(latest?)
+- Features:
+    1. structure definition or structure set may use ones from EnderCat to make sure provided strucutres can be placed or for better placement
+- Notice:
+    1. May change generation in other dimensions
+    2. This addon can be removed due to license(strict license or ARR)
+    3. To fully function, this datapack must take priority (load after `EnderCat`). In singleplayer, select `EnderCat` first and select this; In dedicated server, add `EnderCat`, start and stop server, then add this. Make sure the name appears after `EnderCat`'s in `/datapack list`
+    4. The namespace of structures spawning in this dimension is `better_cave_dimensions`, not `luistercorp`
+</details>
+<details>
+<summary>EnderCat compat - larger structures</summary>
+
+- Overlay name: `overlay_addon_compat_endercat_larger`
+- Supported Minecraft version: Unknown(latest?)
+- Dependencies: `overlay_addon_compat_endercat`
+- Features:
+    1. Unlock structure limits like "Unlimited vanilla structures"
+        - ~~Change/Optimize `size`~~
+</details>
+<details>
+<summary>EnderCat compat - high density</summary>
+
+- Overlay name: `overlay_addon_compat_endercat_high_density`
+- Supported Minecraft version: Unknown(latest?)
+- Dependencies: `overlay_addon_compat_endercat`
+- Features:
+    1. Unlock structure limits like "Unlimited vanilla structures"
+        - Structure set `spacing` -> 1/2
+        - Chunk generation may take a long time due to large structures
+            - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
+</details>
+
 #### Happy Ghast Houses - WIP
 #### Tidal Towns - WIP
 
