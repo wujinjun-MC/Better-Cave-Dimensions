@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": [
+    "better_cave_dimensions:flower_forest",
+    "better_cave_dimensions:meadow"
+  ],
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "none",
+  "start_pool": "luistercorp:happy_ghast_house_magenta",
+  "size": 1,
+  "start_height": {
+    "type": "minecraft:uniform",
+    "max_inclusive": {
+      "below_top": 16
+    },
+    "min_inclusive": {
+      "absolute": -32
+    }
+  },
+  "liquid_settings": "ignore_waterlogging",
+  "max_distance_from_center": 100,
+  "use_expansion_hack": false
+}

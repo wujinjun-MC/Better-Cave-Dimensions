@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:happy_ghast_docking_station",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 9746524,
+    "spacing": 42,
+    "separation": 38,
+    "frequency": 0.75,
+    "spread_type": "triangular",
+    "frequency_reduction_method": "default"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#better_cave_dimensions:all_biome",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "beard_box",
+  "start_pool": "luistercorp:happy_ghast_house_red",
+  "size": 1,
+  "start_height": {
+    "type": "minecraft:uniform",
+    "max_inclusive": {
+      "below_top": 16
+    },
+    "min_inclusive": {
+      "absolute": -32
+    }
+  },
+  "liquid_settings": "ignore_waterlogging",
+  "max_distance_from_center": 116,
+  "use_expansion_hack": true
+}

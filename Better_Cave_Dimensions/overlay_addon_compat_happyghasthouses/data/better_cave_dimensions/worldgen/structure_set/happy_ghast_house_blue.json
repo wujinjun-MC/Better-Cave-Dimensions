@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:happy_ghast_house_blue",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 8647925,
+    "spacing": 35,
+    "separation": 25,
+    "frequency": 0.5,
+    "spread_type": "triangular",
+    "frequency_reduction_method": "default"
+  }
+}

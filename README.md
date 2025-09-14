@@ -66,7 +66,8 @@ May only support 1.21.4+
         - Addon required: [Copper Golem Statue compat](#addon_compat_coppergolemstatue)
     - [x] [EnderCat](https://modrinth.com/datapack/ender-cat)
         - Addon required: [EnderCat compat](#addon_compat_endercat)
-    - [ ] [Happy Ghast Houses](https://modrinth.com/datapack/happy-ghast-houses)
+    - [x] [Happy Ghast Houses](https://modrinth.com/datapack/happy-ghast-houses)
+        - Addon required: [EnderCat compat](#addon_compat_happyghasthouses)
     - [ ] [Tidal Towns](https://modrinth.com/datapack/tidal-towns)
 - [ ] Extend-able height (e.g. -128~512)
 - [ ] Guidelines to create more cave dimensions / Cave dimension preset
@@ -437,11 +438,50 @@ May only support 1.21.4+
 - Features:
     1. Unlock structure limits like "Unlimited vanilla structures"
         - Structure set `spacing` -> 1/2
+        - No frequency limits
         - Chunk generation may take a long time due to large structures
             - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
 
-#### Happy Ghast Houses - WIP
+#### Happy Ghast Houses <span id = "addon_compat_happyghasthouses"></span>
+
+<details>
+<summary>Happy Ghast Houses compat</summary>
+
+- Overlay name: `overlay_addon_compat_happyghasthouses`
+- Supported Minecraft version: Unknown(latest?)
+- Features:
+    1. structure definition or structure set may use ones from Happy Ghast Houses to make sure provided strucutres can be placed or for better placement
+- Notice:
+    1. May change generation in other dimensions
+    2. This addon can be removed due to license(strict license or ARR)
+    3. To fully function, this datapack must take priority (load after `Happy Ghast Houses`). In singleplayer, select `Happy Ghast Houses` first and select this; In dedicated server, add `Happy Ghast Houses`, start and stop server, then add this. Make sure the name appears after `Happy Ghast Houses`'s in `/datapack list`
+    4. The namespace of structures spawning in this dimension is `better_cave_dimensions`, not `luistercorp`
+</details>
+<details>
+<summary>Happy Ghast Houses compat - larger structures</summary>
+
+- Overlay name: `overlay_addon_compat_happyghasthouses_larger`
+- Supported Minecraft version: Unknown(latest?)
+- Dependencies: `overlay_addon_compat_happyghasthouses`
+- Features:
+    1. Unlock structure limits like "Unlimited vanilla structures"
+        - ~~Change/Optimize `size`~~
+</details>
+<details>
+<summary>Happy Ghast Houses compat - high density</summary>
+
+- Overlay name: `overlay_addon_compat_happyghasthouses_high_density`
+- Supported Minecraft version: Unknown(latest?)
+- Dependencies: `overlay_addon_compat_happyghasthouses`
+- Features:
+    1. Unlock structure limits like "Unlimited vanilla structures"
+        - Structure set `spacing` -> 1/2
+        - No frequency limits
+        - Chunk generation may take a long time due to large structures
+            - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
+</details>
+
 #### Tidal Towns - WIP
 
 ## How to enable addon
