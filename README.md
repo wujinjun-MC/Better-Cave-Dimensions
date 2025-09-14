@@ -67,8 +67,9 @@ May only support 1.21.4+
     - [x] [EnderCat](https://modrinth.com/datapack/ender-cat)
         - Addon required: [EnderCat compat](#addon_compat_endercat)
     - [x] [Happy Ghast Houses](https://modrinth.com/datapack/happy-ghast-houses)
-        - Addon required: [EnderCat compat](#addon_compat_happyghasthouses)
-    - [ ] [Tidal Towns](https://modrinth.com/datapack/tidal-towns)
+        - Addon required: [Happy Ghast Houses compat](#addon_compat_happyghasthouses)
+    - [x] [Tidal Towns](https://modrinth.com/datapack/tidal-towns)
+        - Addon required: [Tidal Towns compat](#addon_compat_tidaltowns)
 - [ ] Extend-able height (e.g. -128~512)
 - [ ] Guidelines to create more cave dimensions / Cave dimension preset
 
@@ -482,7 +483,45 @@ May only support 1.21.4+
             - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
 </details>
 
-#### Tidal Towns - WIP
+#### Tidal Towns <span id = "addon_compat_tidaltowns"></span>
+
+<details>
+<summary>Tidal Towns compat</summary>
+
+- Overlay name: `overlay_addon_compat_tidaltowns`
+- Supported Minecraft version: Unknown(latest?)
+- Features:
+    1. structure definition or structure set may use ones from Tidal Towns to make sure provided strucutres can be placed or for better placement
+- Notice:
+    1. May change generation in other dimensions
+    2. This addon can be removed due to license(strict license or ARR)
+    3. To fully function, this datapack must take priority (load after `Tidal Towns`). In singleplayer, select `Tidal Towns` first and select this; In dedicated server, add `Tidal Towns`, start and stop server, then add this. Make sure the name appears after `Tidal Towns`'s in `/datapack list`
+    4. The namespace of structures spawning in this dimension is `better_cave_dimensions`, not `joshie`
+</details>
+<details>
+<summary>Tidal Towns compat - larger structures</summary>
+
+- Overlay name: `overlay_addon_compat_tidaltowns_larger`
+- Supported Minecraft version: Unknown(latest?)
+- Dependencies: `overlay_addon_compat_tidaltowns`
+- Features:
+    1. Unlock structure limits like "Unlimited vanilla structures"
+        - Change/Optimize `size`
+            - Normally size will be doubled/maximized
+</details>
+<details>
+<summary>Tidal Towns compat - high density</summary>
+
+- Overlay name: `overlay_addon_compat_tidaltowns_high_density`
+- Supported Minecraft version: Unknown(latest?)
+- Dependencies: `overlay_addon_compat_tidaltowns`
+- Features:
+    1. Unlock structure limits like "Unlimited vanilla structures"
+        - Structure set `spacing` -> 1/2
+        - No frequency limits
+        - Chunk generation may take a long time due to large structures
+            - Suggestion: see suggestion in `Dungeons and Taverns compat - larger structures`
+</details>
 
 ## How to enable addon
 1. Open `pack.mcmeta`

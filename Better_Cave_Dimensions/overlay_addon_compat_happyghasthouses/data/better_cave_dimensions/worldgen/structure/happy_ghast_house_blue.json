@@ -6,7 +6,7 @@
   ],
   "step": "surface_structures",
   "spawn_overrides": {},
-  "terrain_adaptation": "none",
+  "terrain_adaptation": "beard_box",
   "start_pool": "luistercorp:happy_ghast_house_blue",
   "size": 1,
   "start_height": {
