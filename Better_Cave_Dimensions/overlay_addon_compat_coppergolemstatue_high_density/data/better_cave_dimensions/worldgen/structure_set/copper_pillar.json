@@ -20,14 +20,7 @@
   "placement": {
     "type": "minecraft:random_spread",
     "salt": 34357642,
-    "frequency_reduction_method": "default",
-    "spread_type" :"triangular",
-    "frequency": 1,
-    "spacing": 38,
-    "separation": 26,
-    "exclusion_zone": {
-      "chunk_count": 2,
-      "other_set": "better_cave_dimensions:statue_copper_golem"
-    } 
+    "spacing": 19,
+    "separation": 0
   }
 }
