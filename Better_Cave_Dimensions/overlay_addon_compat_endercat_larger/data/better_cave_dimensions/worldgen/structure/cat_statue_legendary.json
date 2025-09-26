@@ -4,7 +4,7 @@
   "step": "surface_structures",
   "spawn_overrides": {},
   "terrain_adaptation": "beard_box",
-  "start_pool": "luistercorp:cat_tree_house",
+  "start_pool": "luistercorp:cat_statue_legendary",
   "size": 1,
   "start_height": {
     "type": "minecraft:uniform",

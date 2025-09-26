@@ -1,8 +1,7 @@
 {
   "type": "minecraft:jigsaw",
   "biomes": [
-    "better_cave_dimensions:taiga",
-    "better_cave_dimensions:snowy_taiga"
+    "better_cave_dimensions:taiga"
   ],
   "step": "surface_structures",
   "spawn_overrides": {},
