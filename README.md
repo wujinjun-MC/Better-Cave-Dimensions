@@ -49,7 +49,7 @@ May only support 1.21.4+
     - [x] [Dungeons and Taverns(DnT)](https://modrinth.com/user/NovaWostra)
         - Addon required: [Dungeons and Taverns compat](#addon_dnt_compat)
         - Full support:
-            - [x] [Main](https://modrinth.com/datapack/dungeons-and-taverns)
+            - [x] [Main](https://modrinth.com/datapack/dungeons-and-taverns) (pending v5.0.0 support)
             - [x] [Ancient City Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-ancient-city-overhaul)
             - [x] [Desert Temple Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-desert-temple-overhaul)
             - [x] [End Castle Standalone](https://modrinth.com/datapack/dungeons-and-taverns-end-castle-standalone)
