@@ -1,0 +1,83 @@
+{
+  "sea_level": 0,
+  "disable_mob_generation": true,
+  "aquifers_enabled": false,
+  "ore_veins_enabled": false,
+  "legacy_random_source": true,
+  "default_block": {
+    "Name": "minecraft:end_stone"
+  },
+  "default_fluid": {
+    "Name": "minecraft:air"
+  },
+  "noise": {
+    "min_y": 0,
+    "height": 128,
+    "size_horizontal": 2,
+    "size_vertical": 1
+  },
+  "noise_router": {
+    "barrier": "end_caves:noise_router/barrier",
+    "fluid_level_floodedness": "end_caves:noise_router/fluid_level_floodedness",
+    "fluid_level_spread": "end_caves:noise_router/fluid_level_spread",
+    "lava": "end_caves:noise_router/lava",
+    "temperature": "end_caves:noise_router/temperature",
+    "vegetation": "end_caves:noise_router/vegetation",
+    "continents": "end_caves:noise_router/continents",
+    "erosion": "end_caves:noise_router/erosion",
+    "depth": "end_caves:noise_router/depth",
+    "ridges": "end_caves:noise_router/ridges",
+    "preliminary_surface_level": "end_caves:noise_router/preliminary_surface_level",
+    "final_density": "end_caves:noise_router/final_density",
+    "vein_toggle": "end_caves:noise_router/vein_toggle",
+    "vein_ridged": "end_caves:noise_router/vein_ridged",
+    "vein_gap": "end_caves:noise_router/vein_gap"
+  },
+  "spawn_target": [],
+  "surface_rule": {
+    "type": "minecraft:sequence",
+    "sequence": [
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:not",
+          "invert": {
+            "type": "minecraft:vertical_gradient",
+            "random_name": "minecraft:bedrock_roof",
+            "true_at_and_below": {
+              "below_top": 5
+            },
+            "false_at_and_above": {
+              "below_top": 0
+            }
+          }
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "minecraft:bedrock"
+          }
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:vertical_gradient",
+          "random_name": "minecraft:bedrock_floor",
+          "true_at_and_below": {
+            "above_bottom": 0
+          },
+          "false_at_and_above": {
+            "above_bottom": 5
+          }
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "minecraft:bedrock"
+          }
+        }
+      }
+    ]
+  }
+}
