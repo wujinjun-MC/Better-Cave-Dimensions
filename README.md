@@ -2,7 +2,7 @@
 
 - 20260721:
     - I finally have some spare time to resume the development.
-    - However the upstream [klinbee/Better-Cave-Worlds](https://github.com/klinbee/Better-Cave-Worlds) doesn't update for 9 months (as of today) so I will re-fork `main` branch to another repo, support new version(s) and publish to Modrinth (Better Cave Worlds fork)
+    - However the upstream [klinbee/Better-Cave-Worlds](https://github.com/klinbee/Better-Cave-Worlds) doesn't update for 9 months (as of today) so I will re-fork `main` branch to [wujinjun-MC/Better-Cave-Dimensions@Better-Cave-Worlds-updated](https://github.com/wujinjun-MC/Better-Cave-Dimensions/tree/Better-Cave-Worlds-updated), support new version(s) and publish to Modrinth (Better Cave Worlds fork) or make pull request.
     - Once the "upstream" work complete, I will work on my [Better-Cave-Dimensions](https://github.com/wujinjun-MC/Better-Cave-Dimensions) for new version(s) support.
     - Goals:
         - [x] Merge remaining commits from upstream
