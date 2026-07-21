@@ -4,6 +4,10 @@
     - I finally have some spare time to resume the development.
     - However the upstream [klinbee/Better-Cave-Worlds](https://github.com/klinbee/Better-Cave-Worlds) doesn't update for 9 months (as of today) so I will re-fork `main` branch to another repo, support new version(s) and publish to Modrinth (Better Cave Worlds fork)
     - Once the "upstream" work complete, I will work on my [Better-Cave-Dimensions](https://github.com/wujinjun-MC/Better-Cave-Dimensions) for new version(s) support.
+    - Goals:
+        - [x] Merge remaining commits from upstream
+        - [ ] Fork `Better-Cave-Worlds` and support new version(s), finally support 26.2
+        - [ ] Apply to `Better-Cave-Dimensions` to support new versions
 
 # Description
 `klinbee/Better-Cave-Worlds`, but in a dimension!
@@ -79,6 +83,7 @@ May only support 1.21.4+
         - Addon required: [Tidal Towns compat](#addon_compat_tidaltowns)
 - [ ] Extend-able height (e.g. -128~512)
 - [ ] Guidelines to create more cave dimensions / Cave dimension preset
+- [ ] Support latest Minecraft version
 
 [^1]: Can not be placed due to missing biomes. Use addon `Unlimited vanilla structures` can fix it.
 [^2]: May break bedrock roof
