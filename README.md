@@ -16,9 +16,14 @@ Tools used:
 
 - 1.21.11:
     - [25w42a](https://misode.github.io/versions/?id=25w42a):
-        - Many dimension type fields have been migrated to Environment Attributes: `ultrawarm`, `bed_works`, `respawn_anchor_works`, `cloud_height`, `piglin_safe`, and `has_raids`.
-        - The dimension type `natural` field has not been removed but its functionality has been migrated to `gameplay/nether_portal_spawns_piglin` Environment Attribute.
+        - Pack format version: 90.0, [90, 0]
+        - [dimension] [breaking] Many dimension type fields have been migrated to Environment Attributes: `ultrawarm`, `bed_works`, `respawn_anchor_works`, `cloud_height`, `piglin_safe`, and `has_raids`.
+        - [dimension] The dimension type `natural` field has not been removed but its functionality has been migrated to `gameplay/nether_portal_spawns_piglin` Environment Attribute.
         - See [Dimension type](https://minecraft.wiki/w/Dimension_type#History), [Environment attribute](https://minecraft.wiki/w/Environment_attribute)
+    - [25w45a](https://misode.github.io/versions/?id=25w45a):
+        - Pack format version: 93.0, [93, 0]
+        - [dimension] Added optional `timelines` field to dimension types to specify which timelines are active. Format: timeline ID, list of timeline IDs, or timeline tag.
+        - See [Timeline](https://minecraft.wiki/w/Timeline)
 </details>
 
 Want an independent cave dimension (1.21.4+)? Check my another fork/branch [Better-Cave-Dimensions](https://github.com/wujinjun-MC/Better-Cave-Dimensions/tree/main)
