@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:sea_pickle",
+            "Properties": {
+              "waterlogged": "true",
+              "pickles": "1"
+            }
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:sea_pickle",
+            "Properties": {
+              "waterlogged": "true",
+              "pickles": "2"
+            }
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:sea_pickle",
+            "Properties": {
+              "waterlogged": "true",
+              "pickles": "3"
+            }
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:sea_pickle",
+            "Properties": {
+              "waterlogged": "true",
+              "pickles": "4"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

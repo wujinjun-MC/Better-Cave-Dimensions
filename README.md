@@ -23,7 +23,7 @@ Tools used:
 <details>
 <summary>Changes that are needed to adapt:</summary>
 
-- 1.21.11:
+- [1.21.11](https://misode.github.io/versions/?id=1.21.11&tab=changelog):
     - [25w42a](https://misode.github.io/versions/?id=25w42a):
         - Pack format version: 90.0, [90, 0]
         - [dimension] [breaking] Many dimension type fields have been migrated to Environment Attributes: `ultrawarm`, `bed_works`, `respawn_anchor_works`, `cloud_height`, `piglin_safe`, and `has_raids`.
@@ -33,6 +33,39 @@ Tools used:
         - Pack format version: 93.0, [93, 0]
         - [dimension] Added optional `timelines` field to dimension types to specify which timelines are active. Format: timeline ID, list of timeline IDs, or timeline tag.
         - See [Timeline](https://minecraft.wiki/w/Timeline)
+- [26.1](https://misode.github.io/versions/?id=26.1&tab=changelog):
+    - [snapshot-1](https://misode.github.io/versions/?id=26.1-snapshot-1):
+        - Pack format version: 95.0, [95, 0]
+        - [environment-attribute] Added `visual/ambient_light_color` attribute to define both the ambient light tint and brightness. Default values: Overworld `#0A0A0A`, ...
+    - [snapshot-3](https://misode.github.io/versions/?id=26.1-snapshot-3):
+        - Pack format version: 97.0, [97, 0]
+        - [dimension] Added `default_clock` field to dimension types. This optional field specifies the default clock that will be used for the `/time` command.
+    - [snapshot-6](https://misode.github.io/versions/?id=26.1-snapshot-6):
+        - Pack format version: 99.0, [99, 0]
+        - [dimension] Added `has_ender_dragon_fight` boolean field to dimension types. Controls whether it is possible for an ender dragon fight to exist in the dimension.
+        - [worldgen] [breaking] `forest_rock` feature has been renamed to `block_blob`.
+            - However there is no change in `data/minecraft/worldgen/placed_feature/forest_rock.json` comparing versions before and after. Ignore.
+        - [worldgen] [breaking] `ice_spike` feature has been renamed to `spike`.
+            - However there is no change in `data/minecraft/worldgen/placed_feature/ice_spike.json` comparing versions before and after. Ignore.
+    - [pre-1](https://misode.github.io/versions/?id=26.1-pre-1):
+        - Pack format version: 101.0, [101, 0]
+        - [worldgen] [breaking] Removed the `flower`, `flower_no_bonemeal`, and `random_patch` feature types
+            - Instead, patches can be expressed as a sequence of `count` and `random_offset` placement modifiers
+            - Affected:
+                - `data/minecraft/worldgen/placed_feature`: `sea_pickle.json`, `seagrass_cold.json`, `seagrass_deep_cold.json`, `seagrass_deep_warm.json`, `seagrass_deep.json`, `seagrass_normal.json`, `seagrass_river.json`, `seagrass_swamp.json`, `seagrass_warm.json`:
+                	- "tries" is now a "minecraft:count" placement setting
+                    - "xz_spread" and "y_spread" are now a single "random_offset" placement setting, using "trapezoid" number providers
+                    - "config.feature.placement" is now merged with "placement" in the placed_feature
+                - `data/minecraft/worldgen/configured_feature`: `sea_pickle.json`, `seagrass_mid.json`, `seagrass_short.json`, `seagrass_slightly_less_short.json`, `seagrass_tall.json`:
+                    - The configured feature itself (the entire file) should now be what was previously under ".config.feature.feature"
+                - Any other `data/minecraft/worldgen/placed_feature`s that reference affected `configured_feature`s: Modify `.feature` string to match new name + merge `tries` and `*_spread`
+    - [others](https://misode.github.io/versions/?id=26.1-undefined) (not mentioned in Versions Explorer):
+        - Pack format version: ?.0, [?, 0] (Surely 94.1~101.1)
+        - `data/minecraft/worldgen/placed_feature`: `.placement.predicate.type` `minecraft:matching_blocks`->`minecraft:matching_block_tag`, with `.placement.predicate.blocks`->`.placement.predicate.tag`. Affected: `grass_bonemeal.json`
+    - Notes:
+        - Hardest version advancement (spent longest time to support this version)
+        - In `data/minecraft/worldgen/placed_feature` and `data/overlay_*/worldgen/placed_feature` there are some JSONs that have no diff compared to vanilla, PLEASE CONSIDER REMOVING THEM FOR BETTER MAINTAINABILITY !!!
+            - Including but not limited to: `flower_plain.json`, `grass_bonemeal.json`, some `patch_*.json`
 </details>
 
 Want an independent cave dimension (1.21.4+)? Check my another fork/branch [Better-Cave-Dimensions](https://github.com/wujinjun-MC/Better-Cave-Dimensions/tree/main)
