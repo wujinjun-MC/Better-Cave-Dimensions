@@ -66,6 +66,22 @@ Tools used:
         - Hardest version advancement (spent longest time to support this version)
         - In `data/minecraft/worldgen/placed_feature` and `data/overlay_*/worldgen/placed_feature` there are some JSONs that have no diff compared to vanilla, PLEASE CONSIDER REMOVING THEM FOR BETTER MAINTAINABILITY !!!
             - Including but not limited to: `flower_plain.json`, `grass_bonemeal.json`, some `patch_*.json`
+- Original author (klinbee) forgot to adapt to old updates
+    - Some `placed_feature`s contain `{"type": "minecraft:in_square"}, {"type": "minecraft:heightmap", "heightmap": "*"}` in `.placement`. Must be replaced by `{"type": "minecraft:count_on_every_layer", "count": * (default =1)}` or the feature will not be placed.
+        - List:
+            - 1.20.1 (datapack base/minimum version)
+            - 1.21.5
+                - [patch_bush.json](https://mcasset.cloud/1.21.5...1.21.4/data/minecraft/worldgen/placed_feature/patch_bush.json)
+                - [patch_dry_grass_badlands.json](https://mcasset.cloud/1.21.5...1.21.4/data/minecraft/worldgen/placed_feature/patch_dry_grass_badlands.json)
+                - [patch_dry_grass_desert.json](https://mcasset.cloud/1.21.5...1.21.4/data/minecraft/worldgen/placed_feature/patch_dry_grass_desert.json)
+                - [patch_firefly_bush_near_water.json](https://mcasset.cloud/1.21.5...1.21.4/data/minecraft/worldgen/placed_feature/patch_firefly_bush_near_water.json)
+                - [patch_firefly_bush_near_water_swamp.json](https://mcasset.cloud/1.21.5...1.21.4/data/minecraft/worldgen/placed_feature/patch_firefly_bush_near_water_swamp.json)
+                - [patch_firefly_bush_swamp.json](https://mcasset.cloud/1.21.5...1.21.4/data/minecraft/worldgen/placed_feature/patch_firefly_bush_swamp.json)
+                - [patch_grass_meadow.json](https://mcasset.cloud/1.21.5...1.21.4/data/minecraft/worldgen/placed_feature/patch_grass_meadow.json)
+                - [patch_leaf_litter.json](https://mcasset.cloud/1.21.5...1.21.4/data/minecraft/worldgen/placed_feature/patch_leaf_litter.json)
+                - [wildflowers_birch_forest.json](https://mcasset.cloud/1.21.5...1.21.4/data/minecraft/worldgen/placed_feature/wildflowers_birch_forest.json)
+                - [wildflowers_meadow.json](https://mcasset.cloud/1.21.5...1.21.4/data/minecraft/worldgen/placed_feature/wildflowers_meadow.json)
+        - In `26.1-pre-1` files are changed because of feature types removal, but were not tracked without re-check due to non existence!
 </details>
 
 Want an independent cave dimension (1.21.4+)? Check my another fork/branch [Better-Cave-Dimensions](https://github.com/wujinjun-MC/Better-Cave-Dimensions/tree/main)
