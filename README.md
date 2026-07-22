@@ -2,7 +2,7 @@
 
 This is an unofficial fork of [klinbee/Better-Cave-Worlds](https://github.com/klinbee/Better-Cave-Worlds) to support newer Minecraft versions, as the original author [klinbee](https://github.com/klinbee) stopped maintaining since Oct 18, 2025. ([last commit](https://github.com/klinbee/Better-Cave-Worlds/commit/cd8e17e98e29c024fc554cecf6763d1b8783f1c3))
 
-AI / LLM is prohibited, for best precision and accuracy.
+AI / LLM is not used in datapack development (for best precision and accuracy) but may be used in README/icon/other assets generation.
 
 Tools used:
 - [Data Pack Generators - Versions Explorer](https://misode.github.io/versions/): Compare datapack structure and check for breaking changes among versions
