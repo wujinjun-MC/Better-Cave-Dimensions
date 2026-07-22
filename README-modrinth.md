@@ -11,7 +11,7 @@ This fork exists to keep the project alive by:
 - fixing bugs
 - accepting contributes from issues and pull requests
 
-> Previously I deeply involved in my derivation, [Better Cave Dimensions](https://github.com/wujinjun-MC/Better-Cave-Dimensions/tree/main) (may also publish to Modrinth later), and had a joyful experience in Singleplayer and with fellows/friends in [1A1S SMP](https://www.wdsjfwq.com/server-1170.html) (which, sadly, is now offline). Because development by the original creators has ceased, other players who love this project—myself included—are forced to remain on old Minecraft version. With no one in the player community maintaining the project, I believe it is time to bring the datapack to the latest Minecraft releases.
+> Previously I deeply involved in my derivative, [Better Cave Dimensions](https://github.com/wujinjun-MC/Better-Cave-Dimensions/tree/main) (may also publish to Modrinth later), and had a joyful experience in Singleplayer and with fellows/friends in [1A1S SMP](https://www.wdsjfwq.com/server-1170.html) (which, sadly, is now offline). Because development by the original creators has ceased, other players who love this project—myself included—are forced to remain on old Minecraft version. With no one in the player community maintaining the project, I believe it is time to bring the datapack to the latest Minecraft releases.
 
 ---
 
