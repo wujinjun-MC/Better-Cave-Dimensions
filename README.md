@@ -62,10 +62,23 @@ Tools used:
     - [others](https://misode.github.io/versions/?id=26.1-undefined) (not mentioned in Versions Explorer):
         - Pack format version: ?.0, [?, 0] (Surely 94.1~101.1)
         - `data/minecraft/worldgen/placed_feature`: `.placement.predicate.type` `minecraft:matching_blocks`->`minecraft:matching_block_tag`, with `.placement.predicate.blocks`->`.placement.predicate.tag`. Affected: `grass_bonemeal.json`
+        - `data/minecraft/worldgen/noise_settings/caves.json`: `.noise_router.temperature` and `.noise_router.vegetation` are set to 0.0 instead of generating via `minecraft:shifted_noise`.
+            - However, this will eliminate some biomes including `minecraft:cold_ocean`. Ignore.
     - Notes:
         - Hardest version advancement (spent longest time to support this version)
         - In `data/minecraft/worldgen/placed_feature` and `data/overlay_*/worldgen/placed_feature` there are some JSONs that have no diff compared to vanilla, PLEASE CONSIDER REMOVING THEM FOR BETTER MAINTAINABILITY !!!
             - Including but not limited to: `flower_plain.json`, `grass_bonemeal.json`, some `patch_*.json`
+- [26.2](https://misode.github.io/versions/?id=26.2&tab=changelog):
+    - [others](https://misode.github.io/versions/?id=26.2-undefined) (not mentioned in Versions Explorer):
+        - Pack format version: ?.0, [?, 0] (Surely 101.1~107.1)
+        - `data/minecraft/worldgen`:
+            - When removing the `flower` feature types, `placed_feature`s (`flower_default.json` and `flower_warm.json`) are affected by `configured_feature`s but (Mojang) forgot to modify. Now they are added to 26.2 support (overlay_26_2) to fix, but will not be added to 26.1 support (overlay_26_1), to match vanilla functionality.
+            - Remove `.placement.noise_offset` in `placed_feature`s: `kelp_cold.json`, `kelp_warm.json`, `warm_ocean_vegetation.json`
+            - `density_function/overworld/final_density.json`: Sync `data/minecraft/worldgen/noise_settings/caves.json` `.noise_router.final_density.argument` changes (before: outer is `type=minecraft:mul`, `type=minecraft:interpolated` is under an `argument`; after: swapped)
+            - `data/minecraft/worldgen/noise_settings/overworld.json`:
+                - Add support for sulfur caves
+                - For `type=minecraft:biome` condition, if `biome_is` only contain one value, directly `biome_is=""` instead of `biome_is=[""]`
+                    - Example: `"biome_is": ["minecraft:wooded_badlands"]` -> `"biome_is": "minecraft:wooded_badlands"`
 - Original author (klinbee) forgot to adapt to old updates
     - Some `placed_feature`s contain `{"type": "minecraft:in_square"}, {"type": "minecraft:heightmap", "heightmap": "*"}` in `.placement`. Must be replaced by `{"type": "minecraft:count_on_every_layer", "count": * (default =1)}` or the feature will not be placed.
         - List:
