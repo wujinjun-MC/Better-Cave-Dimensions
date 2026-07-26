@@ -97,7 +97,7 @@ Tools used:
         - In `26.1-pre-1` files are changed because of feature types removal, but were not tracked without re-check due to non existence!
 </details>
 
-Want an independent cave dimension (1.21.4+)? Check my another fork/branch [Better-Cave-Dimensions](https://github.com/wujinjun-MC/Better-Cave-Dimensions/tree/main)
+Want an independent cave dimension? Check my `Better Cave Dimensions` ([1.21.4~1.21.8](https://github.com/wujinjun-MC/Better-Cave-Dimensions/tree/Better-Cave-Dimensions-legacy) or [26.2+](https://github.com/wujinjun-MC/Better-Cave-Dimensions/tree/Better-Cave-Dimensions-26.2_or_later)).
 
 ---
 
