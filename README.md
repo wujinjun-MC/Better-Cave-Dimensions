@@ -6,8 +6,10 @@
     - Once the "upstream" work complete, I will work on my [Better-Cave-Dimensions](https://github.com/wujinjun-MC/Better-Cave-Dimensions) for new version(s) support.
     - Goals:
         - [x] Merge remaining commits from upstream
-        - [ ] Fork `Better-Cave-Worlds` and support new version(s), finally support 26.2
-        - [ ] Apply to `Better-Cave-Dimensions` to support new versions
+        - [x] Fork `Better-Cave-Worlds` and support new version(s), finally support 26.2
+        - ~~[ ] Apply to `Better-Cave-Dimensions` to support new versions~~
+- 20260726
+    - After finishing new version support in [wujinjun-MC/Better-Cave-Dimensions@Better-Cave-Worlds-updated](https://github.com/wujinjun-MC/Better-Cave-Dimensions/tree/Better-Cave-Worlds-updated), `Better-Cave-Dimensions` support is currently in process. However, given the current significant gap, this branch is no longer maintained (for Minecraft version 1.21.4~1.21.8) and renamed `main`->`Better-Cave-Dimensions-legacy`. Switch to branch [Better-Cave-Dimensions-26.2_or_later](https://github.com/wujinjun-MC/Better-Cave-Dimensions/tree/Better-Cave-Dimensions-26.2_or_later) to obtain the versions adapted for the Minecraft version 26.2 or later.
 
 # Description
 `klinbee/Better-Cave-Worlds`, but in a dimension!
