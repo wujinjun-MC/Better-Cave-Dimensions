@@ -4,6 +4,8 @@ This is an unofficial fork of [klinbee/Better-Cave-Worlds](https://github.com/kl
 
 AI / LLM is not used in datapack development (for best precision and accuracy) but may be used in README/icon/other assets generation.
 
+Install: [Modrinth](https://modrinth.com/datapack/better-cave-worlds-updated)
+
 Tools used:
 - [Data Pack Generators - Versions Explorer](https://misode.github.io/versions/): Compare datapack structure and check for breaking changes among versions
 - [Minecraft Assets Explorer](https://mcasset.cloud/): Compare file in vanilla datapack between two versions side by side.
