@@ -6,11 +6,11 @@
   "input": {
     "type": "minecraft:squeeze",
     "argument": {
-      "type": "minecraft:mul",
-      "argument1": 0.64,
-      "argument2": {
-        "type": "minecraft:interpolated",
-        "argument": {
+      "type": "minecraft:interpolated",
+      "argument": {
+        "type": "minecraft:mul",
+        "argument1": 0.64,
+        "argument2": {
           "type": "minecraft:blend_density",
           "argument": {
             "type": "minecraft:add",
