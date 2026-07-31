@@ -11,7 +11,15 @@
         "color": "#AAAAAA"
       },
       {
-        "text": "Klinbee",
+        "text": "Klinbee, ",
+        "color": "#ffbbbb"
+      },
+      {
+        "text": "updated by ",
+        "color": "#AAAAAA"
+      },
+      {
+        "text": "Wujinjun",
         "color": "#ffbbbb"
       }
     ],
