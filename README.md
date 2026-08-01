@@ -200,6 +200,10 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
     - `has_skylight` -> true: For players who prefer building over the ceiling
     - `.attributes.minecraft:visual/cloud_height` -> 128: Lower cloud height
     - `min_y` -> -128, `height` and `logical_height` -> 448: Height range -128~320 (with later `noise_settings` changes, players can build over the ceiling 256~320 or below the bedrock -128~-64)
+- Rename and Adjust `worldgen/noise_settings`
+    - `overworld.json`->`cave.json`
+    - `sea_level` -> 32
+    - `.noise.height` -> 384: See above ("Height range")
 
 ---
 
