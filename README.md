@@ -196,7 +196,10 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
             ```
         - Place in `Better_Cave_Dimensions/data/better_cave_dimensions/dimension/cave.json`
     - After: Also rename `Better_Cave_Dimensions/data/better_cave_dimensions/dimension_type/overworld.json`->`Better_Cave_Dimensions/data/better_cave_dimensions/dimension_type/cave.json` because the template uses `.generator.settings`=`better_cave_dimensions:cave`
-- Adjust dimension definition
+- Rename and Adjust `dimension_type` (dimension settings)
+    - `has_skylight` -> true: For players who prefer building over the ceiling
+    - `.attributes.minecraft:visual/cloud_height` -> 128: Lower cloud height
+    - `min_y` -> -128, `height` and `logical_height` -> 448: Height range -128~320 (with later `noise_settings` changes, players can build over the ceiling 256~320 or below the bedrock -128~-64)
 
 ---
 
