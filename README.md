@@ -95,6 +95,111 @@ Simply go to [releases](https://github.com/wujinjun-MC/Better-Cave-Dimensions/re
 
 ---
 
+## Dev Details
+
+<details>
+<summary>Stage 1: Make it a seperate dimension</summary>
+
+Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinjun-MC/Better-Cave-Dimensions/commits/Better-Cave-Dimensions-legacy):
+- `License.txt` add my copyright info
+- Merge overlays (only support latest versions); `pack.mcmeta` adapt to latest version requirements
+- Rename to better cave dimensions
+- Create dimension definition
+    - [An example from legacy branch](https://raw.githubusercontent.com/wujinjun-MC/Better-Cave-Dimensions/d52f84c7076c3999e43257f777801b3e0e87192a/Better_Cave_Dimensions/data/better_cave_dimensions/dimension/cave.json)
+    - Step by step:
+        - Generate biome list (with condition info) from vanilla server.jar
+            - command: `java -DbundlerMainClass="net.minecraft.data.Main" -jar server.jar --server --reports --output generated`
+            - file: `generated/reports/biome_parameters/minecraft/*.json`
+        - (optional, enabled) merge overworld and nether to allow nether biomes in cave dimension. (in `.biomes` array, copy those in `nether.json` into `overworld.json`)
+        - Replace the namespace of biome: `minecraft` -> `better_cave_dimensions` (named `all_biomes.json`)
+            - Before:
+                ```json
+                {
+                  "biomes": [
+                    {
+                      "biome": "minecraft:mushroom_fields",
+                      "parameters": {...}
+                    },
+                    ...
+                  ]
+                }
+                ```
+            - After:
+                ```json
+                {
+                  "biomes": [
+                    {
+                      "biome": "better_cave_dimensions:mushroom_fields",
+                      "parameters": {...}
+                    },
+                    ...
+                  ]
+                }
+                ```
+            - Trick: find `"biome": "minecraft:`, "replace all" with `"biome": "better_cave_dimensions:`
+        - Use this template, replace `.generator.biome_source.biomes` with `.biomes` in `all_biomes.json`
+            ```json
+            {
+              "type": "better_cave_dimensions:cave",
+              "generator": {
+                "type": "minecraft:noise",
+                "settings": "better_cave_dimensions:cave",
+                "biome_source": {
+                  "type": "minecraft:multi_noise",
+                  "biomes": [...]
+                }
+              }
+            }
+            ```
+        - Finally you will get:
+            ```json
+            {
+              "type": "better_cave_dimensions:cave",
+              "generator": {
+                "type": "minecraft:noise",
+                "settings": "better_cave_dimensions:cave",
+                "biome_source": {
+                  "type": "minecraft:multi_noise",
+                  "biomes": [
+                    {
+                      "biome": "better_cave_dimensions:mushroom_fields",
+                      "parameters": {
+                        "continentalness": [
+                          -1.2,
+                          -1.05
+                        ],
+                        "depth": 0.0,
+                        "erosion": [
+                          -1.0,
+                          1.0
+                        ],
+                        "humidity": [
+                          -1.0,
+                          1.0
+                        ],
+                        "offset": 0.0,
+                        "temperature": [
+                          -1.0,
+                          1.0
+                        ],
+                        "weirdness": [
+                          -1.0,
+                          1.0
+                        ]
+                      }
+                    },
+                    ...
+                  ]
+                }
+              }
+            }
+            ```
+        - Place in `Better_Cave_Dimensions/data/better_cave_dimensions/dimension/cave.json`
+    - After: Also rename `Better_Cave_Dimensions/data/better_cave_dimensions/dimension_type/overworld.json`->`Better_Cave_Dimensions/data/better_cave_dimensions/dimension_type/cave.json` because the template uses `.generator.settings`=`better_cave_dimensions:cave`
+- Adjust dimension definition
+
+---
+
 ## Bug Fix
 
 - [ ] Some terrain generation can break bedrock roof (e.g. Cold biomes (bedrocks are replaced by snow blocks))
