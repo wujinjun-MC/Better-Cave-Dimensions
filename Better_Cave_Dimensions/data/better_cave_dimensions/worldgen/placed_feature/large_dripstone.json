@@ -1,9 +1,13 @@
 {
-  "feature": "minecraft:desert_well",
+  "feature": "minecraft:large_dripstone",
   "placement": [
     {
-      "type": "minecraft:rarity_filter",
-      "chance": 1000
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:uniform",
+        "max_inclusive": 48,
+        "min_inclusive": 10
+      }
     },
     {
       "type": "minecraft:in_square"

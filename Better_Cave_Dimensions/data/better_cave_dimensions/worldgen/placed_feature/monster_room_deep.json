@@ -1,9 +1,9 @@
 {
-  "feature": "minecraft:desert_well",
+  "feature": "minecraft:monster_room",
   "placement": [
     {
-      "type": "minecraft:rarity_filter",
-      "chance": 1000
+      "type": "minecraft:count",
+      "count": 4
     },
     {
       "type": "minecraft:in_square"
@@ -13,7 +13,7 @@
       "height": {
         "type": "minecraft:uniform",
         "max_inclusive": {
-          "below_top": 0
+          "absolute": -1
         },
         "min_inclusive": {
           "above_bottom": 0

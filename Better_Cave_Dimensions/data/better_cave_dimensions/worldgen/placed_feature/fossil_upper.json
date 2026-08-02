@@ -1,9 +1,9 @@
 {
-  "feature": "minecraft:desert_well",
+  "feature": "minecraft:fossil_coal",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 1000
+      "chance": 64
     },
     {
       "type": "minecraft:in_square"

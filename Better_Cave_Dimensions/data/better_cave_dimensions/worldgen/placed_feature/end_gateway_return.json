@@ -1,0 +1,25 @@
+{
+  "feature": "minecraft:end_gateway_return",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 700
+    },
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 1
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 0,
+      "y_spread": {
+        "type": "minecraft:uniform",
+        "max_inclusive": 9,
+        "min_inclusive": 3
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

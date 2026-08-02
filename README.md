@@ -218,7 +218,83 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
 - Adjust/Add `configured_feature`
     - Replace `better_cave_worlds`->`better_cave_dimensions` for `$.config.features[*].feature` and `$.config.default` if `"type": "minecraft:random_selector"`
 - Adjust/Add `placed_feature`
+    - Remove redundancy (no diff compared to vanilla)
     - Replace `better_cave_worlds`->`better_cave_dimensions`
+    - Scan rest of files in vanilla. If contains strict rules (below) that make it impossible to generate in this dimension, simply import and eliminate/modify.
+        - Strict `height_range`
+            - Suggestion: `[0/5 blocks above "min_y"]~[0/5 blocks below max height]` or directly remove
+            - Example:
+                - `amethyst_geode`: It should allow to generate in wider height range since the whole dimension is cave
+            - Ores (`ore_*`) are excepted (Or you can enable addon `TODO` to unlock)
+        - `in_square`+`heightmap`
+            - 1
+                - Pattern:
+                    ```json
+                    {
+                      "type": "minecraft:in_square"
+                    },
+                    {
+                      "type": "minecraft:heightmap",
+                      "heightmap": * (WORLD_SURFACE_WG, MOTION_BLOCKING)
+                    }
+                    ```
+                - Replace:
+                    ```json
+                    {
+                      "type": "minecraft:count_on_every_layer",
+                      "count": 1
+                    }
+                    ```
+            - 2
+                - Pattern:
+                    ```json
+                    {//this part is optional
+                      "type": "minecraft:in_square"
+                    },
+                    {
+                      "type": "minecraft:surface_water_depth_filter",
+                      "max_water_depth": 0
+                    },
+                    {
+                      "type": "minecraft:heightmap",
+                      "heightmap": "OCEAN_FLOOR"
+                    }
+                    ```
+                - Replace:
+                    ```json
+                    {
+                      "type": "minecraft:count_on_every_layer",
+                      "count": 1
+                    },
+                    {
+                      "type": "minecraft:block_predicate_filter",
+                      "predicate": {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          0,
+                          0
+                        ],
+                        "blocks": "minecraft:air"
+                      }
+                    }
+                    ```
+        - Other `heatmap`
+            - Pattern:
+                ```json
+                {
+                  "type": "minecraft:surface_relative_threshold_filter",
+                  "heightmap": "OCEAN_FLOOR_WG",
+                  "max_inclusive": *
+                }
+                ```
+            - Replace:
+                ```json
+                {
+                  "type": "minecraft:count_on_every_layer",
+                  "count": 1
+                }
+                ```
 - Add biomes in `worldgen/biome` (TODO; should do after `configure_feature` and `placed_feature` are ready)
     - Path: `Better_Cave_Dimensions/data/better_cave_dimensions/worldgen/biome`
     - Step by step:

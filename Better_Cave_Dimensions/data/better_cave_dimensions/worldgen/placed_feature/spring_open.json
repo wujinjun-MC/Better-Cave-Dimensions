@@ -1,9 +1,9 @@
 {
-  "feature": "minecraft:desert_well",
+  "feature": "minecraft:spring_nether_open",
   "placement": [
     {
-      "type": "minecraft:rarity_filter",
-      "chance": 1000
+      "type": "minecraft:count",
+      "count": 8
     },
     {
       "type": "minecraft:in_square"

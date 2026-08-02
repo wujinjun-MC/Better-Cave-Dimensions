@@ -1,9 +1,9 @@
 {
-  "feature": "better_cave_dimensions:seagrass_short",
+  "feature": "minecraft:red_mushroom",
   "placement": [
     {
-      "type": "minecraft:count",
-      "count": 80
+      "type": "minecraft:rarity_filter",
+      "chance": 2
     },
     {
       "type": "minecraft:in_square"
@@ -25,35 +25,28 @@
     },
     {
       "type": "minecraft:count",
-      "count": 2
+      "count": 96
     },
     {
       "type": "minecraft:random_offset",
       "xz_spread": {
         "type": "minecraft:trapezoid",
-        "min": -5,
-        "max": 5,
+        "max": 7,
+        "min": -7,
         "plateau": 0
       },
       "y_spread": {
         "type": "minecraft:trapezoid",
-        "min": -2,
-        "max": 2,
+        "max": 3,
+        "min": -3,
         "plateau": 0
       }
     },
     {
-      "type": "minecraft:environment_scan",
-      "direction_of_search": "down",
-      "max_steps": 6,
-      "target_condition": {
-        "type": "minecraft:has_sturdy_face",
-        "offset": [0, -1, 0],
-        "direction": "up"
-      },
-      "allowed_search_condition": {
-        "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:water"
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_block_tag",
+        "tag": "minecraft:air"
       }
     }
   ]

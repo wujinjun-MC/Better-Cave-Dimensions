@@ -1,12 +1,13 @@
 {
-  "feature": "minecraft:desert_well",
+  "feature": "minecraft:glow_lichen",
   "placement": [
     {
-      "type": "minecraft:rarity_filter",
-      "chance": 1000
-    },
-    {
-      "type": "minecraft:in_square"
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:uniform",
+        "max_inclusive": 157,
+        "min_inclusive": 104
+      }
     },
     {
       "type": "minecraft:height_range",
@@ -19,6 +20,13 @@
           "above_bottom": 0
         }
       }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 1
     },
     {
       "type": "minecraft:biome"
