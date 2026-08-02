@@ -215,9 +215,9 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
     - In `$.noise_router`, replace `better_cave_worlds:overworld`->`better_cave_dimensions:cave`
     - Replace other `better_cave_worlds`->`better_cave_dimensions`
     - Find all `biome_is`, replace namespace `minecraft`->`better_cave_dimensions`
-- Adjust/Add `configured_feature`
+- Adjust/Add `worldgen/configured_feature`
     - Replace `better_cave_worlds`->`better_cave_dimensions` for `$.config.features[*].feature` and `$.config.default` if `"type": "minecraft:random_selector"`
-- Adjust/Add `placed_feature`
+- Adjust/Add `worldgen/placed_feature`
     - Remove redundancy (no diff compared to vanilla)
     - Replace `better_cave_worlds`->`better_cave_dimensions`
     - Scan rest of files in vanilla. If contains strict rules (below) that make it impossible to generate in this dimension, simply import and eliminate/modify.
