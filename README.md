@@ -102,14 +102,16 @@ Simply go to [releases](https://github.com/wujinjun-MC/Better-Cave-Dimensions/re
 
 Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinjun-MC/Better-Cave-Dimensions/commits/Better-Cave-Dimensions-legacy):
 - `License.txt` add my copyright info
+- Generate vanilla `data` (for datapack file and structure) and `reports` for biome parameters from server.jar
+    - command: `java -DbundlerMainClass="net.minecraft.data.Main" -jar server.jar --server --reports --output generated`
+    - Now the files are in folder `generated` (Use `.gitignore` to ignore this folder)
 - Merge overlays (only support latest versions); `pack.mcmeta` adapt to latest version requirements
 - Rename to better cave dimensions
 - Create dimension definition
     - [An example from legacy branch](https://raw.githubusercontent.com/wujinjun-MC/Better-Cave-Dimensions/d52f84c7076c3999e43257f777801b3e0e87192a/Better_Cave_Dimensions/data/better_cave_dimensions/dimension/cave.json)
     - Step by step:
-        - Generate biome list (with condition info) from vanilla server.jar
-            - command: `java -DbundlerMainClass="net.minecraft.data.Main" -jar server.jar --server --reports --output generated`
-            - file: `generated/reports/biome_parameters/minecraft/*.json`
+        - Prepare biome list (with condition info) from "generated"
+            - files: `generated/reports/biome_parameters/minecraft/*.json`
         - (optional, enabled) merge overworld and nether to allow nether biomes in cave dimension. (in `.biomes` array, copy those in `nether.json` into `overworld.json`)
         - Replace the namespace of biome: `minecraft` -> `better_cave_dimensions` (named `all_biomes.json`)
             - Before:
@@ -204,6 +206,15 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
     - `overworld.json`->`cave.json`
     - `sea_level` -> 32
     - `.noise.height` -> 384: See above ("Height range")
+    - In `.noise_router`, replace `better_cave_worlds:overworld`->`better_cave_dimensions:cave`
+    - Replace other `better_cave_worlds`->`better_cave_dimensions`
+    - Find all `biome_is`, replace namespace `minecraft`->`better_cave_dimensions`
+- Adjust/Add `placed_feature`
+    - Replace `better_cave_worlds`->`better_cave_dimensions`
+- Add biomes in `worldgen/biome` (TODO; should do after `configure_feature` and `placed_feature` are ready)
+    - Path: `Better_Cave_Dimensions/data/better_cave_dimensions/worldgen/biome`
+    - Step by step:
+        - 
 
 ---
 
