@@ -1,0 +1,221 @@
+{
+  "attributes": {
+    "minecraft:audio/background_music": {
+      "default": {
+        "max_delay": 24000,
+        "min_delay": 12000,
+        "sound": "minecraft:music.overworld.swamp"
+      }
+    },
+    "minecraft:gameplay/increased_fire_burnout": true,
+    "minecraft:visual/sky_color": "#78a7ff",
+    "minecraft:visual/water_fog_color": "#232317",
+    "minecraft:visual/water_fog_end_distance": {
+      "argument": 0.85,
+      "modifier": "multiply"
+    }
+  },
+  "carvers": [
+    "minecraft:cave",
+    "minecraft:cave_extra_underground",
+    "minecraft:canyon"
+  ],
+  "downfall": 0.9,
+  "effects": {
+    "dry_foliage_color": "#7b5334",
+    "foliage_color": "#6a7039",
+    "grass_color_modifier": "swamp",
+    "water_color": "#617b64"
+  },
+  "features": [
+    [],
+    [
+      "better_cave_dimensions:lake_lava_underground",
+      "minecraft:lake_lava_surface"
+    ],
+    [
+      "better_cave_dimensions:amethyst_geode"
+    ],
+    [
+      "better_cave_dimensions:fossil_upper",
+      "better_cave_dimensions:fossil_lower",
+      "minecraft:monster_room",
+      "better_cave_dimensions:monster_room_deep"
+    ],
+    [],
+    [],
+    [
+      "better_cave_dimensions:ore_dirt",
+      "better_cave_dimensions:ore_gravel",
+      "better_cave_dimensions:ore_granite_upper",
+      "better_cave_dimensions:ore_granite_lower",
+      "better_cave_dimensions:ore_diorite_upper",
+      "better_cave_dimensions:ore_diorite_lower",
+      "better_cave_dimensions:ore_andesite_upper",
+      "better_cave_dimensions:ore_andesite_lower",
+      "better_cave_dimensions:ore_tuff",
+      "better_cave_dimensions:ore_coal_upper",
+      "better_cave_dimensions:ore_coal_lower",
+      "better_cave_dimensions:ore_iron_upper",
+      "better_cave_dimensions:ore_iron_middle",
+      "better_cave_dimensions:ore_iron_small",
+      "better_cave_dimensions:ore_gold",
+      "better_cave_dimensions:ore_gold_lower",
+      "better_cave_dimensions:ore_redstone",
+      "better_cave_dimensions:ore_redstone_lower",
+      "better_cave_dimensions:ore_diamond",
+      "better_cave_dimensions:ore_diamond_medium",
+      "better_cave_dimensions:ore_diamond_large",
+      "better_cave_dimensions:ore_diamond_buried",
+      "better_cave_dimensions:ore_lapis",
+      "better_cave_dimensions:ore_lapis_buried",
+      "better_cave_dimensions:ore_copper",
+      "better_cave_dimensions:underwater_magma",
+      "better_cave_dimensions:disk_clay"
+    ],
+    [],
+    [
+      "better_cave_dimensions:spring_water",
+      "better_cave_dimensions:spring_lava"
+    ],
+    [
+      "better_cave_dimensions:glow_lichen",
+      "better_cave_dimensions:trees_swamp",
+      "better_cave_dimensions:flower_swamp",
+      "better_cave_dimensions:patch_grass_normal",
+      "better_cave_dimensions:patch_dead_bush",
+      "better_cave_dimensions:patch_waterlily",
+      "better_cave_dimensions:brown_mushroom_swamp",
+      "better_cave_dimensions:red_mushroom_swamp",
+      "better_cave_dimensions:brown_mushroom_normal",
+      "better_cave_dimensions:red_mushroom_normal",
+      "better_cave_dimensions:patch_sugar_cane_swamp",
+      "better_cave_dimensions:patch_pumpkin",
+      "better_cave_dimensions:patch_firefly_bush_swamp",
+      "better_cave_dimensions:patch_firefly_bush_near_water_swamp",
+      "better_cave_dimensions:seagrass_swamp"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ],
+  "has_precipitation": true,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [
+      {
+        "type": "minecraft:bat",
+        "maxCount": 8,
+        "minCount": 8,
+        "weight": 10
+      }
+    ],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "minecraft:sheep",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 12
+      },
+      {
+        "type": "minecraft:pig",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 10
+      },
+      {
+        "type": "minecraft:chicken",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 10
+      },
+      {
+        "type": "minecraft:cow",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 8
+      },
+      {
+        "type": "minecraft:frog",
+        "maxCount": 5,
+        "minCount": 2,
+        "weight": 10
+      }
+    ],
+    "misc": [],
+    "monster": [
+      {
+        "type": "minecraft:spider",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 100
+      },
+      {
+        "type": "minecraft:zombie",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 95
+      },
+      {
+        "type": "minecraft:zombie_villager",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 5
+      },
+      {
+        "type": "minecraft:skeleton",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 70
+      },
+      {
+        "type": "minecraft:creeper",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 100
+      },
+      {
+        "type": "minecraft:slime",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 100
+      },
+      {
+        "type": "minecraft:enderman",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 10
+      },
+      {
+        "type": "minecraft:witch",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 5
+      },
+      {
+        "type": "minecraft:slime",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 1
+      },
+      {
+        "type": "minecraft:bogged",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 30
+      }
+    ],
+    "underground_water_creature": [
+      {
+        "type": "minecraft:glow_squid",
+        "maxCount": 6,
+        "minCount": 4,
+        "weight": 10
+      }
+    ],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.8
+}

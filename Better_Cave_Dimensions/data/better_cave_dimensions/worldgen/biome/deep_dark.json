@@ -1,0 +1,96 @@
+{
+  "attributes": {
+    "minecraft:audio/background_music": {
+      "default": {
+        "max_delay": 24000,
+        "min_delay": 12000,
+        "sound": "minecraft:music.overworld.deep_dark"
+      }
+    },
+    "minecraft:visual/sky_color": "#78a7ff"
+  },
+  "carvers": [
+    "minecraft:cave",
+    "minecraft:cave_extra_underground",
+    "minecraft:canyon"
+  ],
+  "downfall": 0.4,
+  "effects": {
+    "water_color": "#3f76e4"
+  },
+  "features": [
+    [],
+    [],
+    [
+      "better_cave_dimensions:amethyst_geode"
+    ],
+    [
+      "minecraft:monster_room",
+      "better_cave_dimensions:monster_room_deep"
+    ],
+    [],
+    [],
+    [
+      "better_cave_dimensions:ore_dirt",
+      "better_cave_dimensions:ore_gravel",
+      "better_cave_dimensions:ore_granite_upper",
+      "better_cave_dimensions:ore_granite_lower",
+      "better_cave_dimensions:ore_diorite_upper",
+      "better_cave_dimensions:ore_diorite_lower",
+      "better_cave_dimensions:ore_andesite_upper",
+      "better_cave_dimensions:ore_andesite_lower",
+      "better_cave_dimensions:ore_tuff",
+      "better_cave_dimensions:ore_coal_upper",
+      "better_cave_dimensions:ore_coal_lower",
+      "better_cave_dimensions:ore_iron_upper",
+      "better_cave_dimensions:ore_iron_middle",
+      "better_cave_dimensions:ore_iron_small",
+      "better_cave_dimensions:ore_gold",
+      "better_cave_dimensions:ore_gold_lower",
+      "better_cave_dimensions:ore_redstone",
+      "better_cave_dimensions:ore_redstone_lower",
+      "better_cave_dimensions:ore_diamond",
+      "better_cave_dimensions:ore_diamond_medium",
+      "better_cave_dimensions:ore_diamond_large",
+      "better_cave_dimensions:ore_diamond_buried",
+      "better_cave_dimensions:ore_lapis",
+      "better_cave_dimensions:ore_lapis_buried",
+      "better_cave_dimensions:ore_copper",
+      "better_cave_dimensions:underwater_magma",
+      "better_cave_dimensions:disk_sand",
+      "better_cave_dimensions:disk_clay",
+      "better_cave_dimensions:disk_gravel"
+    ],
+    [
+      "better_cave_dimensions:sculk_vein",
+      "better_cave_dimensions:sculk_patch_deep_dark"
+    ],
+    [],
+    [
+      "better_cave_dimensions:glow_lichen",
+      "better_cave_dimensions:patch_tall_grass_2",
+      "better_cave_dimensions:trees_plains",
+      "better_cave_dimensions:flower_plains",
+      "better_cave_dimensions:patch_grass_plain",
+      "better_cave_dimensions:brown_mushroom_normal",
+      "better_cave_dimensions:red_mushroom_normal",
+      "better_cave_dimensions:patch_pumpkin"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ],
+  "has_precipitation": true,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.8
+}

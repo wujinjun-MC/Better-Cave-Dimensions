@@ -295,10 +295,12 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
                   "count": 1
                 }
                 ```
-- Add biomes in `worldgen/biome` (TODO; should do after `configure_feature` and `placed_feature` are ready)
+- Add biomes in `worldgen/biome`
     - Path: `Better_Cave_Dimensions/data/better_cave_dimensions/worldgen/biome`
     - Step by step:
-        - 
+        - Import all biomes from vanilla (End biomes (which are not exist in this dimension) can skip)
+        - In `$.features`, if the `placed_features` name exists, replace namespace `minecraft`->`better_cave_dimensions`
+            - Trick: In VScode, F2 -> Ctrl+C to copy name, paste into all files search (click `...` and `files to include`=`Better_Cave_Dimensions/data/better_cave_dimensions/worldgen/biome`), if there are results, replace `minecraft:*`->`better_cave_dimensions:*`
 
 ---
 
