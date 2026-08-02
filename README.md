@@ -112,7 +112,7 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
     - Step by step:
         - Prepare biome list (with condition info) from "generated"
             - files: `generated/reports/biome_parameters/minecraft/*.json`
-        - (optional, enabled) merge overworld and nether to allow nether biomes in cave dimension. (in `.biomes` array, copy those in `nether.json` into `overworld.json`)
+        - (optional, enabled) merge overworld and nether to allow nether biomes in cave dimension. (in `$.biomes` array, copy those in `nether.json` into `overworld.json`)
         - Replace the namespace of biome: `minecraft` -> `better_cave_dimensions` (named `all_biomes.json`)
             - Before:
                 ```json
@@ -139,7 +139,7 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
                 }
                 ```
             - Trick: find `"biome": "minecraft:`, "replace all" with `"biome": "better_cave_dimensions:`
-        - Use this template, replace `.generator.biome_source.biomes` with `.biomes` in `all_biomes.json`
+        - Use this template, fill in `$.generator.biome_source.biomes` with `$.biomes` in `all_biomes.json`
             ```json
             {
               "type": "better_cave_dimensions:cave",
@@ -197,18 +197,20 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
             }
             ```
         - Place in `Better_Cave_Dimensions/data/better_cave_dimensions/dimension/cave.json`
-    - After: Also rename `Better_Cave_Dimensions/data/better_cave_dimensions/dimension_type/overworld.json`->`Better_Cave_Dimensions/data/better_cave_dimensions/dimension_type/cave.json` because the template uses `.generator.settings`=`better_cave_dimensions:cave`
+    - After: Also rename `Better_Cave_Dimensions/data/better_cave_dimensions/dimension_type/overworld.json`->`Better_Cave_Dimensions/data/better_cave_dimensions/dimension_type/cave.json` because the template uses `$.generator.settings`=`better_cave_dimensions:cave`
 - Rename and Adjust `dimension_type` (dimension settings)
     - `has_skylight` -> true: For players who prefer building over the ceiling
-    - `.attributes.minecraft:visual/cloud_height` -> 128: Lower cloud height
+    - `$.attributes.minecraft:visual/cloud_height` -> 128: Lower cloud height
     - `min_y` -> -128, `height` and `logical_height` -> 448: Height range -128~320 (with later `noise_settings` changes, players can build over the ceiling 256~320 or below the bedrock -128~-64)
 - Rename and Adjust `worldgen/noise_settings`
     - `overworld.json`->`cave.json`
     - `sea_level` -> 32
-    - `.noise.height` -> 384: See above ("Height range")
-    - In `.noise_router`, replace `better_cave_worlds:overworld`->`better_cave_dimensions:cave`
+    - `$.noise.height` -> 384: See above ("Height range")
+    - In `$.noise_router`, replace `better_cave_worlds:overworld`->`better_cave_dimensions:cave`
     - Replace other `better_cave_worlds`->`better_cave_dimensions`
     - Find all `biome_is`, replace namespace `minecraft`->`better_cave_dimensions`
+- Adjust/Add `configured_feature`
+    - Replace `better_cave_worlds`->`better_cave_dimensions` for `$.config.features[*].feature` and `$.config.default` if `"type": "minecraft:random_selector"`
 - Adjust/Add `placed_feature`
     - Replace `better_cave_worlds`->`better_cave_dimensions`
 - Add biomes in `worldgen/biome` (TODO; should do after `configure_feature` and `placed_feature` are ready)
