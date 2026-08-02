@@ -107,6 +107,12 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
     - Now the files are in folder `generated` (Use `.gitignore` to ignore this folder)
 - Merge overlays (only support latest versions); `pack.mcmeta` adapt to latest version requirements
 - Rename to better cave dimensions
+    - `better_cave_worlds`->`better_cave_dimensions`
+    - Scan potential unconverted files:
+        - Search `worlds`
+- Remove redundancies
+    - Search `minecraft:no_op`
+        - Example: `Better_Cave_Dimensions/data/better_cave_dimensions/worldgen/placed_feature/fancy_oak_bees_0002.json`
 - Create dimension definition
     - [An example from legacy branch](https://raw.githubusercontent.com/wujinjun-MC/Better-Cave-Dimensions/d52f84c7076c3999e43257f777801b3e0e87192a/Better_Cave_Dimensions/data/better_cave_dimensions/dimension/cave.json)
     - Step by step:
