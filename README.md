@@ -301,6 +301,9 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
         - Import all biomes from vanilla (End biomes (which are not exist in this dimension) can skip)
         - In `$.features`, if the `placed_features` name exists, replace namespace `minecraft`->`better_cave_dimensions`
             - Trick: In VScode, F2 -> Ctrl+C to copy name, paste into all files search (click `...` and `files to include`=`Better_Cave_Dimensions/data/better_cave_dimensions/worldgen/biome`), if there are results, replace `minecraft:*`->`better_cave_dimensions:*`
+- Fix `worldgen/density_function`
+    - Rename folder `overworld`->`cave`
+    - Replace `better_cave_worlds:overworld`->`better_cave_dimensions:cave`
 
 ---
 
