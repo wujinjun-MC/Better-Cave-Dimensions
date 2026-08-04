@@ -5,13 +5,13 @@
   "spawn_overrides": {},
   "setups": [
     {
-      "placement": "underground",
-      "air_pocket_probability": 1,
+      "air_pocket_probability": 1.0,
+      "can_be_cold": true,
       "mossiness": 0.2,
       "overgrown": false,
-      "vines": false,
-      "can_be_cold": true,
+      "placement": "underground",
       "replace_with_blackstone": false,
+      "vines": false,
       "weight": 0.5
     }
   ]
