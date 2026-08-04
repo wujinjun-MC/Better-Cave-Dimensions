@@ -1,0 +1,8 @@
+{
+  "values": [
+    "#better_cave_dimensions:is_ocean",
+    "#better_cave_dimensions:is_river",
+    "better_cave_dimensions:swamp",
+    "better_cave_dimensions:mangrove_swamp"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#better_cave_dimensions:is_badlands",
+    "#better_cave_dimensions:is_hill",
+    "better_cave_dimensions:savanna_plateau",
+    "better_cave_dimensions:windswept_savanna",
+    "better_cave_dimensions:stony_shore",
+    "#better_cave_dimensions:is_mountain"
+  ]
+}

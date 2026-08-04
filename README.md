@@ -327,7 +327,7 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
                     - Usage: `python nbt-text-search-and-replace_namespace.py --dir D:\structures-processing --replace-namespace "minecraft" "better_cave_dimensions" --search-val <val1> --search-val <val2> ...`
                         - Obtain `val*`: Base on `template_pool` root folder, add all file paths without ".json" (e.g. `pillager_outpost/base_plates`) (On Windows, convert backslashes to forward slashes).
                     - Command (as of 26.2): `python assets/tools/nbt-text-search-and-replace_namespace.py --dir D:\structures-processing --replace-namespace "minecraft" "better_cave_dimensions" --search-val pillager_outpost/base_plates --search-val pillager_outpost/feature_plates --search-val village/desert/streets --search-val village/desert/terminators --search-val village/desert/town_centers --search-val village/desert/zombie/streets --search-val village/desert/zombie/terminators --search-val village/plains/houses --search-val village/plains/streets --search-val village/plains/terminators --search-val village/plains/town_centers --search-val village/plains/zombie/houses --search-val village/plains/zombie/streets --search-val village/savanna/streets --search-val village/savanna/terminators --search-val village/savanna/town_centers --search-val village/savanna/zombie/streets --search-val village/savanna/zombie/terminators --search-val village/snowy/streets --search-val village/snowy/terminators --search-val village/snowy/town_centers --search-val village/snowy/zombie/streets --search-val village/taiga/streets --search-val village/taiga/terminators --search-val village/taiga/town_centers --search-val village/taiga/zombie/streets`
-            - Import all `tags/worldgen/biome` and `tags/worldgen/structure` from vanilla and replace namespace `minecraft`->`better_cave_dimensions`.
+            - Import all `tags/worldgen/biome` and `tags/worldgen/structure` (place at `Better_Cave_Dimensions/data/minecraft/tags/worldgen/structure`) from vanilla and replace namespace `minecraft`->`better_cave_dimensions`.
             - Import all `worldgen/structure` and `worldgen/structure_set` from vanilla (do not overwrite existing files). If leave ones un-imported, those structures will not generate in this dimension.
             - In `worldgen/structure`
                 - Replace namespace `minecraft`->`better_cave_dimensions` in `$.biomes`.
@@ -362,6 +362,7 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
 ## Bug Fix
 
 - [ ] Some terrain generation can break bedrock roof (e.g. Cold biomes (bedrocks are replaced by snow blocks))
+- [x] Throwing eye of ender causes server crash due to unable to find anywhere
 
 ---
 ---
