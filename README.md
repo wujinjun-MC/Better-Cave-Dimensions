@@ -97,14 +97,17 @@ Simply go to [releases](https://github.com/wujinjun-MC/Better-Cave-Dimensions/re
 
 ## Dev Details
 
+Note: `$.`... represents JSON path, e.g. `$.generator.settings` means the value of key `settings` in object `generator`.
+
 <details>
 <summary>Stage 1: Make it a seperate dimension</summary>
 
 Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinjun-MC/Better-Cave-Dimensions/commits/Better-Cave-Dimensions-legacy):
 - `License.txt` add my copyright info
-- Generate vanilla `data` (for datapack file and structure) and `reports` for biome parameters from server.jar
+- Generate vanilla `data` (for datapack file except structures) and `reports` for biome parameters from server.jar
     - command: `java -DbundlerMainClass="net.minecraft.data.Main" -jar server.jar --server --reports --output generated`
     - Now the files are in folder `generated` (Use `.gitignore` to ignore this folder)
+- Extract structure .nbt files from server.jar (Located in `data/minecraft/structures`)
 - Merge overlays (only support latest versions); `pack.mcmeta` adapt to latest version requirements
 - Rename to better cave dimensions
     - `better_cave_worlds`->`better_cave_dimensions`
@@ -304,6 +307,32 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
 - Fix `worldgen/density_function`
     - Rename folder `overworld`->`cave`
     - Replace `better_cave_worlds:overworld`->`better_cave_dimensions:cave`
+- Fix structure not generate properly (Structure Generation Fixes and Vanilla Structure Support)
+    - Approach 1: Only add tags with `tags/worldgen/biome/has_structure/*` under namespace `minecraft:`
+        - Deprecated: Inefficient for further customization (e.g. fix over-roof generation)
+    - Approach 2: Import structures (nbt, definition and set)
+        - Since the sturctures are not changed 1.21.8~26.2, some files are imported from old branch `Better-Cave-Dimensions-legacy`.
+        - Affected: `worldgen/structure`, `worldgen/structure_set`, `tags/worldgen/biome`(optional?), `template_pool`
+        - Step by step:
+            - Check all `structure` in vanilla (tag with "Step 1")
+                - Use [NBTstudio](https://github.com/tryashtar/nbt-studio) (or zh_CN: https://github.com/firesahc/nbt-studio-language) or VS code extension ([NBT Viewer](https://marketplace.visualstudio.com/items?itemName=Misodee.vscode-nbt) and [snbt](https://marketplace.visualstudio.com/items?itemName=Tnze.snbt))
+                - Extract S-NBT and text find `pool` (equal SNBT path: `.blocks[*].nbt.pool`). If references existing `worldgen/template_pool`, include and replace namespace `minecraft`->`better_cave_dimensions`
+            - Check all `worldgen/template_pool` in vanilla (tag with "Step 2")
+                - If any `$.elements[*].element.projection`=`terrain_matching`, include and replace with `rigid` (or the structure can break the ceiling).
+                - If "Step 1" included .nbt file, related `template_pool` should be included and replace namespace `minecraft`->`better_cave_dimensions` (only affected).
+            - Repeat "Step 1" and "Step 2" until no new modifications are found.
+                - Boring one by one .nbt edit? Use the [tool](./assets/tools/nbt-text-search-and-replace_namespace.py)
+                    - Requires nbtlib (pip install nbtlib)
+                    - Prepare vanilla structure .nbt files in a seperate folder (e.g. D:\structures-processing), leaving only "names" in template_pool (currently `pillager_outpost` and `village`).
+                    - Usage: `python nbt-text-search-and-replace_namespace.py --dir D:\structures-processing --replace-namespace "minecraft" "better_cave_dimensions" --search-val <val1> --search-val <val2> ...`
+                        - Obtain `val*`: Base on `template_pool` root folder, add all file paths without ".json" (e.g. `pillager_outpost/base_plates`) (On Windows, convert backslashes to forward slashes).
+                    - Command (as of 26.2): `python assets/tools/nbt-text-search-and-replace_namespace.py --dir D:\structures-processing --replace-namespace "minecraft" "better_cave_dimensions" --search-val pillager_outpost/base_plates --search-val pillager_outpost/feature_plates --search-val village/desert/streets --search-val village/desert/terminators --search-val village/desert/town_centers --search-val village/desert/zombie/streets --search-val village/desert/zombie/terminators --search-val village/plains/houses --search-val village/plains/streets --search-val village/plains/terminators --search-val village/plains/town_centers --search-val village/plains/zombie/houses --search-val village/plains/zombie/streets --search-val village/savanna/streets --search-val village/savanna/terminators --search-val village/savanna/town_centers --search-val village/savanna/zombie/streets --search-val village/savanna/zombie/terminators --search-val village/snowy/streets --search-val village/snowy/terminators --search-val village/snowy/town_centers --search-val village/snowy/zombie/streets --search-val village/taiga/streets --search-val village/taiga/terminators --search-val village/taiga/town_centers --search-val village/taiga/zombie/streets`
+            - Import all `worldgen/structure` and `worldgen/structure_set` from vanilla (do not overwrite existing files). If leave ones un-imported, those structures will not generate in this dimension.
+            - In `worldgen/structure`
+                - Replace namespace `minecraft`->`better_cave_dimensions` in `$.biomes`.
+                - If `$.start_pool` exists:
+                    - Remove `minecraft:` at the beginning, and if the file `worldgen/template_pool/<string>.json` exists, replace namespace `minecraft`->`better_cave_dimensions`
+                        - Example: pillager_outpost.json: `$.start_pool`=`minecraft:pillager_outpost/base_plates`, `worldgen/template_pool/pillager_outpost/base_plates.json` exists, then replace with `better_cave_dimensions:pillager_outpost/base_plates`.
 
 ---
 

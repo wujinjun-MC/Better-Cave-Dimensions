@@ -1,6 +1,6 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "#minecraft:has_structure/trail_ruins",
+  "biomes": "#better_cave_dimensions:has_structure/trail_ruins",
   "step": "underground_structures",
   "spawn_overrides": {},
   "terrain_adaptation": "bury",

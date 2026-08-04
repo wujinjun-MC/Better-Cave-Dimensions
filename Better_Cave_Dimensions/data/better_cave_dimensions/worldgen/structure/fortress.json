@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:fortress",
+  "biomes": "#better_cave_dimensions:has_structure/nether_fortress",
+  "spawn_overrides": {
+    "monster": {
+      "bounding_box": "piece",
+      "spawns": [
+        {
+          "type": "minecraft:blaze",
+          "maxCount": 3,
+          "minCount": 2,
+          "weight": 10
+        },
+        {
+          "type": "minecraft:zombified_piglin",
+          "maxCount": 4,
+          "minCount": 4,
+          "weight": 5
+        },
+        {
+          "type": "minecraft:wither_skeleton",
+          "maxCount": 5,
+          "minCount": 5,
+          "weight": 8
+        },
+        {
+          "type": "minecraft:skeleton",
+          "maxCount": 5,
+          "minCount": 5,
+          "weight": 2
+        },
+        {
+          "type": "minecraft:magma_cube",
+          "maxCount": 4,
+          "minCount": 4,
+          "weight": 3
+        }
+      ]
+    }
+  },
+  "terrain_adaptation": "beard_box",
+  "step": "underground_decoration"
+}

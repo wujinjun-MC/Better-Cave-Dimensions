@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:desert_pyramid",
+  "biomes": "#better_cave_dimensions:has_structure/desert_pyramid",
+  "spawn_overrides": {},
+  "terrain_adaptation": "beard_box",
+  "step": "surface_structures"
+}

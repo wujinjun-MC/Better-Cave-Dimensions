@@ -1,6 +1,6 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "#minecraft:has_structure/pillager_outpost",
+  "biomes": "#better_cave_dimensions:has_structure/pillager_outpost",
   "step": "surface_structures",
   "spawn_overrides": {
     "monster": {
@@ -10,13 +10,13 @@
           "type": "minecraft:pillager",
           "weight": 1,
           "minCount": 1,
-          "maxCount": 1
+          "maxCount": 4
         }
       ]
     }
   },
   "terrain_adaptation": "beard_box",
-  "start_pool": "minecraft:pillager_outpost/base_plates",
+  "start_pool": "better_cave_dimensions:pillager_outpost/base_plates",
   "size": 7,
   "start_height": {
     "type": "minecraft:uniform",
