@@ -298,15 +298,25 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
                   "count": 1
                 }
                 ```
+        - Bug fix:
+            - Feature placing race condition:
+                - Example: `[01:09:01] [Worker-Main-6/ERROR]: Detected unsafe terrain read during worldgen: reading from chunk [26, -30] while generating chunk [28, -31] (distance: 2, write radius: 1), step: minecraft:features, currently generating: ResourceKey[minecraft:worldgen/placed_feature / better_cave_dimensions:sculk_patch_deep_dark]`
+                - type `count`+`count_on_every_layer` combo (or other kinda over-counted placement)
+                - Try to remove `count_on_every_layer`
 - Add biomes in `worldgen/biome`
     - Path: `Better_Cave_Dimensions/data/better_cave_dimensions/worldgen/biome`
     - Step by step:
         - Import all biomes from vanilla (End biomes (which are not exist in this dimension) can skip)
         - In `$.features`, if the `placed_features` name exists, replace namespace `minecraft`->`better_cave_dimensions`
             - Trick: In VScode, F2 -> Ctrl+C to copy name, paste into all files search (click `...` and `files to include`=`Better_Cave_Dimensions/data/better_cave_dimensions/worldgen/biome`), if there are results, replace `minecraft:*`->`better_cave_dimensions:*`
-- Fix `worldgen/density_function`
+- Fix and adjust `worldgen/density_function`
     - Rename folder `overworld`->`cave`
     - Replace `better_cave_worlds:overworld`->`better_cave_dimensions:cave` then `better_cave_worlds`->`better_cave_dimensions`.
+    - Adjust `final_density.json`:
+        - In `$.input.argument.argument.argument2.argument.argument2.argument2.argument2.argument2.argument1`:
+            - `from_y`=240, `to_y`=256
+            - Expand the internal cavity. The original cave ceiling height range was 104~128. After expanding the cave height range (setting it to -64~256 in `noise_setting`), the 128~256 area only contained stone and a few noisy caves, wasting remaining value. By adjusting it to 240~256, there are only 16 blocks in the ceiling, giving players more space and reducing their reliance on the space above bedrock.
+        - In `$.input.argument.argument.argument2.argument.argument2.argument1`:
 - Fix structure not generate properly (Structure Generation Fixes and Vanilla Structure Support)
     - Approach 1: Only add tags with `tags/worldgen/biome/has_structure/*` under namespace `minecraft:`
         - Deprecated: Inefficient for further customization (e.g. fix over-roof generation)
