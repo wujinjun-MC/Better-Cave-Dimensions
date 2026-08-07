@@ -365,6 +365,18 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
 - [x] Throwing eye of ender causes server crash due to unable to find anywhere
 
 ---
+
+## AI/LLM/Agent Usage
+
+Open mind: AI commits/bug fixes are welcome, but please ensure that the code is thoroughly reviewed and tested before merging. The goal is to maintain a high standard of quality and reliability in the codebase.
+
+---
+
+## License
+
+This data pack is licensed under the MIT License. See the LICENSE file for more details.
+
+---
 ---
 
 ↓ Original README
