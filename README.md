@@ -300,7 +300,7 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
                 ```
         - Bug fix:
             - Feature placing race condition:
-                - Example: `[01:09:01] [Worker-Main-6/ERROR]: Detected unsafe terrain read during worldgen: reading from chunk [26, -30] while generating chunk [28, -31] (distance: 2, write radius: 1), step: minecraft:features, currently generating: ResourceKey[minecraft:worldgen/placed_feature / better_cave_dimensions:sculk_patch_deep_dark]`
+                - Example: `[01:09:01] [Worker-Main-6/ERROR]: Detected unsafe terrain read during worldgen: reading from chunk [26, -30] while generating chunk [28, -31] (distance: 2, write radius: 1), step: minecraft:features, currently generating: ResourceKey[minecraft:worldgen/placed_feature / better_cave_dimensions:glow_lichen]`
                 - type `count`+`count_on_every_layer` combo (or other kinda over-counted placement)
                 - Try to remove `count_on_every_layer`
 - Add biomes in `worldgen/biome`
@@ -316,13 +316,14 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
         - In `$.input.argument.argument.argument2.argument.argument2.argument2.argument2.argument2.argument1`:
             - `from_y`=240, `to_y`=256
             - Expand the internal cavity. The original cave ceiling height range was 104~128. After expanding the cave height range (setting it to -64~256 in `noise_setting`), the 128~256 area only contained stone and a few noisy caves, wasting remaining value. By adjusting it to 240~256, there are only 16 blocks in the ceiling, giving players more space and reducing their reliance on the space above bedrock.
-        - In `$.input.argument.argument.argument2.argument.argument2.argument1`:
+        - In `$.input.argument.argument.argument2.argument.argument2.argument1`: No need to adjust currently. If lowest height is changed, `from_y` and `to_y` should be moved.
+    - `aquifer/fluid_level_floodedness.json`, `vein/ridged.json` and `vein/toggle.json`: Fit height range.
 - Fix structure not generate properly (Structure Generation Fixes and Vanilla Structure Support)
     - Approach 1: Only add tags with `tags/worldgen/biome/has_structure/*` under namespace `minecraft:`
         - Deprecated: Inefficient for further customization (e.g. fix over-roof generation)
     - Approach 2: Import structures (nbt, definition and set)
         - Since the sturctures are not changed 1.21.8~26.2, some files are imported from old branch `Better-Cave-Dimensions-legacy`.
-        - Affected: `worldgen/structure`, `worldgen/structure_set`, `tags/worldgen/biome`, `template_pool`
+        - Affected: `worldgen/structure`, `worldgen/structure_set`, `tags/worldgen` biome and structure, `template_pool`
         - Step by step:
             - Check all `structure` in vanilla (tag with "Step 1")
                 - Use [NBTstudio](https://github.com/tryashtar/nbt-studio) (or zh_CN: https://github.com/firesahc/nbt-studio-language) or VS code extension ([NBT Viewer](https://marketplace.visualstudio.com/items?itemName=Misodee.vscode-nbt) and [snbt](https://marketplace.visualstudio.com/items?itemName=Tnze.snbt))
@@ -338,6 +339,8 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
                         - Obtain `val*`: Base on `template_pool` root folder, add all file paths without ".json" (e.g. `pillager_outpost/base_plates`) (On Windows, convert backslashes to forward slashes).
                     - Command (as of 26.2): `python assets/tools/nbt-text-search-and-replace_namespace.py --dir D:\structures-processing --replace-namespace "minecraft" "better_cave_dimensions" --search-val pillager_outpost/base_plates --search-val pillager_outpost/feature_plates --search-val village/desert/streets --search-val village/desert/terminators --search-val village/desert/town_centers --search-val village/desert/zombie/streets --search-val village/desert/zombie/terminators --search-val village/plains/houses --search-val village/plains/streets --search-val village/plains/terminators --search-val village/plains/town_centers --search-val village/plains/zombie/houses --search-val village/plains/zombie/streets --search-val village/savanna/streets --search-val village/savanna/terminators --search-val village/savanna/town_centers --search-val village/savanna/zombie/streets --search-val village/savanna/zombie/terminators --search-val village/snowy/streets --search-val village/snowy/terminators --search-val village/snowy/town_centers --search-val village/snowy/zombie/streets --search-val village/taiga/streets --search-val village/taiga/terminators --search-val village/taiga/town_centers --search-val village/taiga/zombie/streets`
             - Import all `tags/worldgen/biome` and `tags/worldgen/structure` (place at `Better_Cave_Dimensions/data/minecraft/tags/worldgen/structure`) from vanilla and replace namespace `minecraft`->`better_cave_dimensions`.
+                - If referencing tags (start with `#`), also put related tags in `better_cave_dimensions` namespace
+                    - `dolphin_located.json`: Only contains tags (`ocean_ruin` and `shipwreck`). Copy `ocean_ruin.json` and `shipwreck.json` to `better_cave_dimensions` namespace.
             - Import all `worldgen/structure` and `worldgen/structure_set` from vanilla (do not overwrite existing files). If leave ones un-imported, those structures will not generate in this dimension.
             - In `worldgen/structure`
                 - Replace namespace `minecraft`->`better_cave_dimensions` in `$.biomes`.
