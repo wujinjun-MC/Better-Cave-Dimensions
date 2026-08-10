@@ -100,13 +100,20 @@ This datapack must be loaded *after* datapacks mentioned below.
 ---
 
 ## Addons
+
+### Enable addon
+
+1. Open `pack.mcmeta`
+2. Use `Ctrl+F` to search "Overlay name"
+3. Change `min_format` range to the value of `$.pack.min_format`
+
 ### List
 #### Vanilla
 <details>
 <summary>Unlimited vanilla structures</summary>
 
 - Overlay name: `overlay_addon_unlimited_vanilla_structures`
-- Supported Minecraft version: 
+- Supported Minecraft version: (same as datapack supported version)
 - Features:
     1. Structure definition
         1. Structures can be placed in any biomes
@@ -133,7 +140,7 @@ This datapack must be loaded *after* datapacks mentioned below.
 <summary>Dimension type tweaks</summary>
 
 - Overlay name: `overlay_addon_dimension_type_tweaks`
-- Supported Minecraft version: same as datapack supported version
+- Supported Minecraft version: (same as datapack supported version)
 - Features:
     1. `piglin_safe`: Piglins will not convert to zombified ones
     2. `respawn_anchor_works`
@@ -145,7 +152,7 @@ This datapack must be loaded *after* datapacks mentioned below.
 <summary>Extend noise height range</summary>
 
 - Overlay name: `overlay_addon_noise_height_extend`
-- Supported Minecraft version: same as datapack supported version
+- Supported Minecraft version: (same as datapack supported version)
 - Features:
     1. Terrain noise height range syncs with dimension height range (aka. no building space above bedrock roof)
     2. Without cave height range configuration, there may be only lava lakes in y 128~256
@@ -158,7 +165,7 @@ This datapack must be loaded *after* datapacks mentioned below.
 <summary>Configurable cave</summary>
 
 - Overlay name: `overlay_addon_custom_cave_config`
-- Supported Minecraft version: same as datapack supported version
+- Supported Minecraft version: (same as datapack supported version)
 - Features:
     1. Customize cave generation, including height range and density!
 - Config:
