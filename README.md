@@ -26,35 +26,35 @@ Simply go to [releases](https://github.com/wujinjun-MC/Better-Cave-Dimensions/re
 
 ### Structure Generation Fixes
 
-- [ ] Pillager Outposts
+- [x] Pillager Outposts
 - Villages
-    - [ ] Desert
-    - [ ] Plains
-    - [ ] Savanna
-    - [ ] Snowy
-    - [ ] Taiga
+    - [x] Desert
+    - [x] Plains
+    - [x] Savanna
+    - [x] Snowy
+    - [x] Taiga
 
 ### Vanilla Structure Support
 > [!WARNING]
 > Do **not** run `/locate structure` for Bastion Remnant(?) and Ocean Monuments, as it will crash your game/server.
 
-- [ ] Ancient City
-- [ ] Bastion Remnant [^1]
-- [ ] Buried Treasure [^2]
-- [ ] Desert Pyramid [^2]
-- [ ] End City [^1]
-- [ ] Igloo [^2]
-- [ ] Jungle Pyramid [^2]
-- [ ] Mineshaft
-- [ ] Nether Fortress [^1]
-- [ ] Nether Fossil [^1]
-- [ ] Ocean Monument (Rare or nonexistent)
-- [ ] Ocean Ruins [^2]
-- [ ] Shipwreck [^2]
-- [ ] Stronghold
-- [ ] Swamp Hut [^2]
-- [ ] Trial Chambers
-- [ ] Woodland Mansion [^2]
+- [x] Ancient City
+- [x] Bastion Remnant [^1]
+- [x] Buried Treasure [^2]
+- [x] Desert Pyramid [^2]
+- [x] End City [^1]
+- [x] Igloo [^2]
+- [x] Jungle Pyramid [^2]
+- [x] Mineshaft
+- [x] Nether Fortress [^1]
+- [x] Nether Fossil [^1]
+- [x] Ocean Monument (Rare or nonexistent)
+- [x] Ocean Ruins [^2]
+- [x] Shipwreck [^2]
+- [x] Stronghold
+- [x] Swamp Hut [^2]
+- [x] Trial Chambers
+- [x] Woodland Mansion [^2]
 
 ### Third-Party Datapack Compatibility
 *Note: Compatibility addons are not in this datapack and will be hosted in separate repositories.*
@@ -142,16 +142,18 @@ This datapack must be loaded *after* datapacks mentioned below.
 - Overlay name: `overlay_addon_dimension_type_tweaks`
 - Supported Minecraft version: (same as datapack supported version)
 - Features:
-    1. `piglin_safe`: Piglins will not convert to zombified ones
-    2. `respawn_anchor_works`
-    3. `cloud_height` -> 64
-    4. Enable skylight
+    - `$.attributes`
+        1. `gameplay/bed_rule` `can_sleep` = always: Can always sleep to skip night or whole day
+        2. `gameplay/piglins_zombify` = false: Piglins will not convert to zombified ones
+        3. `gameplay/respawn_anchor_works` = true: Can use respawn anchor to set spawn, without exploading
+        4. `gameplay/snow_golem_melts` = false: Snow golem can't take damage by heat
+        5. `visual/cloud_height` = 64.33: Low cloud height
 </details>
 
-<span id = "addon_noise_height_extend"><details></span>
-<summary>Extend noise height range</summary>
+<span id = "addon_height_extend"><details></span>
+<summary>Extend height range</summary>
 
-- Overlay name: `overlay_addon_noise_height_extend`
+- Overlay name: `overlay_addon_height_extend`
 - Supported Minecraft version: (same as datapack supported version)
 - Features:
     1. Terrain noise height range syncs with dimension height range (aka. no building space above bedrock roof)
