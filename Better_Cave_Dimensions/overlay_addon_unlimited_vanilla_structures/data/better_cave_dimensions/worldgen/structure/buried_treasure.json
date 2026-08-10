@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:buried_treasure",
+  "biomes": "#better_cave_dimensions:all_biome",
+  "spawn_overrides": {},
+  "step": "underground_structures"
+}

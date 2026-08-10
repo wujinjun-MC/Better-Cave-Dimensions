@@ -1,0 +1,30 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 10387312,
+    "separation": 0,
+    "spacing": 16
+  },
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:village_plains",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:village_desert",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:village_savanna",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:village_snowy",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:village_taiga",
+      "weight": 1
+    }
+  ]
+}

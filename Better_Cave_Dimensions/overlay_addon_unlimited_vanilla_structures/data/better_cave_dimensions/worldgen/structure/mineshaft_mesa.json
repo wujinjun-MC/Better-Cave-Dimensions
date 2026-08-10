@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:mineshaft",
+  "biomes": "#better_cave_dimensions:all_biome",
+  "mineshaft_type": "mesa",
+  "spawn_overrides": {},
+  "step": "top_layer_modification"
+}

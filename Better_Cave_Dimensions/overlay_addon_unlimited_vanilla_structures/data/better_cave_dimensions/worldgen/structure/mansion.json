@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:woodland_mansion",
+  "biomes": "#better_cave_dimensions:all_biome",
+  "spawn_overrides": {},
+  "step": "surface_structures"
+}

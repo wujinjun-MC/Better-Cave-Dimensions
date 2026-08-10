@@ -36,7 +36,7 @@ Simply go to [releases](https://github.com/wujinjun-MC/Better-Cave-Dimensions/re
 
 ### Vanilla Structure Support
 > [!WARNING]
-> Do **not** run `/locate structure` for Ocean Monuments, as it will crash your game/server.
+> Do **not** run `/locate structure` for Bastion Remnant(?) and Ocean Monuments, as it will crash your game/server.
 
 - [ ] Ancient City
 - [ ] Bastion Remnant [^1]

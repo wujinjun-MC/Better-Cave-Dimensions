@@ -1,0 +1,19 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "frequency": 0.008,
+    "salt": 0,
+    "separation": 0,
+    "spacing": 1
+  },
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:mineshaft",
+      "weight": 1
+    },
+    {
+      "structure": "better_cave_dimensions:mineshaft_mesa",
+      "weight": 1
+    }
+  ]
+}

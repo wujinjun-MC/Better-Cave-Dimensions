@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 10387313,
+    "separation": 0,
+    "spacing": 10
+  },
+  "structures": [
+    {
+      "structure": "better_cave_dimensions:end_city",
+      "weight": 1
+    }
+  ]
+}

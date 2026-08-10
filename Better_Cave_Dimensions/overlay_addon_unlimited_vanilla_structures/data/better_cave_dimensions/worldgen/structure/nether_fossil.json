@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:nether_fossil",
+  "biomes": "#better_cave_dimensions:all_biome",
+  "height": {
+    "type": "minecraft:uniform",
+    "max_inclusive": {
+      "below_top": 16
+    },
+    "min_inclusive": {
+      "above_bottom": 16
+    }
+  },
+  "spawn_overrides": {},
+  "step": "underground_decoration"
+}
