@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#better_cave_dimensions:is_deep_ocean",
+    "better_cave_dimensions:frozen_ocean",
+    "better_cave_dimensions:ocean",
+    "better_cave_dimensions:cold_ocean",
+    "better_cave_dimensions:lukewarm_ocean",
+    "better_cave_dimensions:warm_ocean"
+  ]
+}
