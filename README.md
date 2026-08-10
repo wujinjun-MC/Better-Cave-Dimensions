@@ -59,6 +59,10 @@ Simply go to [releases](https://github.com/wujinjun-MC/Better-Cave-Dimensions/re
 ### Third-Party Datapack Compatibility
 *Note: Compatibility addons are not in this datapack and will be hosted in separate repositories.*
 
+This datapack must be loaded *after* datapacks mentioned below.
+- If you are starting a fresh server: Rename this datapack file name (e.g. Add prefix "Z") so that it is the last one alphabetically.
+- If you are adding this datapack or the datapack(s) that needs compatibility to existing server: DO NOT enable compatibility addons initially. Add datapacks, completely start and stop server, open "level.dat" in NBT editor (if using bukkit/spigot/paper (or forks), also open that in other world/dimension folders), expand "DataPacks", place this datapack below the others, save, finally enable compatibility addons and start.
+
 - [ ] [Dungeons and Taverns(DnT)](https://modrinth.com/user/NovaWostra)
     - Addon required: [Dungeons and Taverns compat](#addon_dnt_compat)
     - Full support:
@@ -92,6 +96,113 @@ Simply go to [releases](https://github.com/wujinjun-MC/Better-Cave-Dimensions/re
 [^1]: Absolutely not exist due to missing biomes. Use addon `Unlimited vanilla structures` to fix.
 [^2]: May break bedrock roof
 [^3]: Rare or completely missing due to missing biomes. Use addon `overlay_addon_compat_`*`_larger` to fix.
+
+---
+
+## Addons
+### List
+#### Vanilla
+<details>
+<summary>Unlimited vanilla structures</summary>
+
+- Overlay name: `overlay_addon_unlimited_vanilla_structures`
+- Supported Minecraft version: 
+- Features:
+    1. Structure definition
+        1. Structures can be placed in any biomes
+        2. Change `terrain_adaption` to expose structures
+        3. Change `spawn_overrides` to allow mob generation
+        4. Change `step` (feature order) to allow some structures to override neighborhoods
+        4. For structures using jigsaws
+            1. Always `use_expansion_hack`
+            2. Maximize `size` and `max_distance_from_center` (Requires strong CPU)
+            3. Maximize `start_height` range (-32 ~ [max height -16])
+                - Lowest height can not < -55, or it will be lava-logged
+            4. Remove `dimension_padding`
+    2. Structure set
+        1. `placement`.`spacing` (or `placement`.`distance`) -> max(1,min(16, half_spacing))
+        2. `placement`.`separation` -> 0
+        3. `placement`.`spread_type` -> default
+        4. `placement`.`frequency_reduction_method` -> default
+        5. `placement`.`exclusion_zone` -> none
+        6. `placement`.`frequency` -> double (if present)
+        7. Strong hold count -> 1024 ; `preferred_biomes` -> all
+</details>
+
+<details>
+<summary>Dimension type tweaks</summary>
+
+- Overlay name: `overlay_addon_dimension_type_tweaks`
+- Supported Minecraft version: same as datapack supported version
+- Features:
+    1. `piglin_safe`: Piglins will not convert to zombified ones
+    2. `respawn_anchor_works`
+    3. `cloud_height` -> 64
+    4. Enable skylight
+</details>
+
+<span id = "addon_noise_height_extend"><details></span>
+<summary>Extend noise height range</summary>
+
+- Overlay name: `overlay_addon_noise_height_extend`
+- Supported Minecraft version: same as datapack supported version
+- Features:
+    1. Terrain noise height range syncs with dimension height range (aka. no building space above bedrock roof)
+    2. Without cave height range configuration, there may be only lava lakes in y 128~256
+    3. (Recommend) enable `overlay_addon_unlimited_vanilla_structures` and/or `overlay_addon_compat_*_larger`, since original height range doesn't allow structure placement in y 128~256.
+- Side effects:
+    - Some structures can only be placed on bedrock roof. After enabling, they are not placed correctly
+</details>
+
+<span id = "addon_custom_cave_config"><details></span>
+<summary>Configurable cave</summary>
+
+- Overlay name: `overlay_addon_custom_cave_config`
+- Supported Minecraft version: same as datapack supported version
+- Features:
+    1. Customize cave generation, including height range and density!
+- Config:
+    - Path: `overlay_addon_custom_cave_config/data/better_cave_dimensions/worldgen/density_function/cave/final_density.json`
+    - Json path:
+        - Cave bottom: `input`.`argument`.`argument2`.`argument`.`argument`.`argument2`.`argument1` (line 20~26)
+        - Cave main: `input`.`argument`.`argument2`.`argument`.`argument`.`argument2`.`argument2`.`argument2`.`argument2`.`argument1` (line 35~41)
+    - Definition:
+        - `from_y` and `to_y`: Cave roof/base height range
+            - `from_y` < `to_y`
+            - Must be in range of noise height range
+                - `to_y` <= 128, or
+                - `to_y` <= 256 (with `overlay_addon_noise_height_extend`)
+            - Suggestion: `cave_bottom`.`to_y` >= -50, to avoid hard-coded lava layer
+        - `to_value` (for cave bottom, > `from_value`) and `from_value` (for cave main, < `to_value`): Control cave density
+            - Higher value -> Lower density
+            - \> 1: Unexpected behavior, including: bedrock roof breaker, infinite lava ocean
+            - If value is too low, noise caves(like underground vanilla caves) still generate
+    - Default tweaks:
+        - Cave main: `from_y` = 224, `to_y` = 256 -- more space to survive!
+    - Sometimes world can be chaotic!
+        - e.g. `to_y` > [noise height range] -> bedrock roof breaker
+            <details>
+            <summary>Images: Bedrock roof breaker</summary>
+
+            ![bedrock-roof-breaker-1](assets/images/overlay_addon_custom_cave_config/bedrock-roof-breaker-1.png)
+            ![bedrock-roof-breaker-2](assets/images/overlay_addon_custom_cave_config/bedrock-roof-breaker-2.png)
+            ![bedrock-roof-breaker-3](assets/images/overlay_addon_custom_cave_config/bedrock-roof-breaker-3.png)
+            </details>
+</details>
+
+<details>
+<summary>Vanilla biome tag tweaks</summary>
+
+- Overlay name: `overlay_addon_biome_tag_tweaks_vanilla`
+- Supported Minecraft version: 1.21.4+
+- Features:
+    1. No biome blocks mineshaft
+    2. Polar bears can spawn on ice blocks in all biomes
+    3. Snow golem can not smelt in all biomes
+    4. Pillager Patrol can spawn in all biomes
+    5. Wandering Trader can spawn in all biomes
+    6. Zombie Siege can spawn in all biomes
+</details>
 
 ---
 
@@ -339,8 +450,12 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
                         - Obtain `val*`: Base on `template_pool` root folder, add all file paths without ".json" (e.g. `pillager_outpost/base_plates`) (On Windows, convert backslashes to forward slashes).
                     - Command (as of 26.2): `python assets/tools/nbt-text-search-and-replace_namespace.py --dir D:\structures-processing --replace-namespace "minecraft" "better_cave_dimensions" --search-val pillager_outpost/base_plates --search-val pillager_outpost/feature_plates --search-val village/desert/streets --search-val village/desert/terminators --search-val village/desert/town_centers --search-val village/desert/zombie/streets --search-val village/desert/zombie/terminators --search-val village/plains/houses --search-val village/plains/streets --search-val village/plains/terminators --search-val village/plains/town_centers --search-val village/plains/zombie/houses --search-val village/plains/zombie/streets --search-val village/savanna/streets --search-val village/savanna/terminators --search-val village/savanna/town_centers --search-val village/savanna/zombie/streets --search-val village/savanna/zombie/terminators --search-val village/snowy/streets --search-val village/snowy/terminators --search-val village/snowy/town_centers --search-val village/snowy/zombie/streets --search-val village/taiga/streets --search-val village/taiga/terminators --search-val village/taiga/town_centers --search-val village/taiga/zombie/streets`
             - Import all `tags/worldgen/biome` and `tags/worldgen/structure` (place at `Better_Cave_Dimensions/data/minecraft/tags/worldgen/structure`) from vanilla and replace namespace `minecraft`->`better_cave_dimensions`.
-                - If referencing tags (start with `#`), also put related tags in `better_cave_dimensions` namespace
+                - If referring to tags (start with `#`), also put related tags in `better_cave_dimensions` namespace
                     - `dolphin_located.json`: Only contains tags (`ocean_ruin` and `shipwreck`). Copy `ocean_ruin.json` and `shipwreck.json` to `better_cave_dimensions` namespace.
+                - If related to vanilla behaviour (e.g. `allows_surface_slime_spawns`), move to `minecraft` namespace
+                    - But if it is also used by other tags (e.g. `is_ocean`), do not remove from `better_cave_dimensions` namespace
+                        - Should check the "chain"
+                        - e.g. `is_badlands` is referred by `spawns_warm_variant_farm_animals` and `spawns_warm_variant_frogs` and these "upper" tags only change vanilla behaviour. If these two "upper" tags are the only tags that refer to `is_badlands`, all three tags should be moved to `minecraft` namespace. However, the other two "upper" tags `has_structure/mineshaft_mesa` and `has_structure/ruined_portal_mountain` control the biomes that the two structures can appear in in `better_cave_dimensions:cave`. Eventually, `is_badlands` is copied to `minecraft` namespace, not to be moved to.
             - Import all `worldgen/structure` and `worldgen/structure_set` from vanilla (do not overwrite existing files). If leave ones un-imported, those structures will not generate in this dimension.
             - In `worldgen/structure`
                 - Replace namespace `minecraft`->`better_cave_dimensions` in `$.biomes`.
