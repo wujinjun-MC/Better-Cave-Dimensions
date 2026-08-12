@@ -147,7 +147,7 @@ This datapack must be loaded *after* datapacks mentioned below.
         2. `gameplay/piglins_zombify` = false: Piglins will not convert to zombified ones
         3. `gameplay/respawn_anchor_works` = true: Can use respawn anchor to set spawn, without exploading
         4. `gameplay/snow_golem_melts` = false: Snow golem can't take damage by heat
-        5. `visual/cloud_height` = 64.33: Low cloud height
+        5. `visual/cloud_height` = 256.33: Higher cloud height
 </details>
 
 <span id = "addon_height_extend"><details></span>
@@ -156,47 +156,13 @@ This datapack must be loaded *after* datapacks mentioned below.
 - Overlay name: `overlay_addon_height_extend`
 - Supported Minecraft version: (same as datapack supported version)
 - Features:
-    1. Terrain noise height range syncs with dimension height range (aka. no building space above bedrock roof)
-    2. Without cave height range configuration, there may be only lava lakes in y 128~256
-    3. (Recommend) enable `overlay_addon_unlimited_vanilla_structures` and/or `overlay_addon_compat_*_larger`, since original height range doesn't allow structure placement in y 128~256.
+    1. All Changes in `overlay_addon_dimension_type_tweaks`
+    2. Build height extends to -128~512
+    3. Noise height (the height of cave part) extends to -64~384
+    4. Density functions fit the new noise height.
+    5. Cloud height change to 448
 - Side effects:
-    - Some structures can only be placed on bedrock roof. After enabling, they are not placed correctly
-</details>
-
-<span id = "addon_custom_cave_config"><details></span>
-<summary>Configurable cave</summary>
-
-- Overlay name: `overlay_addon_custom_cave_config`
-- Supported Minecraft version: (same as datapack supported version)
-- Features:
-    1. Customize cave generation, including height range and density!
-- Config:
-    - Path: `overlay_addon_custom_cave_config/data/better_cave_dimensions/worldgen/density_function/cave/final_density.json`
-    - Json path:
-        - Cave bottom: `input`.`argument`.`argument2`.`argument`.`argument`.`argument2`.`argument1` (line 20~26)
-        - Cave main: `input`.`argument`.`argument2`.`argument`.`argument`.`argument2`.`argument2`.`argument2`.`argument2`.`argument1` (line 35~41)
-    - Definition:
-        - `from_y` and `to_y`: Cave roof/base height range
-            - `from_y` < `to_y`
-            - Must be in range of noise height range
-                - `to_y` <= 128, or
-                - `to_y` <= 256 (with `overlay_addon_noise_height_extend`)
-            - Suggestion: `cave_bottom`.`to_y` >= -50, to avoid hard-coded lava layer
-        - `to_value` (for cave bottom, > `from_value`) and `from_value` (for cave main, < `to_value`): Control cave density
-            - Higher value -> Lower density
-            - \> 1: Unexpected behavior, including: bedrock roof breaker, infinite lava ocean
-            - If value is too low, noise caves(like underground vanilla caves) still generate
-    - Default tweaks:
-        - Cave main: `from_y` = 224, `to_y` = 256 -- more space to survive!
-    - Sometimes world can be chaotic!
-        - e.g. `to_y` > [noise height range] -> bedrock roof breaker
-            <details>
-            <summary>Images: Bedrock roof breaker</summary>
-
-            ![bedrock-roof-breaker-1](assets/images/overlay_addon_custom_cave_config/bedrock-roof-breaker-1.png)
-            ![bedrock-roof-breaker-2](assets/images/overlay_addon_custom_cave_config/bedrock-roof-breaker-2.png)
-            ![bedrock-roof-breaker-3](assets/images/overlay_addon_custom_cave_config/bedrock-roof-breaker-3.png)
-            </details>
+    - The base height of a structure is too limited (-32~80 in default setting for vanilla ones) so that it is not possible to see any structures in the upper cave space. You can just enable `overlay_addon_unlimited_vanilla_structures` and/or `overlay_addon_compat_*_larger` to fix.
 </details>
 
 <details>
