@@ -123,8 +123,7 @@ This datapack must be loaded *after* datapacks mentioned below.
         4. For structures using jigsaws
             1. Always `use_expansion_hack`
             2. Maximize `size` and `max_distance_from_center` (Requires strong CPU)
-            3. Maximize `start_height` range (-32 ~ [max height -16])
-                - Lowest height can not < -55, or it will be lava-logged
+            3. Maximize `start_height` range ([min height +16] ~ [max height -16])
             4. Remove `dimension_padding`
     2. Structure set
         1. `placement`.`spacing` (or `placement`.`distance`) -> max(1,min(16, half_spacing))

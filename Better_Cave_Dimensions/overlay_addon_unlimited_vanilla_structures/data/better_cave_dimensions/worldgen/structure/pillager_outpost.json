@@ -24,7 +24,7 @@
       "below_top": 16
     },
     "min_inclusive": {
-      "absolute": -32
+      "above_bottom": 16
     }
   },
   "max_distance_from_center": 116,

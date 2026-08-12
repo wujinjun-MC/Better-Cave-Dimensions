@@ -10,7 +10,7 @@
       "below_top": 16
     },
     "min_inclusive": {
-      "absolute": -32
+      "above_bottom": 16
     }
   },
   "start_pool": "minecraft:bastion/starts",
