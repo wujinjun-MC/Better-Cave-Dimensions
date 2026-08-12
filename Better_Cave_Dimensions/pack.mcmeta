@@ -45,6 +45,11 @@
         "min_format": 998,
         "max_format": 999,
         "directory": "overlay_addon_dimension_type_tweaks"
+      },
+      {
+        "min_format": 998,
+        "max_format": 999,
+        "directory": "overlay_addon_height_extend"
       }
     ]
   }
