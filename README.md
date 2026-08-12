@@ -165,17 +165,18 @@ This datapack must be loaded *after* datapacks mentioned below.
 </details>
 
 <details>
-<summary>Vanilla biome tag tweaks</summary>
+<summary>Vanilla tag tweaks</summary>
 
-- Overlay name: `overlay_addon_biome_tag_tweaks_vanilla`
+- Overlay name: `overlay_addon_tag_tweaks_vanilla`
 - Supported Minecraft version: 1.21.4+
 - Features:
-    1. No biome blocks mineshaft
-    2. Polar bears can spawn on ice blocks in all biomes
-    3. Snow golem can not smelt in all biomes
-    4. Pillager Patrol can spawn in all biomes
-    5. Wandering Trader can spawn in all biomes
-    6. Zombie Siege can spawn in all biomes
+    1. Tropical fish spawns at any height in all biomes
+    2. No biome blocks mineshaft
+    3. Polar bears can spawn on ice blocks in all biomes
+    4. Snow golem can not smelt in all biomes
+    5. Pillager Patrol can spawn in all biomes
+    6. Wandering Trader can spawn in all biomes
+    7. Zombie Siege can spawn in all biomes
 </details>
 
 ---

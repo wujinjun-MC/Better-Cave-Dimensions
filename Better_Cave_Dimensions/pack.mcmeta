@@ -44,6 +44,11 @@
       {
         "min_format": 998,
         "max_format": 999,
+        "directory": "overlay_addon_tag_tweaks_vanilla"
+      },
+      {
+        "min_format": 998,
+        "max_format": 999,
         "directory": "overlay_addon_dimension_type_tweaks"
       },
       {
