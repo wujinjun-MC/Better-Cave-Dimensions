@@ -11,7 +11,18 @@ This fork exists to keep the project alive by:
 - fixing bugs
 - accepting contributes from issues and pull requests
 
-> Previously I deeply involved in my derivative, Better Cave Dimensions (for [26.2](https://github.com/wujinjun-MC/Better-Cave-Dimensions/tree/Better-Cave-Dimensions-26.2_or_later) (may also publish to Modrinth later) or [1.21.4~1.21.8](https://github.com/wujinjun-MC/Better-Cave-Dimensions/tree/Better-Cave-Dimensions-legacy)), and had a joyful experience in Singleplayer and with fellows/friends in [1A1S SMP](https://www.wdsjfwq.com/server-1170.html) (which, sadly, is now offline). Because development by the original creators has ceased, other players who love this project—myself included—are forced to remain on old Minecraft version. With no one in the player community maintaining the project, I believe it is time to bring the datapack to the latest Minecraft releases.
+<details>
+<summary>A little story</summary>
+
+Previously I deeply involved in my derivative, Better Cave Dimensions (for [26.2](https://github.com/wujinjun-MC/Better-Cave-Dimensions/tree/Better-Cave-Dimensions-26.2_or_later) (may also publish to Modrinth later) or [1.21.4~1.21.8](https://github.com/wujinjun-MC/Better-Cave-Dimensions/tree/Better-Cave-Dimensions-legacy)), and had a joyful experience in Singleplayer and with fellows/friends in `1A1S SMP`. Because development by the original creators has ceased, other players who love this project—myself included—are forced to remain on old Minecraft version. With no one in the player community maintaining the project, I believe it is time to bring the datapack to the latest Minecraft releases.
+
+Update [20260815]: The "Better Cave Dimensions" for 26.2 or later is stable now (It will turn this datapack into a standalone dimension so that the overworld is not affected). Currently it is only available on [Github Releases](https://github.com/wujinjun-MC/Better-Cave-Dimensions/releases) and will publish to Modrinth later.
+
+Update [20260816]: The "1A1S SMP" is revived now with "Better Cave Dimensions" installed. You may test it in the server.
+- server ip: lightseeking.eu.org
+- to enter the dimension: `/mvtp world_better_cave_dimensions_cave` or through the "portal"
+
+</details>
 
 ---
 
