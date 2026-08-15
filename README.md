@@ -4,7 +4,7 @@ Make "Better Cave Worlds" a standalone dimension that does not affect overworld.
 
 **Version Support:** This branch strictly targets the latest Minecraft version (Currently **26.2**).
 
-**Development Transparency:** AI/LLMs are **not** used in datapack logic development to ensure maximum precision and accuracy. AI tools may occasionally be used to generate README, assets, icons, or documentation.
+**Development Transparency:** AI/LLMs are **not** used in datapack logic development to ensure maximum precision and accuracy. AI tools may involve in checking codes and occasionally generating README and assets (Only Github-side).
 
 ---
 
