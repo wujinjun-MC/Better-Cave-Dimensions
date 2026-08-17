@@ -1,19 +1,19 @@
 # Better Cave Worlds
 
-EN | [简体中文 (TODO)](https://github.com/wujinjun-MC/Better-Cave-Dimensions/blob/Better-Cave-Worlds-updated/README-modrinth.md)
+**EN** | [简体中文](https://github.com/wujinjun-MC/Better-Cave-Dimensions/blob/Better-Cave-Worlds-updated/README-modrinth.zh_hans.md)
 
 ## THIS IS A FORK
 
-This is a fork of the datapack [Better Cave Worlds](https://modrinth.com/datapack/better-cave-worlds) ([Github repo](https://github.com/klinbee/Better-Cave-Worlds)), it exist because the original developer doesn't actively maintain and and newer Minecraft versions introduced multiple datapack breaking changes.
+This is a fork of the datapack [Better Cave Worlds](https://modrinth.com/datapack/better-cave-worlds) ([Github repo](https://github.com/klinbee/Better-Cave-Worlds)), it exist because the original developer doesn't actively maintain and it fails on newer Minecraft versions where multiple breaking changes are introduced.
 
 This fork exists to keep the project alive by:
 - updating it for new Minecraft releases
-- fixing broken world generation caused by Mojang changes
+- fixing broken world generation caused by latest changes
 - maintaining compatibility going forward
 - fixing bugs
 - accepting contributes from issues and pull requests
 
-For developers/contributors, see README on Github ([En](https://github.com/wujinjun-MC/Better-Cave-Dimensions/tree/Better-Cave-Worlds-updated) | [简体中文 (TODO)](https://github.com/wujinjun-MC/Better-Cave-Dimensions/tree/Better-Cave-Worlds-updated))
+For developers/contributors, see README on Github ([EN](https://github.com/wujinjun-MC/Better-Cave-Dimensions/tree/Better-Cave-Worlds-updated) | [简体中文](https://github.com/wujinjun-MC/Better-Cave-Dimensions/blob/Better-Cave-Worlds-updated/README.zh_hans.md))
 
 <details>
 <summary>A little story</summary>
