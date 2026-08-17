@@ -1,10 +1,10 @@
 # Better Cave Dimensions
 
+**EN** | [简体中文 (TODO)](./README.zh_hans.md)
+
 Make "Better Cave Worlds" a standalone dimension that does not affect overworld. Based on my [updated port](https://github.com/wujinjun-MC/Better-Cave-Dimensions/tree/Better-Cave-Worlds-updated).
 
 **Version Support:** This branch strictly targets the latest Minecraft version (Currently **26.2**).
-
-**Development Transparency:** AI/LLMs are **not** used in datapack logic development to ensure maximum precision and accuracy. AI tools may involve in checking codes and occasionally generating README and assets (Only Github-side).
 
 ---
 
@@ -79,14 +79,6 @@ This datapack must be loaded *after* datapacks mentioned below.
     - Addon required: [Structory compat](#addon_compat_structory)
 - [ ] [Hopo Better Mineshaft](https://modrinth.com/datapack/hopo-better-mineshaft)
     - Addon required: [Hopo Better Mineshaft compat](#addon_compat_hopobettermineshaft)
-- [ ] [Copper Golem Statue](https://modrinth.com/datapack/copper-golem-statue)
-    - Addon required: [Copper Golem Statue compat](#addon_compat_coppergolemstatue)
-- [ ] [EnderCat](https://modrinth.com/datapack/ender-cat)
-    - Addon required: [EnderCat compat](#addon_compat_endercat)
-- [ ] [Happy Ghast Houses](https://modrinth.com/datapack/happy-ghast-houses)
-    - Addon required: [Happy Ghast Houses compat](#addon_compat_happyghasthouses)
-- [ ] [Tidal Towns](https://modrinth.com/datapack/tidal-towns)
-    - Addon required: [Tidal Towns compat](#addon_compat_tidaltowns)
 
 ### Other features
 
@@ -181,7 +173,13 @@ This datapack must be loaded *after* datapacks mentioned below.
 
 ---
 
-## Dev Details
+## Developer
+
+### AI Policy
+
+Same as [docs/AI_policy in `Better-Cave-Worlds-updated` branch](https://github.com/wujinjun-MC/Better-Cave-Dimensions/blob/Better-Cave-Worlds-updated/docs/AI_policy.md)
+
+### Development details
 
 Note: `$.`... represents JSON path, e.g. `$.generator.settings` means the value of key `settings` in object `generator`.
 
@@ -466,12 +464,6 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
 
 - [ ] Some terrain generation can break bedrock roof (e.g. Cold biomes (bedrocks are replaced by snow blocks))
 - [x] Throwing eye of ender causes server crash due to unable to find anywhere
-
----
-
-## AI/LLM/Agent Usage
-
-Open mind: AI commits/bug fixes are welcome, but please ensure that the code is thoroughly reviewed and tested before merging. The goal is to maintain a high standard of quality and reliability in the codebase.
 
 ---
 
