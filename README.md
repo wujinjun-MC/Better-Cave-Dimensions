@@ -21,6 +21,9 @@ Tools used:
     - [26.1.x](https://www.youtube.com/watch?v=4FFFRFIyqIs)
     - [26.2](https://www.youtube.com/watch?v=k53YFmA8Oe0)
     - [Tutorial files](https://drive.google.com/drive/folders/17h79rkR0QulQbeR--SPpC5So3vAU_1ga)
+- [Blockbench](https://blockbench.net/): Make .bbmodel for icon
+    - Used plugin:
+        - [Minecraft Title Generator](https://www.blockbench.net/plugins/minecraft_title_generator)
 
 <details>
 <summary>Changes that are needed to adapt:</summary>
