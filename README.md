@@ -1,5 +1,7 @@
 # Better Cave Worlds Updated
 
+**EN** | [简体中文](./README.zh_hans.md)
+
 This is an unofficial fork of [klinbee/Better-Cave-Worlds](https://github.com/klinbee/Better-Cave-Worlds) to support newer Minecraft versions, as the original author [klinbee](https://github.com/klinbee) stopped maintaining since Oct 18, 2025. ([last commit](https://github.com/klinbee/Better-Cave-Worlds/commit/cd8e17e98e29c024fc554cecf6763d1b8783f1c3))
 
 Also see README for Modrinth ([EN](https://modrinth.com/datapack/better-cave-worlds-updated) | [简体中文](./README-modrinth.zh_hans.md))

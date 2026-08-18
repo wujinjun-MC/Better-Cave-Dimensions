@@ -1,5 +1,7 @@
 # Better Cave Worlds Updated (更好的洞穴世界-更新版)
 
+[EN](./README.md) | **简体中文**
+
 这是 [klinbee/Better-Cave-Worlds](https://github.com/klinbee/Better-Cave-Worlds) (非官方)分支，用于支持新版Minecraft，因为原作者 [klinbee](https://github.com/klinbee) 从2025.10.18起没有维护。 ([最后一次 commit](https://github.com/klinbee/Better-Cave-Worlds/commit/cd8e17e98e29c024fc554cecf6763d1b8783f1c3))
 
 另外查看用于Modrinth的README ([EN](https://modrinth.com/datapack/better-cave-worlds-updated) | [简体中文](./README-modrinth.zh_hans.md))
