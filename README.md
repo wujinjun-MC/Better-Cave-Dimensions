@@ -59,27 +59,6 @@ Simply go to [releases](https://github.com/wujinjun-MC/Better-Cave-Dimensions/re
 ### Third-Party Datapack Compatibility
 *Note: Compatibility addons are not in this datapack and will be hosted in [this repository](https://github.com/wujinjun-MC/Better-Cave-Dimensions-Compat).*
 
-This datapack must be loaded *after* datapacks mentioned below.
-- If you are starting a fresh server: Rename this datapack file name (e.g. Add prefix "Z") so that it is the last one alphabetically.
-- If you are adding this datapack or the datapack(s) that needs compatibility to existing server: DO NOT enable compatibility addons initially. Add datapacks, completely start and stop server, open "level.dat" in NBT editor (if using bukkit/spigot/paper (or forks), also open that in other world/dimension folders), expand "DataPacks", place this datapack below the others, save, finally enable compatibility addons and start.
-
-- [ ] [Dungeons and Taverns(DnT)](https://modrinth.com/user/NovaWostra)
-    - Addon required: [Dungeons and Taverns compat](#addon_dnt_compat)
-    - Full support:
-        - [ ] [Main](https://modrinth.com/datapack/dungeons-and-taverns)
-        - [ ] [Ancient City Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-ancient-city-overhaul)
-        - [ ] [Desert Temple Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-desert-temple-overhaul)
-        - [ ] [End Castle Standalone](https://modrinth.com/datapack/dungeons-and-taverns-end-castle-standalone)
-        - [ ] [Nether Fortress Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-nether-fortress-overhaul)
-        - [ ] [Pillager Outpost Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-pillager-outpost-overhaul)
-        - [ ] [Stronghold Overhaul](https://modrinth.com/datapack/dungeons-and-taverns-stronghold-overhaul)
-- [ ] [Explorify](https://modrinth.com/datapack/explorify)
-    - Addon required: [Explorify compat](#addon_compat_explorify)
-- [ ] [Structory](https://modrinth.com/datapack/structory)
-    - Addon required: [Structory compat](#addon_compat_structory)
-- [ ] [Hopo Better Mineshaft](https://modrinth.com/datapack/hopo-better-mineshaft)
-    - Addon required: [Hopo Better Mineshaft compat](#addon_compat_hopobettermineshaft)
-
 ### Other features
 
 - [ ] Extend-able height (e.g. -128~512)
