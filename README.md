@@ -57,7 +57,7 @@ Simply go to [releases](https://github.com/wujinjun-MC/Better-Cave-Dimensions/re
 - [x] Woodland Mansion [^2]
 
 ### Third-Party Datapack Compatibility
-*Note: Compatibility addons are not in this datapack and will be hosted in separate repositories.*
+*Note: Compatibility addons are not in this datapack and will be hosted in [this repository](https://github.com/wujinjun-MC/Better-Cave-Dimensions-Compat).*
 
 This datapack must be loaded *after* datapacks mentioned below.
 - If you are starting a fresh server: Rename this datapack file name (e.g. Add prefix "Z") so that it is the last one alphabetically.
@@ -170,6 +170,9 @@ This datapack must be loaded *after* datapacks mentioned below.
     6. Wandering Trader can spawn in all biomes
     7. Zombie Siege can spawn in all biomes
 </details>
+
+#### Third-Party Datapack Compatibility
+*Note: Compatibility addons are not in this datapack and will be hosted in [this repository](https://github.com/wujinjun-MC/Better-Cave-Dimensions-Compat).*
 
 ---
 
