@@ -56,7 +56,7 @@ Simply go to [releases](https://github.com/wujinjun-MC/Better-Cave-Dimensions/re
 - [x] Trial Chambers
 - [x] Woodland Mansion [^2]
 
-### Third-Party Datapack Compatibility
+### Compatibility with other resources (Datapacks, Plugins, and more)
 *Note: Compatibility addons are not in this datapack and will be hosted in [this repository](https://github.com/wujinjun-MC/Better-Cave-Dimensions-Compat).*
 
 ### Other features
@@ -103,7 +103,7 @@ Simply go to [releases](https://github.com/wujinjun-MC/Better-Cave-Dimensions/re
         4. `placement`.`frequency_reduction_method` -> default
         5. `placement`.`exclusion_zone` -> none
         6. `placement`.`frequency` -> double (if present)
-        7. Strong hold count -> 1024 ; `preferred_biomes` -> all
+        7. Stronghold count -> 1024 ; `preferred_biomes` -> all
 </details>
 
 <details>
@@ -150,7 +150,7 @@ Simply go to [releases](https://github.com/wujinjun-MC/Better-Cave-Dimensions/re
     7. Zombie Siege can spawn in all biomes
 </details>
 
-#### Third-Party Datapack Compatibility
+#### Compatibility with other resources (Datapacks, Plugins, and more)
 *Note: Compatibility addons are not in this datapack and will be hosted in [this repository](https://github.com/wujinjun-MC/Better-Cave-Dimensions-Compat).*
 
 ---
