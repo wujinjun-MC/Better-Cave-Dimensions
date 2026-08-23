@@ -1,10 +1,19 @@
-# Better Cave Worlds Updated (更好的洞穴世界-更新版)
+<!--suppress HtmlDeprecatedAttribute -->
+<div align="center">
+  <img src="assets/images/bcwu_icon.png" width="150" alt="Better Cave Worlds Updated logo">
+  <h1>Better Cave Worlds Updated (更好的洞穴世界-更新版)</h1>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License"></a>
+
+  <p><strong>将主世界变成洞穴，并正确生成地物和结构的数据包</strong></p>
+</div>
 
 [EN](./README.md) | **简体中文**
 
-这是 [klinbee/Better-Cave-Worlds](https://github.com/klinbee/Better-Cave-Worlds) (非官方)分支，用于支持新版Minecraft，因为原作者 [klinbee](https://github.com/klinbee) 从2025.10.18起没有维护。 ([最后一次 commit](https://github.com/klinbee/Better-Cave-Worlds/commit/cd8e17e98e29c024fc554cecf6763d1b8783f1c3))
+> 这是 [klinbee/Better-Cave-Worlds](https://github.com/klinbee/Better-Cave-Worlds) (非官方)分支，用于支持新版Minecraft，因为原作者 [klinbee](https://github.com/klinbee) 从2025.10.18起没有维护。 ([最后一次 commit](https://github.com/klinbee/Better-Cave-Worlds/commit/cd8e17e98e29c024fc554cecf6763d1b8783f1c3))
 
 另外查看用于Modrinth的README ([EN](https://modrinth.com/datapack/better-cave-worlds-updated) | [简体中文](./README-modrinth.zh_hans.md))
+
+![Modfolio Modrinth 卡片](https://modfolio.creeperkatze.dev/modrinth/project/4nhL5nCA)
 
 ## 安装
 

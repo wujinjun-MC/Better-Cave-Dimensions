@@ -1,10 +1,19 @@
-# Better Cave Worlds Updated
+<!--suppress HtmlDeprecatedAttribute -->
+<div align="center">
+  <img src="assets/images/bcwu_icon.png" width="150" alt="Better Cave Worlds Updated logo">
+  <h1>Better Cave Worlds Updated</h1>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License"></a>
+
+  <p><strong>Data Pack that generates the overworld as caves, with proper features and some structures.</strong></p>
+</div>
 
 **EN** | [简体中文](./README.zh_hans.md)
 
-This is an unofficial fork of [klinbee/Better-Cave-Worlds](https://github.com/klinbee/Better-Cave-Worlds) to support newer Minecraft versions, as the original author [klinbee](https://github.com/klinbee) stopped maintaining since Oct 18, 2025. ([last commit](https://github.com/klinbee/Better-Cave-Worlds/commit/cd8e17e98e29c024fc554cecf6763d1b8783f1c3))
+> This is an unofficial fork of [klinbee/Better-Cave-Worlds](https://github.com/klinbee/Better-Cave-Worlds) to support newer Minecraft versions, as the original author [klinbee](https://github.com/klinbee) stopped maintaining since Oct 18, 2025. ([last commit](https://github.com/klinbee/Better-Cave-Worlds/commit/cd8e17e98e29c024fc554cecf6763d1b8783f1c3))
 
 Also see README for Modrinth ([EN](https://modrinth.com/datapack/better-cave-worlds-updated) | [简体中文](./README-modrinth.zh_hans.md))
+
+![Modfolio Modrinth Card](https://modfolio.creeperkatze.dev/modrinth/project/4nhL5nCA)
 
 ## Install
 
