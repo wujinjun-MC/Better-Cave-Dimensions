@@ -166,7 +166,7 @@ Same as [docs/AI_policy in `Better-Cave-Worlds-updated` branch](https://github.c
 Note: `$.`... represents JSON path, e.g. `$.generator.settings` means the value of key `settings` in object `generator`.
 
 <details>
-<summary>Stage 1: Make it a seperate dimension</summary>
+<summary>Expand</summary>
 
 Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinjun-MC/Better-Cave-Dimensions/commits/Better-Cave-Dimensions-legacy):
 - `License.txt` add my copyright info
@@ -439,6 +439,8 @@ Following the path in [Better-Cave-Dimensions-legacy](https://github.com/wujinju
                 - Ruined portals (ruined_portal.json): `$.setups[0].placement`=`underground` (except nether) and delete `$.setups[1]`
             - In `worldgen/structure_set`
                 - Replace namespace `minecraft`->`better_cave_dimensions` in `$.structures[*].structure`, `$.placement.exclusion_zone.other_set` and `$.placement.preferred_biomes`.
+
+</details>
 
 ---
 
